@@ -57,7 +57,8 @@ export async function scrapeAmazonProduct(url: string) {
     const discountRate = $('.savingsPercentage').text().replace(/[-%]/g, "");
 
     const description = extractDescription($)
-
+    const rating = $('a-size-base.a-color-base').text();
+    console.log(rating + 'rating')
     // Construct data object with scraped information
     const data = {
       url,
@@ -69,8 +70,8 @@ export async function scrapeAmazonProduct(url: string) {
       priceHistory: [],
       discountRate: Number(discountRate),
       category: 'category',
-      reviewsCount:100,
-      stars: 4.5,
+      reviewsCount:Number(rating),
+      stars: Number(rating),
       isOutOfStock: outOfStock,
       description,
       lowestPrice: Number(currentPrice) || Number(originalPrice),
@@ -78,7 +79,18 @@ export async function scrapeAmazonProduct(url: string) {
       averagePrice: Number(currentPrice) || Number(originalPrice),
     }
 
-    return data;
+
+    const recommend = {
+      url,
+      title ,
+      rating:Number(rating),
+      sub_cat : "SmartPhones",
+      main_cat : "Electronics", 
+     }
+
+     const s :any = [data, recommend]
+     
+    return s;
   } catch (error: any) {
     console.log(error);
   }

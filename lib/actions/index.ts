@@ -7,6 +7,8 @@ import { scrapeAmazonProduct } from "../scraper";
 import { getAveragePrice, getHighestPrice, getLowestPrice } from "../utils";
 import { User } from "@/types";
 import { generateEmailBody, sendEmail } from "../nodemailer";
+import RecommendProduct from "../models/recommend.model";
+import username from "@/app/login";
 
 export async function scrapeAndStoreProduct(productUrl: string) {
   if(!productUrl) return;
@@ -14,13 +16,16 @@ export async function scrapeAndStoreProduct(productUrl: string) {
   try {
     connectToDB();
 
-    const scrapedProduct = await scrapeAmazonProduct(productUrl);
-
+    const [scrapedProduct,scrappedrecommend] = await scrapeAmazonProduct(productUrl);
+    
+    
     if(!scrapedProduct) return;
 
     let product = scrapedProduct;
+    let recommend = scrappedrecommend;
 
     const existingProduct = await Product.findOne({ url: scrapedProduct.url });
+    const existingRecommend = await RecommendProduct.findOne({ url: scrappedrecommend.url });
 
     if(existingProduct) {
       const updatedPriceHistory: any = [
@@ -35,11 +40,49 @@ export async function scrapeAndStoreProduct(productUrl: string) {
         highestPrice: getHighestPrice(updatedPriceHistory),
         averagePrice: getAveragePrice(updatedPriceHistory),
       }
+
+      
     }
+
+    
+    if(existingRecommend) {
+
+      const updateUsers :any = [
+        ...existingRecommend.users,
+        { email: username}
+      ]
+
+      recommend = {
+        ...scrappedrecommend,
+        users: updateUsers,
+
+      }
+    }
+
+   
 
     const newProduct = await Product.findOneAndUpdate(
       { url: scrapedProduct.url },
       product,
+      { upsert: true, new: true }
+    );
+
+
+    const updateUsers :any = [
+      ...existingRecommend.users,
+      { email: username}
+    ]
+
+    recommend = {
+      ...scrappedrecommend,
+      users: updateUsers,
+
+    }
+
+    
+    await RecommendProduct.findOneAndUpdate(
+      { url: scrappedrecommend.url },
+      recommend,
       { upsert: true, new: true }
     );
 
