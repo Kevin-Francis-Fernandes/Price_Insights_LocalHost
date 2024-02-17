@@ -7,7 +7,7 @@ const isValidAmazonProductURL = (url: string) => {
   try {
     const parsedURL = new URL(url);
     const hostname = parsedURL.hostname;
-    
+
     if(
       hostname.includes('amazon.com') || 
       hostname.includes ('amazon.') || 
@@ -16,7 +16,6 @@ const isValidAmazonProductURL = (url: string) => {
       return true;
     }
   } catch (error) {
-    
     return false;
   }
 
@@ -31,12 +30,12 @@ const Searchbar = () => {
     event.preventDefault();
 
     const isValidLink = isValidAmazonProductURL(searchPrompt);
-    
+
     if(!isValidLink) return alert('Please provide a valid Amazon link')
 
     try {
       setIsLoading(true);
-      
+
       // Scrape the product page
       const product = await scrapeAndStoreProduct(searchPrompt);
     } catch (error) {

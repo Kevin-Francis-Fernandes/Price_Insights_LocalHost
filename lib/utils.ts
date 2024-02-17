@@ -30,25 +30,6 @@ export function extractPrice(...elements: any) {
   return '';
 }
 
-export function extractFlipkartPrice(...elements: any) {
-  for (const element of elements) {
-    const priceText = element.text().trim();
-
-    if (priceText) {
-      // Remove non-digit and non-dot characters
-      const cleanPrice = priceText.replace(/[^\d.]/g, '');
-
-      // Parse the cleaned price as a float
-      const numericPrice = parseFloat(cleanPrice);
-
-      return isNaN(numericPrice) ? '' : numericPrice;
-    }
-  }
-
-  return '';
-}
-
-
 // Extracts and returns the currency symbol from an element.
 export function extractCurrency(element: any) {
   const currencyText = element.text().trim().slice(0, 1);
