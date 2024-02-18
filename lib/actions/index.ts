@@ -67,19 +67,15 @@ export async function scrapeAndStoreProduct(productUrl: string) {
       { upsert: true, new: true }
     );
 
-
-    const updateUsers :any = [
-      ...existingRecommend.users,
-      { email: username}
-    ]
-
+    if(!existingRecommend) {
     recommend = {
       ...scrappedrecommend,
-      users: updateUsers,
+      users: [{ email: username}],
 
     }
+  }
 
-    
+    console.log(recommend)
     await RecommendProduct.findOneAndUpdate(
       { url: scrappedrecommend.url },
       recommend,

@@ -84,6 +84,11 @@ export function getLowestPrice(priceList: PriceHistoryItem[]) {
   return lowestPrice.price;
 }
 
+export function extractRating(element: any){
+  const rating = element.text().trim(); //just 1st character
+  if(rating) return rating.replace(/[^\d.]/g,'').slice(0,3);
+}
+
 export function getAveragePrice(priceList: PriceHistoryItem[]) {
   const sumOfPrices = priceList.reduce((acc, curr) => acc + curr.price, 0);
   const averagePrice = sumOfPrices / priceList.length || 0;
