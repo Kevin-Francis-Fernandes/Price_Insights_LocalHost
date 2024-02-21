@@ -3,23 +3,34 @@
 import { scrapeAndStoreProduct } from '@/lib/actions';
 import { FormEvent, useState } from 'react'
 
-const isValidAmazonProductURL = (url: string) => {
+const isValidProductURL = (url: string) => {
   try {
     const parsedURL = new URL(url);
     const hostname = parsedURL.hostname;
 
-    if(
-      hostname.includes('amazon.com') || 
-      hostname.includes ('amazon.') || 
-      hostname.endsWith('amazon')
-    ) {
-      return true;
-    }
-  } catch (error) {
-    return false;
+    if(hostname.includes('amazon.com')||
+         hostname.includes('amazon.')||
+         hostname.endsWith('amazon')){
+            return "amazon"
+         }
+         else if(hostname.includes('croma.com')||
+         hostname.includes('croma.')||
+         hostname.endsWith('croma')){
+            return "croma"
+         }
+         else if(hostname.includes('reliancedigital.com')||
+         hostname.includes('reliancedigital.')||
+         hostname.endsWith('reliancedigital')  )
+         {return "reliance"}
+         else{
+          return "error"
+         }
+ 
+    }catch (error){
+        return "error";
   }
 
-  return false;
+  
 }
 
 const Searchbar = () => {
@@ -29,15 +40,15 @@ const Searchbar = () => {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    const isValidLink = isValidAmazonProductURL(searchPrompt);
+    const isValidLink = isValidProductURL(searchPrompt);
 
-    if(!isValidLink) return alert('Please provide a valid Amazon link')
+    if(isValidLink=="error") return alert('Please provide a valid link')
 
     try {
       setIsLoading(true);
 
       // Scrape the product page
-      const product = await scrapeAndStoreProduct(searchPrompt);
+      const product = await scrapeAndStoreProduct(searchPrompt,isValidLink);
     } catch (error) {
       console.log(error);
     } finally {

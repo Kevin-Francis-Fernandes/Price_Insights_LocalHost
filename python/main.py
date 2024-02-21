@@ -26,7 +26,7 @@ df.shape
 
 
 # Provide the user_id for which you want to get recommendations 
-user_id_to_recommend = 'bdb4199a'
+user_id_to_recommend = '766ee2a6'
 
 # Get the user's interactions (Item_id, title, category, and brand)
 user_interactions = df[df['user_id'] == user_id_to_recommend][['item_id', 'title', 'sub_cat', 'brand']]\
@@ -47,6 +47,10 @@ recommendations = df[df['item_id'].isin(top_n_recommendations_hybrid)][
 print(f"Model recommends the following products to the user {user_id_to_recommend}:")
 print(recommendations)
 
+#send the  recommendation list as a response in json format
+# a=recommendations['item_id']
+# for i in a:
+#     print(i)
 
 
 

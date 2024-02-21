@@ -9,14 +9,29 @@ import { User } from "@/types";
 import { generateEmailBody, sendEmail } from "../nodemailer";
 import RecommendProduct from "../models/recommend.model";
 import username from "@/app/login";
+import { scrapeCromaProduct } from "../scraper/croma";
+import { scrapeRelianceProduct } from "../scraper/reliance";
 
-export async function scrapeAndStoreProduct(productUrl: string) {
+export async function scrapeAndStoreProduct(productUrl: string,type:string) {
   if(!productUrl) return;
 
   try {
     connectToDB();
 
-    const [scrapedProduct,scrappedrecommend] = await scrapeAmazonProduct(productUrl);
+    let scrapedProduct;
+
+    let scrappedrecommend;
+    if(type=="amazon"){
+       [scrapedProduct,scrappedrecommend] = await scrapeAmazonProduct(productUrl);
+    
+    }
+    else if(type=="croma"){
+      [scrapedProduct,scrappedrecommend] = await scrapeCromaProduct(productUrl);
+    }
+    else{
+      //if reliance
+      [scrapedProduct,scrappedrecommend] = await scrapeRelianceProduct(productUrl);
+    }
     
     
     if(!scrapedProduct) return;

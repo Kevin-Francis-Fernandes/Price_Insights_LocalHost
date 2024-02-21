@@ -7,6 +7,7 @@ export type User = {
 };
 
 export type Product = {
+  rating: string;
   _id?: string;
   url: string;
   currency: string;
@@ -21,9 +22,9 @@ export type Product = {
   discountRate: number;
   description: string;
   category: string;
-  reviewsCount: number;
-  stars: number;
+  ratingCount: number;
   isOutOfStock: Boolean;
+  sellerInfo: string;
   users?: User[];
 };
 
