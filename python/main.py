@@ -1,0 +1,62 @@
+
+import pandas as pd
+
+
+from popularity_based import *
+from content_based import *
+from collaborative_filtering import *
+from hybrid_model import *
+
+
+# Read the pre-processed data
+df = pd.read_csv("output.csv") #,encoding='latin1')
+print(df.columns)
+# Convert the 'timestamp' column to datetime
+
+df['timestamp'] = pd.to_datetime(df['timestamp'])
+
+
+
+
+# Filter the data to include only interactions after the year 2015
+df = df[df['timestamp'].dt.year > 2015]
+df.head()
+
+df.shape
+
+
+# Provide the user_id for which you want to get recommendations 
+user_id_to_recommend = 'bdb4199a'
+
+# Get the user's interactions (Item_id, title, category, and brand)
+user_interactions = df[df['user_id'] == user_id_to_recommend][['item_id', 'title', 'sub_cat', 'brand']]\
+    .drop_duplicates('item_id')
+print(f"User {user_id_to_recommend} Interacted for the following products:")
+print(user_interactions)
+
+
+
+
+# Create an instance of the HybridRecommender class
+hybrid_recommender = HybridRecommender(df, content_based_weight=0.4, collaborative_filtering_weight=0.6)
+top_n_recommendations_hybrid = hybrid_recommender.get_recommendations(user_id_to_recommend)
+
+# Get the model's recommended products
+recommendations = df[df['item_id'].isin(top_n_recommendations_hybrid)][
+    ['item_id', 'title', 'sub_cat', 'brand']].drop_duplicates('item_id')
+print(f"Model recommends the following products to the user {user_id_to_recommend}:")
+print(recommendations)
+
+
+
+
+
+# Instantiate the PersonalizedRecommender class
+popularity_recommender = PopularityBasedRecommender(df)
+
+# Get trending items in the last 15 days (e.g., top 10)
+trending_items = popularity_recommender.get_trending_items(period=180, top_n=3)
+
+# Print the recommendations
+print("Trending Items:")
+print(trending_items)

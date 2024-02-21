@@ -3,6 +3,8 @@ from pymongo import MongoClient
 import os
 import hashlib
 import pandas as pd
+import random
+from datetime import datetime
 
 def pseudonymize_email(email):
     # Using hashlib to generate a hash of the email address
@@ -29,7 +31,7 @@ collection = db['recommendproducts']
 csv_file_path = 'output.csv'
 
 # Define CSV header
-csv_header = ['user_id', 'url', '_id', 'title', 'main_cat', 'sub_cat', 'timestamp', 'rating']
+csv_header = ['item_id','title', 'brand','user_id', 'rating', 'timestamp', 'sub_cat','main_cat','age','gender','location']
 
 # Open CSV file for writing
 with open(csv_file_path, 'w', newline='') as csv_file:
@@ -45,18 +47,19 @@ with open(csv_file_path, 'w', newline='') as csv_file:
         for user in document['users']:
             # Extract fields from the document
             user_id = pseudonymize_email(user['email'])
-            url = document['url']
-            _id = str(document['_id'])
-            title = document['title']
+           # url = document['url']
+            item_id = str(document['_id'])
+            title = document['title'].replace(',','').replace('\"','').replace('|','').lower()
             main_cat = document['main_cat']
             sub_cat = document['sub_cat']
-            timestamp = document['updatedAt'] or document['createdAt']
+            timestamp = document['updatedAt'].strftime('%Y-%m-%d %H:%M:%S') or document['createdAt'].strftime('%Y-%m-%d %H:%M:%S')
             rating = document.get('rating', 'N/A')
-
-
-
+            brand=title.split()[0]
+            age='18-24'
+            gender= random.choice(['male','female'])
+            location=random.choice(['Usa','India','UK','Cananda'])
             # Write data to CSV
-            csv_writer.writerow([user_id, url, _id, title, main_cat, sub_cat, timestamp, rating])
+            csv_writer.writerow([ item_id, title, brand, user_id,rating, timestamp,sub_cat,main_cat, age,gender,location])
 
 # Close MongoDB connection
 client.close()
