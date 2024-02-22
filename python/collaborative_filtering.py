@@ -7,8 +7,8 @@ class CollaborativeFilteringRecommender:
         self.df = df
         # Create user-item interaction matrix
         self.user_item_matrix = self.df.pivot_table(index='user_id', columns='item_id', values='rating').fillna(0)
-        print("other",self._get_user_demographic_matrix(weightage_factor=0.6))
-        print("self",self._get_user_similarity_matrix())
+        # print("other",self._get_user_demographic_matrix(weightage_factor=0.6))
+        # print("self",self._get_user_similarity_matrix())
         self.user_similarity_matrix = self._get_user_similarity_matrix().dot(
             self._get_user_demographic_matrix(weightage_factor=0.6))
 
