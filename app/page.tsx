@@ -1,10 +1,78 @@
 import HeroCarousel from "@/components/HeroCarousel"
 import Searchbar from "@/components/Searchbar"
 import Image from "next/image"
-import { getAllProducts } from "@/lib/actions"
+import { getAllProducts, getRecommendations } from "@/lib/actions"
 import ProductCard from "@/components/ProductCard"
+import * as crypto from 'crypto';
+import username from "./login"
+import { useEffect, useState } from "react"
+
+function pseudonymizeEmail(email: string): string {
+    // Using crypto to generate an MD5 hash of the email address
+    const hashedEmail = crypto.createHash('md5').update(email, 'utf-8').digest('hex');
+    
+    // Take the first 8 characters of the hash as a pseudonymous value
+    const pseudonymousValue = hashedEmail.slice(0, 8);
+    
+    return pseudonymousValue;
+}
 
 const Home = async () => {
+
+  
+
+  
+  const param = pseudonymizeEmail(username);  
+  
+  
+  
+      const fetchData = async () => {
+          try {
+              const response = await fetch(`http://127.0.0.1:5000/api/data?param=${param}`);
+              const jsonData = await response.json();
+              return jsonData;
+              
+          } catch (error) {
+              console.error('Error fetching data:', error);
+          }
+      };
+  
+      // Call fetchData
+      
+  
+
+  const data = await fetchData();
+  
+    let hybridArray:string[],popularArray:string[],flag
+    hybridArray=[]
+    popularArray=[]
+    flag=true
+    for (const element of data){
+      if(element=='end')
+        flag=false
+        
+
+      if(flag)
+        hybridArray.push(element)
+      else{
+        if(element!='end')
+          popularArray.push(element)
+      }
+
+    }
+
+    // console.log(hybridArray)
+    console.log(popularArray)
+
+    const popularproducts = await getRecommendations(popularArray)
+    console.log(popularproducts)
+
+    if (popularproducts === null) {
+      console.log('No matching products found.');
+    } else {
+      console.log('Matching products:', popularproducts?.values());
+    }
+
   const allProducts = await getAllProducts();
 
   return (

@@ -59,6 +59,8 @@ export async function scrapeAndStoreProduct(productUrl: string,type:string) {
       
     }
 
+    // use same database just add another field
+
     
     if(existingRecommend) {
 
@@ -108,6 +110,19 @@ export async function getProductById(productId: string) {
     connectToDB();
 
     const product = await Product.findOne({ _id: productId });
+
+    if(!product) return null;
+
+    return product;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+export async function getRecommendations(productId: string[]) {
+  try {
+    connectToDB();
+    const product= await Product.find({ _id: { $in: productId } });
 
     if(!product) return null;
 
