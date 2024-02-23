@@ -22,30 +22,38 @@ export async function scrapeAndStoreProduct(productUrl: string,type:string) {
 
     let scrappedrecommend;
     if(type=="amazon"){
-       [scrapedProduct,scrappedrecommend] = await scrapeAmazonProduct(productUrl);
+       scrapedProduct = await scrapeAmazonProduct(productUrl);
+      //  [scrapedProduct,scrappedrecommend] = await scrapeAmazonProduct(productUrl);
     
     }
     else if(type=="croma"){
-      [scrapedProduct,scrappedrecommend] = await scrapeCromaProduct(productUrl);
+      // [scrapedProduct,scrappedrecommend] = await scrapeCromaProduct(productUrl);
+      scrapedProduct = await scrapeCromaProduct(productUrl);
     }
     else{
       //if reliance
-      [scrapedProduct,scrappedrecommend] = await scrapeRelianceProduct(productUrl);
+     // [scrapedProduct,scrappedrecommend] = await scrapeRelianceProduct(productUrl);
+      scrapedProduct = await scrapeRelianceProduct(productUrl);
     }
     
     
     if(!scrapedProduct) return;
 
     let product = scrapedProduct;
-    let recommend = scrappedrecommend;
+    // let recommend = scrappedrecommend;
 
     const existingProduct = await Product.findOne({ url: scrapedProduct.url });
-    const existingRecommend = await RecommendProduct.findOne({ url: scrappedrecommend.url });
-
+    // const existingRecommend = await RecommendProduct.findOne({ url: scrappedrecommend.url });
+    
     if(existingProduct) {
       const updatedPriceHistory: any = [
         ...existingProduct.priceHistory,
         { price: scrapedProduct.currentPrice }
+      ]
+
+      const updateUsersInteraction:any  = [
+        ...existingProduct.usersInteraction,
+        { email: username}
       ]
 
       product = {
@@ -54,6 +62,7 @@ export async function scrapeAndStoreProduct(productUrl: string,type:string) {
         lowestPrice: getLowestPrice(updatedPriceHistory),
         highestPrice: getHighestPrice(updatedPriceHistory),
         averagePrice: getAveragePrice(updatedPriceHistory),
+        usersInteraction: updateUsersInteraction,
       }
 
       
@@ -62,21 +71,31 @@ export async function scrapeAndStoreProduct(productUrl: string,type:string) {
     // use same database just add another field
 
     
-    if(existingRecommend) {
+    // if(existingRecommend) {
 
-      const updateUsers :any = [
-        ...existingRecommend.users,
+    //   const updateUsers :any = [
+    //     ...existingRecommend.users,
+    //     { email: username}
+    //   ]
+
+    //   recommend = {
+    //     ...scrappedrecommend,
+    //     users: updateUsers,
+
+    //   }
+    // }
+    if(!existingProduct) {
+
+      const updateUsersInteraction:any  = [
+        
         { email: username}
       ]
-
-      recommend = {
-        ...scrappedrecommend,
-        users: updateUsers,
-
-      }
+    product = {
+          ...scrapedProduct,
+          usersInteraction: updateUsersInteraction,
+  
     }
-
-   
+  }
 
     const newProduct = await Product.findOneAndUpdate(
       { url: scrapedProduct.url },
@@ -84,20 +103,20 @@ export async function scrapeAndStoreProduct(productUrl: string,type:string) {
       { upsert: true, new: true }
     );
 
-    if(!existingRecommend) {
-    recommend = {
-      ...scrappedrecommend,
-      users: [{ email: username}],
+    // if(!existingRecommend) {
+    // recommend = {
+    //   ...scrappedrecommend,
+    //   users: [{ email: username}],
 
-    }
-  }
+    // }
+ // }
 
-    console.log(recommend)
-    await RecommendProduct.findOneAndUpdate(
-      { url: scrappedrecommend.url },
-      recommend,
-      { upsert: true, new: true }
-    );
+    // console.log(recommend)
+    // await RecommendProduct.findOneAndUpdate(
+    //   { url: scrappedrecommend.url },
+    //   recommend,
+    //   { upsert: true, new: true }
+    // );
 
     revalidatePath(`/products/${newProduct._id}`);
   } catch (error: any) {

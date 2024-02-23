@@ -32,8 +32,21 @@ export function extractPrice(...elements: any) {
 
 // Extracts and returns the currency symbol from an element.
 export function extractCurrency(element: any) {
-  const currencyText = element.text().trim().slice(0, 1);
+  const currencyText = element.text().slice(0, 1).trim();
   return currencyText ? currencyText : "";
+}
+
+export function extractRating(element: any){
+  const rating = element.text().trim(); //just 1st character 
+  if(rating) return rating.replace(/[^\d.]/g,'').slice(0,3);
+}
+
+export function extractReview(...elements: any){
+  for(const element of elements){
+      const reviewCount= element.text().trim();
+
+      if(reviewCount) return reviewCount.replace(/[^\d.]/g,'');
+  }
 }
 
 // Extracts description from two possible elements from amazon
@@ -60,6 +73,8 @@ export function extractDescription($: any) {
   return "";
 }
 
+
+
 export function getHighestPrice(priceList: PriceHistoryItem[]) {
   let highestPrice = priceList[0];
 
@@ -84,17 +99,13 @@ export function getLowestPrice(priceList: PriceHistoryItem[]) {
   return lowestPrice.price;
 }
 
-export function extractRating(element: any){
-  const rating = element.text().trim(); //just 1st character
-  if(rating) return rating.replace(/[^\d.]/g,'').slice(0,3);
-}
-
 export function getAveragePrice(priceList: PriceHistoryItem[]) {
   const sumOfPrices = priceList.reduce((acc, curr) => acc + curr.price, 0);
   const averagePrice = sumOfPrices / priceList.length || 0;
 
   return averagePrice;
 }
+
 
 export const getEmailNotifType = (
   scrapedProduct: Product,

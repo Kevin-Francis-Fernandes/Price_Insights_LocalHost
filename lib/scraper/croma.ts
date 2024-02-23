@@ -113,7 +113,8 @@ export async function scrapeCromaProduct(url: string) {
         priceHistory:[],
         discountRate:Number(discountRate),
         ratingCount,
-        rating,
+        usersInteraction:[],
+      //  rating,
         category:"category",
         isOutOfStock,
         sellerInfo,
@@ -121,19 +122,22 @@ export async function scrapeCromaProduct(url: string) {
         lowestPrice: Number(currentPrice) || Number(originalPrice),
         highestPrice: Number(originalPrice) || Number(currentPrice),
         averagePrice: Number(currentPrice) || Number(originalPrice),
+        rating:Number(rating),
+          sub_cat : "SmartPhones",
+          main_cat : "Electronics",
         }
 
-        const recommend = {
-          url,
-          title ,
-          rating:Number(rating),
-          sub_cat : "SmartPhones",
-          main_cat : "Electronics", 
-         }
+        // const recommend = {
+        //   url,
+        //   title ,
+        //   rating:Number(rating),
+        //   sub_cat : "SmartPhones",
+        //   main_cat : "Electronics", 
+        //  }
     
-         const s :any = [data, recommend]
+        //  const s :any = [data, recommend]
          
-        return s;
+        // return s;
 
         return data;
 

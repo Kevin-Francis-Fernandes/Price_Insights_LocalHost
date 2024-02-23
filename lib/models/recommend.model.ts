@@ -12,7 +12,8 @@ const recommendSchema = new mongoose.Schema({
   location: { type: String},
   users: [
     {email: { type: String, required: true}}
-  ], default: [],
+  ],
+  default: [],
 }, { timestamps: true });
 
 

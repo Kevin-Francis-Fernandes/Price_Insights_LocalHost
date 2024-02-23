@@ -1,11 +1,11 @@
 import puppeteer from "puppeteer";
 import cheerio from "cheerio";
-import {
-  extractCurrency,
-  extractDescription,
-  extractPrice,
-  extractRating
-} from "../utils";
+// import {
+//   extractCurrency,
+//   extractDescription,
+//   extractPrice,
+//   extractRating
+// } from "../utils";
 import fs from "fs";
 export async function scrapeRelianceProduct(url: string) {
   if (!url) return;
@@ -91,7 +91,7 @@ export async function scrapeRelianceProduct(url: string) {
         priceHistory:[],
         discountRate:Number(discountRate),
         ratingCount,
-        rating,
+        usersInteraction:[],
         category:"category",
         isOutOfStock,
         sellerInfo,
@@ -99,19 +99,22 @@ export async function scrapeRelianceProduct(url: string) {
         lowestPrice: Number(currentPrice) || Number(originalPrice),
         highestPrice: Number(originalPrice) || Number(currentPrice),
         averagePrice: Number(currentPrice) || Number(originalPrice),
-        }
-
-        const recommend = {
-          url,
-          title ,
-          rating:Number(rating),
+        rating:Number(rating),
           sub_cat : "SmartPhones",
           main_cat : "Electronics", 
-         }
+        }
+
+        // const recommend = {
+        //   url,
+        //   title ,
+        //   rating:Number(rating),
+        //   sub_cat : "SmartPhones",
+        //   main_cat : "Electronics", 
+        //  }
     
-         const s :any = [data, recommend]
+        //  const s :any = [data, recommend]
          
-        return s;
+        return data;
     } else {
       console.log('No product data found.');
     }

@@ -25,7 +25,7 @@ except Exception as e:
 
 
 db = client['test']
-collection = db['recommendproducts']
+collection = db['products']
 
 # Define CSV file path
 csv_file_path = 'output.csv'
@@ -34,7 +34,7 @@ csv_file_path = 'output.csv'
 csv_header = ['item_id','title', 'brand','user_id', 'rating', 'timestamp', 'sub_cat','main_cat','age','gender','location']
 
 # Open CSV file for writing
-with open(csv_file_path, 'w', newline='') as csv_file:
+with open(csv_file_path, 'w', newline='',encoding='utf-8') as csv_file:
     # Create CSV writer
     csv_writer = csv.writer(csv_file)
     
@@ -44,7 +44,7 @@ with open(csv_file_path, 'w', newline='') as csv_file:
     # Iterate through MongoDB documents
     for document in collection.find():
         # Iterate through all users in the 'users' field
-        for user in document['users']:
+        for user in document['usersInteraction']:
             # Extract fields from the document
             user_id = pseudonymize_email(user['email'])
            # url = document['url']

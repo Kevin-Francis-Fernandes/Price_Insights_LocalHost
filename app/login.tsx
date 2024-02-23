@@ -1,4 +1,4 @@
 
 
-const username = 'testuser1588392111111111111111111@gmail.com';
+const username = 'test@gmail.com';
 export default username;

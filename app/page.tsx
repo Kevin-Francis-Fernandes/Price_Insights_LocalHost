@@ -6,6 +6,7 @@ import ProductCard from "@/components/ProductCard"
 import * as crypto from 'crypto';
 import username from "./login"
 import { useEffect, useState } from "react"
+import { TypewriterEffectDemo } from "@/components/typewriter"
 
 function pseudonymizeEmail(email: string): string {
     // Using crypto to generate an MD5 hash of the email address
@@ -40,10 +41,10 @@ const Home = async () => {
       // Call fetchData
       
   
-
+  let hybridArray:string[],popularArray:string[],flag,popularproducts
   const data = await fetchData();
-  
-    let hybridArray:string[],popularArray:string[],flag
+  if(data){
+    
     hybridArray=[]
     popularArray=[]
     flag=true
@@ -62,9 +63,9 @@ const Home = async () => {
     }
 
     // console.log(hybridArray)
-    console.log(popularArray)
-
-    const popularproducts = await getRecommendations(popularArray)
+    //console.log(popularArray)
+    
+     popularproducts = await getRecommendations(popularArray)
     console.log(popularproducts)
 
     if (popularproducts === null) {
@@ -72,7 +73,7 @@ const Home = async () => {
     } else {
       console.log('Matching products:', popularproducts?.values());
     }
-
+  }
   const allProducts = await getAllProducts();
 
   return (
@@ -90,10 +91,11 @@ const Home = async () => {
               />
             </p>
 
-            <h1 className="head-text">
+         <h1 className="head-text"> 
               Unleash the Power of
-              <span className="text-primary"> PriceInsights</span>
+              <TypewriterEffectDemo />
             </h1>
+           
 
             <p className="mt-6">
               Powerful, self-serve product and growth analytics to help you convert, engage, and retain more.
@@ -110,7 +112,7 @@ const Home = async () => {
         <h2 className="section-text">Trending</h2>
 
         <div className="flex flex-wrap gap-x-8 gap-y-16">
-          {allProducts?.map((product) => (
+          {popularproducts?.map((product) => (
             <ProductCard key={product._id} product={product} />
           ))}
         </div>

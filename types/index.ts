@@ -6,6 +6,10 @@ export type User = {
   email: string;
 };
 
+export type UserInteraction={
+  email:string;
+}
+
 export type Product = {
   rating: string;
   _id?: string;
@@ -16,6 +20,7 @@ export type Product = {
   currentPrice: number;
   originalPrice: number;
   priceHistory: PriceHistoryItem[] | [];
+  usersInteraction:  UserInteraction[] | [];
   highestPrice: number;
   lowestPrice: number;
   averagePrice: number;
