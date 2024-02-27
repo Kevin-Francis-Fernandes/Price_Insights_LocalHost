@@ -1,15 +1,27 @@
+import username from "@/app/login";
 import Modal from "@/components/Modal";
 import PriceInfoCard from "@/components/PriceInfoCard";
 import ProductCard from "@/components/ProductCard";
-import { getProductById, getSimilarProducts } from "@/lib/actions"
+import { getProductById, getRecommendations, getSimilarProducts } from "@/lib/actions"
 import { formatNumber } from "@/lib/utils";
 import { Product } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import * as crypto from 'crypto';
 
 type Props = {
   params: { id: string }
+}
+
+function pseudonymizeEmail(email: string): string {
+  // Using crypto to generate an MD5 hash of the email address
+  const hashedEmail = crypto.createHash('md5').update(email, 'utf-8').digest('hex');
+  
+  // Take the first 8 characters of the hash as a pseudonymous value
+  const pseudonymousValue = hashedEmail.slice(0, 8);
+  
+  return pseudonymousValue;
 }
 
 const ProductDetails = async ({ params: { id } }: Props) => {
@@ -17,6 +29,58 @@ const ProductDetails = async ({ params: { id } }: Props) => {
 
   if(!product) redirect('/')
 
+  
+  const param = pseudonymizeEmail(username);  
+  
+  
+  
+      const fetchData = async () => {
+          try {
+              const response = await fetch(`http://127.0.0.1:5000/api/data?param=${param}`);
+              const jsonData = await response.json();
+              return jsonData;
+              
+          } catch (error) {
+              console.error('Error fetching data:', error);
+          }
+      };
+  
+      // Call fetchData
+      
+  
+  let hybridArray:string[],popularArray:string[],flag,popularproducts,hybridproducts
+  const data = await fetchData();
+  if(data){
+    
+    hybridArray=[]
+    popularArray=[]
+    flag=true
+    for (const element of data){
+      if(element=='end')
+        flag=false
+        
+
+      if(flag)
+        hybridArray.push(element)
+      else{
+        if(element!='end')
+          popularArray.push(element)
+      }
+
+    }
+
+    // console.log(hybridArray)
+    //console.log(popularArray)
+    hybridproducts = await getRecommendations(hybridArray)
+    popularproducts = await getRecommendations(popularArray)
+    // console.log(popularproducts)
+
+    // if (popularproducts === null) {
+    //   console.log('No matching products found.');
+    // } else {
+    //   console.log('Matching products:', popularproducts?.values());
+    // }
+  }
   const similarProducts = await getSimilarProducts(id);
 
   return (
@@ -179,12 +243,37 @@ const ProductDetails = async ({ params: { id } }: Props) => {
         </button>
       </div>
 
-      {similarProducts && similarProducts?.length > 0 && (
+      {/* {similarProducts && similarProducts?.length > 0 && (
         <div className="py-14 flex flex-col gap-2 w-full">
           <p className="section-text">Similar Products</p>
 
           <div className="flex flex-wrap gap-10 mt-7 w-full">
             {similarProducts.map((product) => (
+              <ProductCard key={product._id} product={product} />
+            ))}
+          </div>
+        </div>
+      )} */}
+
+
+{hybridproducts && hybridproducts?.length > 0 && (
+        <div className="py-14 flex flex-col gap-2 w-full">
+          <p className="section-text">Similar Products</p>
+
+          <div className="flex flex-wrap gap-10 mt-7 w-full">
+            {hybridproducts.map((product) => (
+              <ProductCard key={product._id} product={product} />
+            ))}
+          </div>
+        </div>
+      )}
+
+{popularproducts && popularproducts?.length > 0 && (
+        <div className="py-14 flex flex-col gap-2 w-full">
+          <p className="section-text">Popular Products</p>
+
+          <div className="flex flex-wrap gap-10 mt-7 w-full">
+            {popularproducts.map((product) => (
               <ProductCard key={product._id} product={product} />
             ))}
           </div>
