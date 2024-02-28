@@ -100,7 +100,7 @@ export async function scrapeAmazonProduct(url:string){
         lowestPrice: Number(currentPrice) || Number(originalPrice),
         highestPrice: Number(originalPrice) || Number(currentPrice),
         averagePrice: Number(currentPrice) || Number(originalPrice),
-        rating:Number(rating),
+        rating,
       sub_cat : "SmartPhones",
       main_cat : "Electronics",
         }
