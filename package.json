@@ -11,6 +11,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.18",
     "axios": "^1.6.7",
+    "bcryptjs": "^2.4.3",
     "cheerio": "^1.0.0-rc.12",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.6",
@@ -25,6 +26,7 @@
     "tailwind-merge": "^2.2.1"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
     "@types/node": "^20",
     "@types/nodemailer": "^6.4.14",
     "@types/react": "^18",
