@@ -71,12 +71,12 @@ const Home = async () => {
     //console.log(popularArray)
     
      popularproducts = await getRecommendations(popularArray)
-    console.log(popularproducts)
+    // console.log(popularproducts)
 
     if (popularproducts === null) {
       console.log('No matching products found.');
     } else {
-      console.log('Matching products:', popularproducts?.values());
+      // console.log('Matching products:', popularproducts?.values());
     }
   }
   const allProducts = await getAllProducts();

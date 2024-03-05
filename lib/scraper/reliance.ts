@@ -6,7 +6,7 @@ import cheerio from "cheerio";
 //   extractPrice,
 //   extractRating
 // } from "../utils";
-import fs from "fs";
+
 export async function scrapeRelianceProduct(url: string) {
   if (!url) return;
  
@@ -21,8 +21,7 @@ export async function scrapeRelianceProduct(url: string) {
  
     // Use Cheerio to load the HTML content
     const $ = cheerio.load(htmlContent);
-    fs.appendFileSync("output_test.txt", `${$.html()}\n`);
-
+    
 
     
 

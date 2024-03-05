@@ -6,7 +6,7 @@ import {
   extractPrice,
   extractRating
 } from "../utils";
-import fs from "fs";
+
 export async function scrapeCromaProduct(url: string) {
   if (!url) return;
  
@@ -21,7 +21,7 @@ export async function scrapeCromaProduct(url: string) {
  
     // Use Cheerio to load the HTML content
     const $ = cheerio.load(htmlContent);
-    fs.appendFileSync("output_test.txt", `${$.html()}\n`);
+
     const title = $(".pd-title.pd-title-normal").text().trim();
     const currentPrice = extractPrice($("#pdp-product-price"));
     const originalPrice = extractPrice($("#old-price"));

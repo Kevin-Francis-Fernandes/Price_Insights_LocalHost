@@ -15,7 +15,7 @@ def get_data():
     
     # Read the pre-processed data
     df = pd.read_csv("output.csv") #,encoding='latin1')
-    print(df.columns)
+    # print(df.columns)
     # Convert the 'timestamp' column to datetime
 
     df['timestamp'] = pd.to_datetime(df['timestamp'])

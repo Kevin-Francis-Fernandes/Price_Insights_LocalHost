@@ -1,10 +1,15 @@
 "use client"
 
 import { scrapeAndStoreProduct } from '@/lib/actions';
+
+
+
 import { FormEvent, useState } from 'react'
 
 const isValidProductURL = (url: string) => {
   try {
+
+    
     const parsedURL = new URL(url);
     const hostname = parsedURL.hostname;
 
@@ -23,11 +28,11 @@ const isValidProductURL = (url: string) => {
          hostname.endsWith('reliancedigital')  )
          {return "reliance"}
          else{
-          return "error"
+          return "error";
          }
  
     }catch (error){
-        return "error";
+        return "search";
   }
 
   
@@ -41,14 +46,17 @@ const Searchbar = () => {
     event.preventDefault();
 
     const isValidLink = isValidProductURL(searchPrompt);
-
-    if(isValidLink=="error") return alert('Please provide a valid link')
-
+    
+    if(isValidLink === "error" ) return alert('An error occured ! Please try again'+isValidLink); 
+    
+    
     try {
       setIsLoading(true);
-
-      // Scrape the product page
-      const product = await scrapeAndStoreProduct(searchPrompt,isValidLink);
+      
+        // Scrape the product page
+         const product = await scrapeAndStoreProduct(searchPrompt,isValidLink);
+     
+      
     } catch (error) {
       console.log(error);
     } finally {

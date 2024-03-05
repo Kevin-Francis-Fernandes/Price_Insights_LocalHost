@@ -7,20 +7,21 @@ import { scrapeAmazonProduct } from "../scraper";
 import { getAveragePrice, getHighestPrice, getLowestPrice } from "../utils";
 import { User } from "@/types";
 import { generateEmailBody, sendEmail } from "../nodemailer";
-import RecommendProduct from "../models/recommend.model";
 import username from "@/app/login";
 import { scrapeCromaProduct } from "../scraper/croma";
 import { scrapeRelianceProduct } from "../scraper/reliance";
+import { extractSearchTermInfo } from "../crawler";
 
 export async function scrapeAndStoreProduct(productUrl: string,type:string) {
+ 
   if(!productUrl) return;
-
+  
   try {
     connectToDB();
 
     let scrapedProduct;
-
-    let scrappedrecommend;
+    
+    
     if(type=="amazon"){
        scrapedProduct = await scrapeAmazonProduct(productUrl);
       //  [scrapedProduct,scrappedrecommend] = await scrapeAmazonProduct(productUrl);
@@ -30,14 +31,21 @@ export async function scrapeAndStoreProduct(productUrl: string,type:string) {
       // [scrapedProduct,scrappedrecommend] = await scrapeCromaProduct(productUrl);
       scrapedProduct = await scrapeCromaProduct(productUrl);
     }
-    else{
+    else if (type=="reliance"){
       //if reliance
      // [scrapedProduct,scrappedrecommend] = await scrapeRelianceProduct(productUrl);
       scrapedProduct = await scrapeRelianceProduct(productUrl);
     }
+    else{
+       console.log("hq");
+       const prod=await extractSearchTermInfo(productUrl);
+       
+       
+       
+    }
     
     
-    if(!scrapedProduct) return;
+    if(!scrapedProduct ) return;
 
     let product = scrapedProduct;
     // let recommend = scrappedrecommend;
@@ -118,7 +126,7 @@ export async function scrapeAndStoreProduct(productUrl: string,type:string) {
     //   { upsert: true, new: true }
     // );
 
-    revalidatePath(`/products/${newProduct._id}`);
+    // revalidatePath(`/products/${newProduct._id}`);
   } catch (error: any) {
     throw new Error(`Failed to create/update product: ${error.message}`)
   }
