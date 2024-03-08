@@ -11,6 +11,7 @@ import username from "@/app/login";
 import { scrapeCromaProduct } from "../scraper/croma";
 import { scrapeRelianceProduct } from "../scraper/reliance";
 import { extractSearchTermInfo } from "../crawler";
+import AmazonProduct from "../models/amazon.model";
 
 
 
@@ -132,6 +133,18 @@ export async function getAllProducts() {
     connectToDB();
 
     const products = await Product.find();
+
+    return products;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+export async function getAllCrawledAmazonProducts() {
+  try {
+    connectToDB();
+
+    const products = await AmazonProduct.find();
 
     return products;
   } catch (error) {

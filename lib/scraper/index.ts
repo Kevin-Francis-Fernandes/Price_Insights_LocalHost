@@ -76,9 +76,9 @@ export async function scrapeAmazonProduct(url:string){
        const description= extractDescription($);
 
        const g=typeof(ratingCount)
-       console.log({title,currentPrice,originalPrice,
-                    outOfStock,imageUrls,
-                    currency,discountRate,g,rating});
+      //  console.log({title,currentPrice,originalPrice,
+      //               outOfStock,imageUrls,
+      //               currency,discountRate,g,rating});
 
         const sellerInfo="Amazon";
        //constructing data object of scraped information 
@@ -105,7 +105,7 @@ export async function scrapeAmazonProduct(url:string){
       main_cat : "Electronics",
         }
 
-        console.log(data)
+       console.log("amazon scrapped")
 
         
 

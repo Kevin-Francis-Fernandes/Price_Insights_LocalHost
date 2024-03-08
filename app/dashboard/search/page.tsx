@@ -1,8 +1,20 @@
+import CrawlerProductCard from "@/components/CrawlerProductCard";
+import { getAllCrawledAmazonProducts } from "@/lib/actions";
 
 
-const index = () => {
+const index = async () => {
+  
+  const allProducts = await getAllCrawledAmazonProducts();
   return (
-    <h1>index</h1>
+    <section className="trending-section">
+        <h2 className="section-text">AMAZON</h2>
+
+        <div className="flex flex-wrap gap-x-8 gap-y-16">
+          {allProducts?.map((product) => (
+            <CrawlerProductCard key={product._id} product={product} />
+          ))}
+        </div>
+      </section>
   )
 }
 

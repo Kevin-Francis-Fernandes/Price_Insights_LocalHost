@@ -67,6 +67,8 @@ export async function amazonCrawler(searchTerm:any){
 
 
       })
+
+      return products;
     
   } catch (error) {
     console.error(`Error during Puppeteer scraping: ${error}`);

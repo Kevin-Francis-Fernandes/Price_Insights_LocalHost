@@ -33,6 +33,16 @@ export type Product = {
   users?: User[];
 };
 
+export type crawlerProduct = {
+  rating: Number;
+  price:string;
+  url: string;
+  currency: string;
+  image: string;
+  title: string;
+  
+};
+
 export type NotificationType =
   | "WELCOME"
   | "CHANGE_OF_STOCK"
