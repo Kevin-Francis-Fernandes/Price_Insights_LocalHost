@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const amazonSchema = new mongoose.Schema({
+const cromaSchema = new mongoose.Schema({
   url: { type: String, unique: true },
   title: { type: String },
   price: {type :Number },
@@ -12,6 +12,6 @@ const amazonSchema = new mongoose.Schema({
 
 
 
-const AmazonProduct = mongoose.models.AmazonProduct || mongoose.model('AmazonProduct', amazonSchema);
+const CromaProduct = mongoose.models.CromaProduct || mongoose.model('CromaProduct', cromaSchema);
 
-export default AmazonProduct;
+export default CromaProduct;

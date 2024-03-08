@@ -13,6 +13,10 @@ import { TypewriterEffectDemo } from "@/components/typewriter"
 import UserInfo from "@/components/UserInfo"
 import Navbar from "@/components/Navbar"
 
+
+
+
+
 function pseudonymizeEmail(email: string): string {
     // Using crypto to generate an MD5 hash of the email address
     const hashedEmail = crypto.createHash('md5').update(email, 'utf-8').digest('hex');
@@ -27,7 +31,7 @@ const Home = async () => {
 
   
 
-  
+
   const param = pseudonymizeEmail(username);  
   
   
@@ -107,7 +111,8 @@ const Home = async () => {
               Powerful, self-serve product and growth analytics to help you convert, engage, and retain more.
             </p>
 
-            <Searchbar />
+            <Searchbar  />
+            
           </div>
 
           <HeroCarousel />

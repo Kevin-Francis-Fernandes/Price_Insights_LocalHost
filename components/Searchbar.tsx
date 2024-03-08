@@ -2,9 +2,10 @@
 
 import { scrapeAndStoreProduct } from '@/lib/actions';
 
-
+import { useRouter } from 'next/navigation';
 
 import { FormEvent, useState } from 'react'
+
 
 const isValidProductURL = (url: string) => {
   try {
@@ -38,11 +39,17 @@ const isValidProductURL = (url: string) => {
   
 }
 
+
+
 const Searchbar = () => {
+  const router = useRouter();
   const [searchPrompt, setSearchPrompt] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
+  
+
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    
     event.preventDefault();
 
     const isValidLink = isValidProductURL(searchPrompt);
@@ -55,6 +62,11 @@ const Searchbar = () => {
       
         // Scrape the product page
          const product = await scrapeAndStoreProduct(searchPrompt,isValidLink);
+         if (product && product.redirect) {
+          router.push(product.redirect);
+        }
+         
+         
      
       
     } catch (error) {
@@ -83,6 +95,7 @@ const Searchbar = () => {
         disabled={searchPrompt === ''}
       >
         {isLoading ? 'Searching...' : 'Search'}
+
       </button>
     </form>
   )

@@ -12,8 +12,10 @@ import { scrapeCromaProduct } from "../scraper/croma";
 import { scrapeRelianceProduct } from "../scraper/reliance";
 import { extractSearchTermInfo } from "../crawler";
 
+
+
 export async function scrapeAndStoreProduct(productUrl: string,type:string) {
- 
+  // const router = useRouter();
   if(!productUrl) return;
   
   try {
@@ -24,23 +26,21 @@ export async function scrapeAndStoreProduct(productUrl: string,type:string) {
     
     if(type=="amazon"){
        scrapedProduct = await scrapeAmazonProduct(productUrl);
-      //  [scrapedProduct,scrappedrecommend] = await scrapeAmazonProduct(productUrl);
     
     }
     else if(type=="croma"){
-      // [scrapedProduct,scrappedrecommend] = await scrapeCromaProduct(productUrl);
       scrapedProduct = await scrapeCromaProduct(productUrl);
     }
     else if (type=="reliance"){
-      //if reliance
-     // [scrapedProduct,scrappedrecommend] = await scrapeRelianceProduct(productUrl);
       scrapedProduct = await scrapeRelianceProduct(productUrl);
     }
     else{
-       console.log("hq");
+     
        const prod=await extractSearchTermInfo(productUrl);
+      //how to redirect path here?
+      return { redirect: '/dashboard/search' };
        
-       
+              
        
     }
     
@@ -48,10 +48,8 @@ export async function scrapeAndStoreProduct(productUrl: string,type:string) {
     if(!scrapedProduct ) return;
 
     let product = scrapedProduct;
-    // let recommend = scrappedrecommend;
-
+   
     const existingProduct = await Product.findOne({ url: scrapedProduct.url });
-    // const existingRecommend = await RecommendProduct.findOne({ url: scrappedrecommend.url });
     
     if(existingProduct) {
       const updatedPriceHistory: any = [
@@ -75,23 +73,6 @@ export async function scrapeAndStoreProduct(productUrl: string,type:string) {
 
       
     }
-
-    // use same database just add another field
-
-    
-    // if(existingRecommend) {
-
-    //   const updateUsers :any = [
-    //     ...existingRecommend.users,
-    //     { email: username}
-    //   ]
-
-    //   recommend = {
-    //     ...scrappedrecommend,
-    //     users: updateUsers,
-
-    //   }
-    // }
     if(!existingProduct) {
 
       const updateUsersInteraction:any  = [
@@ -111,22 +92,9 @@ export async function scrapeAndStoreProduct(productUrl: string,type:string) {
       { upsert: true, new: true }
     );
 
-    // if(!existingRecommend) {
-    // recommend = {
-    //   ...scrappedrecommend,
-    //   users: [{ email: username}],
+ 
 
-    // }
- // }
-
-    // console.log(recommend)
-    // await RecommendProduct.findOneAndUpdate(
-    //   { url: scrappedrecommend.url },
-    //   recommend,
-    //   { upsert: true, new: true }
-    // );
-
-    // revalidatePath(`/products/${newProduct._id}`);
+    revalidatePath(`/products/${newProduct._id}`);
   } catch (error: any) {
     throw new Error(`Failed to create/update product: ${error.message}`)
   }
