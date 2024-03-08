@@ -94,7 +94,7 @@ export async function scrapeAndStoreProduct(productUrl: string,type:string) {
 
  
 
-    revalidatePath(`/products/${newProduct._id}`);
+    return { productRedirect : `/products/${newProduct._id}`};
   } catch (error: any) {
     throw new Error(`Failed to create/update product: ${error.message}`)
   }

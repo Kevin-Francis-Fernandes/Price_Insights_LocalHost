@@ -65,6 +65,11 @@ const Searchbar = () => {
          if (product && product.redirect) {
           router.push(product.redirect);
         }
+
+        if (product && product.productRedirect) {
+          router.push(product.productRedirect);
+        }
+
          
          
      
