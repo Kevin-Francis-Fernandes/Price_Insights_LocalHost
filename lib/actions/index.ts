@@ -143,10 +143,13 @@ export async function getAllProducts() {
 export async function getAllCrawledAmazonProducts() {
   try {
     connectToDB();
+    
+      const products = await AmazonProduct.find()
+      return products;
+    
+    
 
-    const products = await AmazonProduct.find();
-
-    return products;
+    
   } catch (error) {
     console.log(error);
   }
