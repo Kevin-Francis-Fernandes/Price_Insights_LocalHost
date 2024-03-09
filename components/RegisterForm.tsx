@@ -8,6 +8,9 @@ export default function RegisterForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [age, setAge] = useState("");
+  const [location, setLocation] = useState("");
+  const [gender, setGender] = useState("");
   const [error, setError] = useState("");
 
   const router = useRouter();
@@ -15,7 +18,7 @@ export default function RegisterForm() {
   const handleSubmit = async (e:any) => {
     e.preventDefault();
 
-    if (!name || !email || !password) {
+    if (!name || !email || !password || !age || !gender || !location) {
       setError("All fields are necessary.");
       return;
     }
@@ -45,6 +48,9 @@ export default function RegisterForm() {
           name,
           email,
           password,
+          age,
+          gender,
+          location,
         }),
       });
 
@@ -80,6 +86,21 @@ export default function RegisterForm() {
             onChange={(e) => setPassword(e.target.value)}
             type="password"
             placeholder="Password"
+          />
+          <input
+            onChange={(e) => setAge(e.target.value)}
+            type="text"
+            placeholder="Age"
+          />
+          <input
+            onChange={(e) => setGender(e.target.value.toLowerCase())}
+            type="text"
+            placeholder="Gender"
+          />
+          <input
+            onChange={(e) => setLocation(e.target.value.toLowerCase())}
+            type="text"
+            placeholder="Location"
           />
           <button className="bg-green-600 text-white font-bold cursor-pointer px-6 py-2">
             Register
