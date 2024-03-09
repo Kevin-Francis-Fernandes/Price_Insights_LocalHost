@@ -26,7 +26,7 @@ const CrawlerProductCard = async ({ product }: Props) => {
   
 
 
-  return (
+  return (  prod._id &&
     
     <Link href={`/products/${prod._id}`}  className="product-card">   
       <div className="product-card_img-container">
