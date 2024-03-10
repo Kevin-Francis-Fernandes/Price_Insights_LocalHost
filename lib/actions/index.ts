@@ -5,23 +5,27 @@ import Product from "../models/product.model";
 import { connectToDB } from "../mongoose";
 import { scrapeAmazonProduct } from "../scraper";
 import { getAveragePrice, getHighestPrice, getLowestPrice } from "../utils";
-import { User } from "@/types";
 import { generateEmailBody, sendEmail } from "../nodemailer";
-import username from "@/app/login";
 import { scrapeCromaProduct } from "../scraper/croma";
 import { scrapeRelianceProduct } from "../scraper/reliance";
 import { extractSearchTermInfo } from "../crawler";
 import AmazonProduct from "../models/amazon.model";
+import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { getServerSession } from "next-auth";
+import User from "../models/user.model";
 
 
 
 export async function scrapeAndStoreProduct(productUrl: string,type:string) {
   // const router = useRouter();
   if(!productUrl) return;
+  let userSession;
+
   
   try {
     connectToDB();
-
+    const session = await getServerSession(authOptions);
+    const userSession = await User.findOne({ email: session?.user?.email });
     let scrapedProduct;
     
     
@@ -60,7 +64,7 @@ export async function scrapeAndStoreProduct(productUrl: string,type:string) {
 
       const updateUsersInteraction:any  = [
         ...existingProduct.usersInteraction,
-        { email: username}
+        { email: userSession.email, age:userSession.age, gender:userSession.gender, location:userSession.location}
       ]
 
       product = {
@@ -78,7 +82,7 @@ export async function scrapeAndStoreProduct(productUrl: string,type:string) {
 
       const updateUsersInteraction:any  = [
         
-        { email: username}
+        { email: userSession.email, age:userSession.age, gender:userSession.gender, location:userSession.location}
       ]
     product = {
           ...scrapedProduct,
@@ -179,7 +183,7 @@ export async function addUserEmailToProduct(productId: string, userEmail: string
 
     if(!product) return;
 
-    const userExists = product.users.some((user: User) => user.email === userEmail);
+    const userExists = product.users.some((user: { email: string; }) => user.email === userEmail);
 
     if(!userExists) {
       product.users.push({ email: userEmail });

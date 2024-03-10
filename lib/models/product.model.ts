@@ -14,7 +14,10 @@ const productSchema = new mongoose.Schema({
     },
   ],
   usersInteraction: [
-    {email: { type: String, required: true}}
+    {email: { type: String, required: true}},
+    {age: { type: String, required: true}},
+    {gender: { type: String, required: true}},
+    {location: { type: String, required: true}}
   ],
   lowestPrice: { type: Number },
   highestPrice: { type: Number },
