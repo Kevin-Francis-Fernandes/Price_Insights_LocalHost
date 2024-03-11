@@ -1,6 +1,25 @@
 item_id,title,brand,user_id,rating,timestamp,sub_cat,main_cat,age,gender,location
-65d867d689ce50fb8a5cfa94,redmi note 13 5g (stealth black 6gb ram 128gb storage)  mtk dimensity 6080 5g  7.6mm slimmest note ever,redmi,06a786f5,3.3,2024-02-23 09:39:33,SmartPhones,Electronics,18-24,male,Usa
-65d869f389ce50fb8a638fb2,oppo a59 5g 128 gb 4 gb ram starry black mobile phone,oppo,06a786f5,5.0,2024-02-23 09:48:34,SmartPhones,Electronics,18-24,male,Usa
-65d86a6189ce50fb8a64d461,iqoo z7 pro 5g (blue lagoon 8gb ram 256gb storage)  3d curved amoled display  4nm mediatek dimesity 7200 5g processor  64mp aura light ois camera  segment's slimmest & lightest smartphone,iqoo,06a786f5,4.4,2024-02-23 09:50:25,SmartPhones,Electronics,18-24,male,Usa
-65d86ad989ce50fb8a662ee6,realme narzo 60x 5gï¼nebula purple 6gb128gb storage ï¼ up to 2tb external memory  50 mp ai primary camera  segments only 33w supervooc charge,realme,1aedb8d9,4.1,2024-02-23 09:52:24,SmartPhones,Electronics,18-24,female,India
-65d86afb89ce50fb8a668f07,redmi note 13 5g (arctic white 6gb ram 128gb storage)  mtk dimensity 6080 5g  7.6mm slimmest note ever,redmi,1aedb8d9,3.3,2024-02-23 09:52:59,SmartPhones,Electronics,18-24,female,India
+65ee7a053403876ff7af2fec,motorola moto g power 5g  2023  unlocked  made for us 6/256gb  50 mpcamera  mineral black 163.06 x 74.8 x 8.45mm,motorola,77864601,4.3,2024-03-11 03:27:00,SmartPhones,Electronics,18-24,male,usa
+65ee826c3403876ff7c13c60,motorola moto g stylus 5g  2023  unlocked  made for us 6/256gb  50 mpcamera  cosmic black 162.83x73.77x9.29,motorola,a2a667f1,4.0,2024-03-11 04:02:51,SmartPhones,Electronics,18-24,female,india
+65ee82b73403876ff7c1b85d,samsung galaxy s23 5g (cream 8gb 256gb storage),samsung,a2a667f1,4.5,2024-03-11 04:04:05,SmartPhones,Electronics,18-24,female,india
+65ee82b93403876ff7c1bc28,samsung galaxy s23 5g (cream 8gb ram 256gb storage),samsung,a2a667f1,4.2,2024-03-11 04:04:08,SmartPhones,Electronics,18-24,female,india
+65ee82bb3403876ff7c1bf16,samsung galaxy s23 ultra 5g (green 12gb 256gb storage),samsung,a2a667f1,4.3,2024-03-11 04:04:10,SmartPhones,Electronics,18-24,female,india
+65ee82bb3403876ff7c1bf6c,samsung galaxy s23 fe 5g (purple 128 gb storage) (8 gb ram),samsung,a2a667f1,3.8,2024-03-11 04:04:10,SmartPhones,Electronics,18-24,female,india
+65ee82c03403876ff7c1c698,samsung galaxy s23 fe 5g (graphite 128 gb storage) (8 gb ram),samsung,a2a667f1,3.8,2024-03-11 04:04:15,SmartPhones,Electronics,18-24,female,india
+65ee82c03403876ff7c1c6b8,samsung galaxy s23 fe 5g (mint 8gb 128gb storage),samsung,a2a667f1,3.9,2024-03-11 04:04:15,SmartPhones,Electronics,18-24,female,india
+65ee82c23403876ff7c1cad9,samsung galaxy s23 5g (green 8gb 256gb storage),samsung,a2a667f1,4.5,2024-03-11 04:04:17,SmartPhones,Electronics,18-24,female,india
+65ee82c53403876ff7c1cf9d,samsung galaxy s23 fe 5g (purple 8gb 256gb storage),samsung,a2a667f1,3.9,2024-03-11 04:04:20,SmartPhones,Electronics,18-24,female,india
+65ee82c73403876ff7c1d27f,samsung galaxy s23 5g (phantom black 8gb 256gb storage),samsung,a2a667f1,4.5,2024-03-11 04:04:22,SmartPhones,Electronics,18-24,female,india
+65ee82ca3403876ff7c1d77e,samsung galaxy s23 5g (green 8gb 128gb storage),samsung,a2a667f1,4.4,2024-03-11 04:04:24,SmartPhones,Electronics,18-24,female,india
+65ee82cc3403876ff7c1db4a,samsung galaxy s23 5g (cream 8gb 128gb storage),samsung,a2a667f1,4.5,2024-03-11 04:04:26,SmartPhones,Electronics,18-24,female,india
+65ee82ce3403876ff7c1dd92,samsung galaxy s23 fe 5g (mint 128 gb storage) (8 gb ram),samsung,a2a667f1,3.8,2024-03-11 04:04:28,SmartPhones,Electronics,18-24,female,india
+65ee82d03403876ff7c1e1a6,samsung galaxy s23 fe 5g (purple 256 gb storage) (8 gb ram),samsung,a2a667f1,3.8,2024-03-11 04:04:31,SmartPhones,Electronics,18-24,female,india
+65ee82d13403876ff7c1e293,samsung galaxy s23 5g (phantom black 8gb 256gb storage),samsung,a2a667f1,4.5,2024-03-11 04:04:31,SmartPhones,Electronics,18-24,female,india
+65ee82d53403876ff7c1e97d,samsung galaxy s23 5g (green 8gb 128gb storage),samsung,a2a667f1,4.4,2024-03-11 04:04:36,SmartPhones,Electronics,18-24,female,india
+65ee82d53403876ff7c1ea0a,samsung galaxy s23 5g (lavender 8gb 256gb storage),samsung,a2a667f1,4.4,2024-03-11 04:04:36,SmartPhones,Electronics,18-24,female,india
+65ee82d93403876ff7c1f07b,samsung galaxy s23 5g (lavender 8gb 128gb storage),samsung,a2a667f1,4.1,2024-03-11 04:04:40,SmartPhones,Electronics,18-24,female,india
+65ee82db3403876ff7c1f24d,samsung galaxy s23 5g (lavender 8gb 128gb storage),samsung,a2a667f1,4.1,2024-03-11 04:04:41,SmartPhones,Electronics,18-24,female,india
+65ee82e03403876ff7c1fc97,samsung galaxy s23 fe 5g (mint 256 gb storage) (8 gb ram),samsung,a2a667f1,3.8,2024-03-11 04:04:47,SmartPhones,Electronics,18-24,female,india
+65ee82e13403876ff7c1fe35,samsung galaxy s23 fe 5g (mint 8gb 256gb storage),samsung,a2a667f1,3.9,2024-03-11 04:04:48,SmartPhones,Electronics,18-24,female,india
+65ee82e43403876ff7c20374,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,a2a667f1,4.4,2024-03-11 04:04:51,SmartPhones,Electronics,18-24,female,india
+65ee82e93403876ff7c20c1f,samsung galaxy s23 fe 5g (purple 8gb 128gb storage),samsung,a2a667f1,3.9,2024-03-11 04:04:55,SmartPhones,Electronics,18-24,female,india

@@ -64,7 +64,11 @@ export async function scrapeAndStoreProduct(productUrl: string,type:string) {
 
       const updateUsersInteraction:any  = [
         ...existingProduct.usersInteraction,
-        { email: userSession.email, age:userSession.age, gender:userSession.gender, location:userSession.location}
+        { email: userSession.email, 
+          age:userSession.age, 
+          gender:userSession.gender, 
+          location:userSession.location
+        }
       ]
 
       product = {
@@ -82,7 +86,11 @@ export async function scrapeAndStoreProduct(productUrl: string,type:string) {
 
       const updateUsersInteraction:any  = [
         
-        { email: userSession.email, age:userSession.age, gender:userSession.gender, location:userSession.location}
+        { email: userSession.email, 
+          age:userSession.age,
+          gender:userSession.gender, 
+          location:userSession.location
+        }
       ]
     product = {
           ...scrapedProduct,

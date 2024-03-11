@@ -55,9 +55,9 @@ with open(csv_file_path, 'w', newline='',encoding='utf-8') as csv_file:
             timestamp = document['updatedAt'].strftime('%Y-%m-%d %H:%M:%S') or document['createdAt'].strftime('%Y-%m-%d %H:%M:%S')
             rating = document.get('rating', 'N/A')
             brand=title.split()[0]
-            age='18-24'
-            gender= random.choice(['male','female'])
-            location=random.choice(['Usa','India','UK','Cananda'])
+            age=user['age']
+            gender= user['gender']
+            location=user['location']
             # Write data to CSV
             csv_writer.writerow([ item_id, title, brand, user_id,rating, timestamp,sub_cat,main_cat, age,gender,location])
 

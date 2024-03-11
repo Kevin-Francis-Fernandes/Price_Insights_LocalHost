@@ -1,4 +1,6 @@
-import username from "@/app/login";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+
 import Modal from "@/components/Modal";
 import PriceInfoCard from "@/components/PriceInfoCard";
 import ProductCard from "@/components/ProductCard";
@@ -29,8 +31,16 @@ const ProductDetails = async ({ params: { id } }: Props) => {
 
   if(!product) redirect('/')
 
+  const session = await getServerSession(authOptions);
+  let setEmail
+  if(session?.user?.email){
+    setEmail=session?.user?.email
+  }
+  else{
+    setEmail='test@mail.com'
+  }
   
-  const param = pseudonymizeEmail(username);  
+  const param = pseudonymizeEmail(setEmail);  
   
   
   

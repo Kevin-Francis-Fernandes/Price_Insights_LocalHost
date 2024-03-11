@@ -6,12 +6,14 @@ import ProductCard from "@/components/ProductCard"
 import * as crypto from 'crypto';
 
 
-import username from "../login"   //CHANGE LOGIC IMPORRTAANNNT
 
+import { getServerSession } from "next-auth";
+import { authOptions } from "../api/auth/[...nextauth]/route";
 
 import { TypewriterEffectDemo } from "@/components/typewriter"
 import UserInfo from "@/components/UserInfo"
 import Navbar from "@/components/Navbar"
+import { redirect } from "next/dist/server/api-utils"
 
 
 
@@ -29,10 +31,16 @@ function pseudonymizeEmail(email: string): string {
 
 const Home = async () => {
 
+  const session = await getServerSession(authOptions);
+  let setEmail
+  if(session?.user?.email){
+    setEmail=session?.user?.email
+  }
+  else{
+    setEmail='test@mail.com'
+  }
   
-
-
-  const param = pseudonymizeEmail(username);  
+  const param = pseudonymizeEmail(setEmail);  
   
   
   
