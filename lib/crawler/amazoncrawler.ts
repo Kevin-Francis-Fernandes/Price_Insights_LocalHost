@@ -49,7 +49,7 @@ export async function amazonCrawler(searchTerm:any){
           products.push({ title, url, price, currency , rating,image});
       }
   });
-    console.log('Extracted Products:', products);
+    // console.log('Extracted Products:', products);
 
     await connectToDB();
     await AmazonProduct.deleteMany({});

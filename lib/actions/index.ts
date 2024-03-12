@@ -13,7 +13,7 @@ import AmazonProduct from "../models/amazon.model";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { getServerSession } from "next-auth";
 import User from "../models/user.model";
-
+import { MongoClient } from "mongodb";
 
 
 export async function scrapeAndStoreProduct(productUrl: string,type:string) {
@@ -43,7 +43,7 @@ export async function scrapeAndStoreProduct(productUrl: string,type:string) {
      
        const prod=await extractSearchTermInfo(productUrl);
       //how to redirect path here?
-      return { redirect: '/dashboard/search' };
+      return { redirect: `/dashboard/search/${productUrl}` };
        
               
        
@@ -152,11 +152,46 @@ export async function getAllProducts() {
   }
 }
 
-export async function getAllCrawledAmazonProducts() {
+export async function getAllCrawledAmazonProducts(id:any) {
   try {
     connectToDB();
+
+    const agg = [
+    {
+      '$search': {
+        'index': 'defaultAmazon', 
+        'compound': {
+          'should': [
+            {
+              'text': {
+                'query': `${id}`, 
+                'path': 'title', 
+                'fuzzy': {
+                  'maxEdits': 2
+                }
+              }
+            },
+          ],
+          'minimumShouldMatch': 1 // Optional, depends on your use case
+        }
+      }
+    },
+    {
+      '$sort': {
+        'score': -1 // Sort in descending order based on the 'score' field
+      }
+    },
+    {
+      '$limit': 4
+    }
+    ];
     
-      const products = await AmazonProduct.find()
+    const client = await MongoClient.connect("mongodb+srv://kevinfrancisfernandes8:Kevin123@cluster0.e8uh7q9.mongodb.net/?retryWrites=true&w=majority");
+    const coll = client.db('test').collection('amazonproducts');
+      const cursor = coll.aggregate(agg);
+      const products = await cursor.toArray();
+      // console.log(products)
+    
       return products;
     
     

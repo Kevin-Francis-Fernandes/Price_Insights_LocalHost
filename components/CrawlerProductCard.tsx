@@ -8,7 +8,7 @@ import React from 'react';
 
 
 interface Props {
-  product: crawlerProduct;
+  product:any; 
 }
  
 const CrawlerProductCard = async ({ product }: Props) => {
