@@ -63,20 +63,20 @@ export async function scrapeRelianceProduct(url: string) {
         100.0
       ).toFixed(2);
 
-     console.log({
-      url,
-      title,
-      image,
-      currentPrice,
-      originalPrice,
-      currency,
-      rating,
-      ratingCount,
-      discountRate,
-      description,
-      isOutOfStock,
-      brand
-    });
+    //  console.log({
+    //   url,
+    //   title,
+    //   image,
+    //   currentPrice,
+    //   originalPrice,
+    //   currency,
+    //   rating,
+    //   ratingCount,
+    //   discountRate,
+    //   description,
+    //   isOutOfStock,
+    //   brand
+    // });
 
     const sellerInfo="Reliance Digital";
        //constructing data object of scraped information 
@@ -88,7 +88,7 @@ export async function scrapeRelianceProduct(url: string) {
         currentPrice: Number(currentPrice) || Number(originalPrice),
         originalPrice:Number(originalPrice) || Number(currentPrice),
         priceHistory:[],
-        discountRate:Number(discountRate),
+        discountRate:Number(discountRate) || 0,
         ratingCount,
         usersInteraction:[],
         category:"category",

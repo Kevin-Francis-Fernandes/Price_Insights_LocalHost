@@ -19,7 +19,7 @@ import { MongoClient } from "mongodb";
 export async function scrapeAndStoreProduct(productUrl: string,type:string) {
   // const router = useRouter();
   if(!productUrl) return;
-  let userSession;
+  // let userSession;
 
   
   try {

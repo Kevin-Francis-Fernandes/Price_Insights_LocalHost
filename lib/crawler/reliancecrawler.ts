@@ -2,64 +2,76 @@ import puppeteer from "puppeteer";
 import cheerio from "cheerio";
 import { connectToDB } from "../mongoose";
 import RelianceProduct from "../models/reliance.model";
-export async function relianceCrawler(searchTerm:any){
+
+
+interface Product {
+  title: string;
+  url: string;
+  price: Number;
+  currency:string;
+  image: string;
+}
+export async function relianceCrawler(searchTerm: string): Promise<Product[] | void> {
+
     
   
   const browser = await puppeteer.launch();
-
+  const page = await browser.newPage();
   try {
-    const page = await browser.newPage();
+    
     
     const relianceUrl = "https://www.reliancedigital.in/search?q="+ searchTerm.replace(/ /g, '%20')+"%20smartphone:relevance" ;
     console.log(relianceUrl);
 
     await page.goto(relianceUrl,{ waitUntil: 'networkidle2' });
+    await page.waitForNetworkIdle();
+    await page.waitForSelector('.pl__container', { timeout: 3000 });
 
-    const content = await page.content();
-    const $ = cheerio.load(content);
-
-    let products: any;
-    // console.log($);
-   
-    $('li.grid').each((_, element) => {
-        
-        const title = $(element).find('.sp__name').text().trim();
-        console.log("TITLE: " + title)
-        const url = "https://www.reliancedigital.in" + $(element).find('.sp.grid a').attr('href');
-        console.log("URL: "+ url)
-        // const price = $(element).find('.TextWeb__Text-sc-1cyx778-0.gimCrs').text().trim()
-
-        const priceElement = $(element).find('.TextWeb__Text-sc-1cyx778-0.gimCrs');
-        const priceText = priceElement.text().trim();
-
-        // Use regex to separate currency and numeric part
-        const priceMatch = priceText.match(/([^\d]+)([\d,.]+)/);
-
-        let currency, price;
-
-        if (priceMatch) {
-            currency = priceMatch[1].trim();
-            price = parseFloat(priceMatch[2].replace(/,/g, ''));
+    const waitForContent = async(maxRetries = 5) => {
+        let retries = 0;
+      
+        while (retries < maxRetries) {
+          const productCount = await page.$$eval('.sp.grid', (items) => items.length);
+          console.log('Product count:', productCount);
+      
+          if (productCount > 0) {
+            console.log('Content is loaded!');
+            return;
+          }
+          console.warn('Content not loaded yet, waiting again...');
+          await new Promise((resolve) => setTimeout(resolve, 5000));
+          retries++;
         }
-        console.log(currency);
-        console.log("PRICE: "+price)
-        const imageElement = $(element).find('.img-responsive.imgCenter');
-        const image = "https://www.reliancedigital.in" + (imageElement.attr('data-src') || imageElement.attr('data-srcset'));
-        console.log("IMAGE: " +image)
-        const rating = 5;
-        if (title && url && price &&  image && currency && rating ) {
-            if (!products) {
-                products = [];
-            }
-            products.push({ title, url, price,  currency, rating ,image });
-        }
+        console.error('Max retries reached. Content not loaded.');
+      }
 
+    await waitForContent();
+
+    const htmlContent = await page.content();
+    const $ = cheerio.load(htmlContent);
+
+    let products: Product[] = [];
+
+    $('.sp.grid').each((_, element) => {
+      const titleElement = $(element).find('.sp__name');
+      const title = titleElement.text().trim();
+
+      const linkElement = $(element).find('.sp.grid a');
+      const url = `https://www.reliancedigital.in${linkElement.attr('href')}`;
+
+      const currentPriceElement = $(element).find('.TextWeb__Text-sc-1cyx778-0.gimCrs');
+      const priceElement = currentPriceElement.text().trim();
+
+      const currency = priceElement.substring(0,1);
+      const price = parseFloat(priceElement.substring(1).replace(/,/g, ''));
+      const imageElement = $(element).find('.img-responsive.imgCenter');
+      const image = `https://www.reliancedigital.in${imageElement.attr('data-src') || imageElement.attr('data-srcset')}`;
+      if(title && url && price && currency && image )
+        products.push({ title, url, price,currency, image });
     });
 
-
-
     console.log('Extracted Products:', products);
-
+    // // products.push({ title, url, price,  currency, rating ,image });
     await connectToDB();
     await RelianceProduct.deleteMany({});
     // Save products to MongoDB
