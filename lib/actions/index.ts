@@ -202,6 +202,106 @@ export async function getAllCrawledAmazonProducts(id:any) {
   }
 }
 
+export async function getAllCrawledCromaProducts(id:any) {
+  try {
+    connectToDB();
+
+    const agg = [
+    {
+      '$search': {
+        'index': 'defaultCroma', 
+        'compound': {
+          'should': [
+            {
+              'text': {
+                'query': `${id}`, 
+                'path': 'title', 
+                'fuzzy': {
+                  'maxEdits': 2
+                }
+              }
+            },
+          ],
+          'minimumShouldMatch': 1 // Optional, depends on your use case
+        }
+      }
+    },
+    {
+      '$sort': {
+        'score': -1 // Sort in descending order based on the 'score' field
+      }
+    },
+    {
+      '$limit': 4
+    }
+    ];
+    
+    const client = await MongoClient.connect("mongodb+srv://kevinfrancisfernandes8:Kevin123@cluster0.e8uh7q9.mongodb.net/?retryWrites=true&w=majority");
+    const coll = client.db('test').collection('cromaproducts');
+      const cursor = coll.aggregate(agg);
+      const products = await cursor.toArray();
+      // console.log(products)
+    
+      return products;
+    
+    
+
+    
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+export async function getAllCrawledRelianceProducts(id:any) {
+  try {
+    connectToDB();
+
+    const agg = [
+    {
+      '$search': {
+        'index': 'defaultReliance', 
+        'compound': {
+          'should': [
+            {
+              'text': {
+                'query': `${id}`, 
+                'path': 'title', 
+                'fuzzy': {
+                  'maxEdits': 2
+                }
+              }
+            },
+          ],
+          'minimumShouldMatch': 1 // Optional, depends on your use case
+        }
+      }
+    },
+    {
+      '$sort': {
+        'score': -1 // Sort in descending order based on the 'score' field
+      }
+    },
+    {
+      '$limit': 4
+    }
+    ];
+    
+    const client = await MongoClient.connect("mongodb+srv://kevinfrancisfernandes8:Kevin123@cluster0.e8uh7q9.mongodb.net/?retryWrites=true&w=majority");
+    const coll = client.db('test').collection('relianceproducts');
+      const cursor = coll.aggregate(agg);
+      const products = await cursor.toArray();
+      // console.log(products)
+    
+      return products;
+    
+    
+
+    
+  } catch (error) {
+    console.log(error);
+  }
+}
+
 export async function getSimilarProducts(productId: string) {
   try {
     connectToDB();

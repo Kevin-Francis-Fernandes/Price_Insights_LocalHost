@@ -5,6 +5,7 @@ type Props = {
 }
 
 
+
 const index = async ({ params: { id } }: Props) => {
   // console.log(id);
   const allProducts = await getAllCrawledAmazonProducts(id);
