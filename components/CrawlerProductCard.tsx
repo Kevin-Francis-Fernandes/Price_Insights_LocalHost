@@ -18,6 +18,9 @@ const CrawlerProductCard = async ({ product }: Props) => {
     await connectToDB();
     const url = product.url;
     prod = await Product.findOne({ url });
+    await new Promise(resolve => setTimeout(resolve, 8000));
+    console.log("prod id: " + prod._id)
+    
   }
   catch(error:any){
     console.log(error.message);
@@ -25,8 +28,8 @@ const CrawlerProductCard = async ({ product }: Props) => {
 
   
 
-
-  return (  prod._id &&
+if(prod){
+  return (  
     
     <Link href={`/products/${prod._id}`}  className="product-card">   
       <div className="product-card_img-container">
@@ -55,6 +58,11 @@ const CrawlerProductCard = async ({ product }: Props) => {
       </div>
     </Link>
   )
+}
+if(!prod ){
+  return <></>
+}
+
 }
 
 export default CrawlerProductCard

@@ -8,9 +8,17 @@ export async function extractSearchTermInfo(searchTerm: any) {
 
   try {
     const amazoncrawlproducts = await amazonCrawler(searchTerm);
-    amazoncrawlproducts.map(
-      async (product: any) => await scrapeAndStoreProduct(product.url, "amazon")
-    );
+    // amazoncrawlproducts.map(
+    //   async (product: any) => await scrapeAndStoreProduct(product.url, "amazon")
+    // );
+    let i=0;
+    for( const product  of amazoncrawlproducts){
+      if(i==6){
+        break;
+      }
+      i++;
+      await scrapeAndStoreProduct(product.url,"amazon");
+    }
   } catch (error: any) {
     console.log(`Error extracting amazon crawled products : ${error.message}`);
   }
@@ -24,17 +32,27 @@ export async function extractSearchTermInfo(searchTerm: any) {
   //   console.log(`Error extracting croma crawled products : ${error.message}`);
   // }
 
-  // try {
-  //   const reliancecrawlproducts = await relianceCrawler(searchTerm);
-  //   if(reliancecrawlproducts){
-  //     reliancecrawlproducts.map(
-  //       async (product: any) =>
-  //         await scrapeAndStoreProduct(product.url, "reliance")
-  //     );
-  //   }
-  // } catch (error: any) {
-    // console.log(
-    //   `Error extracting reliance crawled products : ${error.message}`
-    // );
-  // }
+  try {
+    const reliancecrawlproducts = await relianceCrawler(searchTerm);
+    // if(reliancecrawlproducts){
+    //   reliancecrawlproducts.map(
+    //     async (product: any) =>
+    //       await scrapeAndStoreProduct(product.url, "reliance")
+    //   );
+    // }
+    let i=0;
+    if(reliancecrawlproducts ){
+    for( const product  of reliancecrawlproducts){
+      if(i==6){
+        break;
+      }
+      i++;
+      await scrapeAndStoreProduct(product.url,"reliance");
+    }
+  }
+  } catch (error: any) {
+    console.log(
+      `Error extracting reliance crawled products : ${error.message}`
+    );
+  }
 }
