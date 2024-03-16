@@ -1,16 +1,30 @@
 import { scrapeAndStoreProduct } from "../actions";
 import { amazonCrawler } from "./amazoncrawler";
-// import { cromaCrawler } from "./cromacrawler";
+import { cromaCrawler } from "./cromacrawler";
 import { relianceCrawler } from "./reliancecrawler";
 
 export async function extractSearchTermInfo(searchTerm: any) {
   if (!searchTerm) return;
+  
+
+  try {
+    const cromacrawlproducts = await cromaCrawler(searchTerm);
+    let i=0;
+    if(cromacrawlproducts){
+    for( const product  of cromacrawlproducts){
+      if(i==6){
+        break;
+      }
+      i++;
+      await scrapeAndStoreProduct(product.url,"croma");
+    }
+   }
+  } catch (error: any) {
+    console.log(`Error extracting amazon crawled products : ${error.message}`);
+  }
 
   try {
     const amazoncrawlproducts = await amazonCrawler(searchTerm);
-    // amazoncrawlproducts.map(
-    //   async (product: any) => await scrapeAndStoreProduct(product.url, "amazon")
-    // );
     let i=0;
     for( const product  of amazoncrawlproducts){
       if(i==6){
@@ -23,14 +37,7 @@ export async function extractSearchTermInfo(searchTerm: any) {
     console.log(`Error extracting amazon crawled products : ${error.message}`);
   }
 
-  // try {
-  //   const cromacrawlproducts = await cromaCrawler(searchTerm);
-  //   cromacrawlproducts.map(
-  //     async (product: any) => await scrapeAndStoreProduct(product.url, "croma")
-  //   );
-  // } catch (error: any) {
-  //   console.log(`Error extracting croma crawled products : ${error.message}`);
-  // }
+  
 
   try {
     const reliancecrawlproducts = await relianceCrawler(searchTerm);
@@ -41,7 +48,7 @@ export async function extractSearchTermInfo(searchTerm: any) {
     //   );
     // }
     let i=0;
-    if(reliancecrawlproducts ){
+    if(reliancecrawlproducts){
     for( const product  of reliancecrawlproducts){
       if(i==6){
         break;

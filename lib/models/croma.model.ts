@@ -3,9 +3,9 @@ import mongoose from 'mongoose';
 const cromaSchema = new mongoose.Schema({
   url: { type: String, unique: true },
   title: { type: String },
-  price: {type :Number },
+  price: {type :String },
   currency : {type: String},
-  rating: {type:Number},
+  rating: {type:String},
   image: {type:String},
 });
 
