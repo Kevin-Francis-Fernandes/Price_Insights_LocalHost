@@ -70,7 +70,7 @@ export async function relianceCrawler(searchTerm: string): Promise<Product[] | v
         products.push({ title, url, price,currency, image });
     });
 
-    console.log('Extracted Products:', products);
+    // console.log('Extracted Products:', products);
     // // products.push({ title, url, price,  currency, rating ,image });
     await connectToDB();
     await RelianceProduct.deleteMany({});

@@ -10,6 +10,7 @@ import React from 'react';
 interface Props {
   product:any; 
 }
+
  
 const CrawlerProductCard = async ({ product }: Props) => {
  
@@ -17,8 +18,9 @@ const CrawlerProductCard = async ({ product }: Props) => {
   try {
     await connectToDB();
     const url = product.url;
-    prod = await Product.findOne({ url });
     await new Promise(resolve => setTimeout(resolve, 8000));
+    prod = await Product.findOne({ url });
+    
     console.log("prod id: " + prod._id)
     
   }

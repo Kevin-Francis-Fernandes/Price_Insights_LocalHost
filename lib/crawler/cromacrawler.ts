@@ -48,7 +48,7 @@ export async function cromaCrawler(searchTerm: string) {
                         },
                         'timestamp': new Date().getTime() // Adding timestamp property
                     });
-                }, 1000);
+                }, 10000);
             }
         });
         // await page.waitForSelector('body')
@@ -70,28 +70,28 @@ export async function cromaCrawler(searchTerm: string) {
         $('li.product-item').each((_, element) => {
             const titleElement = $(element).find('h3.product-title');
             
-            const url = "https://www.croma.com/" + titleElement.find('a').attr('href');
+            const url = "https://www.croma.com" + titleElement.find('a').attr('href');
             const title = titleElement.text().trim();
-            console.log("Title: " +title)
-            console.log("Url: " +url)
+            // console.log("Title: " +title)
+            // console.log("Url: " +url)
             const priceElement = $(element).find('span.amount.plp-srp-new-amount');
             const price = priceElement.text().trim().replace(/,/g, '').substring(1);
-            console.log("Price: " +price)
+            // console.log("Price: " +price)
             
             const currency = (priceElement.text().trim().substring(0,1));
-            console.log("currency: " + currency)
-            const ratingText = $(element).find('span.rating-text').text() || "0";
+            // console.log("currency: " + currency)
+            const ratingText = $(element).find('span.rating-text').text() || "none";
             const rating = ratingText.replace(/,/g,'');
-            console.log("rating:" + rating)
+            // console.log("rating:" + rating)
             const image = $(element).find('div.plp-card-thumbnail img').attr('src');
-            console.log("image: " +  image)
+            // console.log("image: " +  image)
             if (title && url && price && currency && image && rating) {
                 products.push({ title, url, price, currency, rating, image });
             }
             
         });
     
-        // console.log(products);
+        console.log(products);
 
         await connectToDB();
         await CromaProduct.deleteMany({});
@@ -112,6 +112,7 @@ export async function cromaCrawler(searchTerm: string) {
 
 
         return products;
+        
       } catch (error:any) {
         console.error("Error:", error.message);
       } finally {

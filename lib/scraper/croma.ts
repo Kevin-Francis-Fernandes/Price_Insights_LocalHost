@@ -14,6 +14,25 @@ export async function scrapeCromaProduct(url: string) {
   const page = await browser.newPage();
  
   try {
+    console.log("croma scraper url :"+url)
+  //   await page.evaluateOnNewDocument(function() {
+  //     navigator.geolocation.getCurrentPosition = function (cb) {
+  //         setTimeout(() => {
+  //             cb({
+  //                 'coords': {
+  //                     accuracy: 21,
+  //                     altitude: null,
+  //                     altitudeAccuracy: null,
+  //                     heading: null,
+  //                     latitude: 23.129163,
+  //                     longitude: 113.264435,
+  //                     speed: null
+  //                 },
+  //                 'timestamp': new Date().getTime() // Adding timestamp property
+  //             });
+  //         }, 1000);
+  //     }
+  // });
     await page.goto(url, { waitUntil: "networkidle2" });
  
     // Get the HTML content after the page is loaded
@@ -76,11 +95,11 @@ export async function scrapeCromaProduct(url: string) {
     const rating = ratingValueMatch ? ratingValueMatch[1] : "N/A";
     const ratingCount = ratingCountMatch ? ratingCountMatch[1] : "N/A";
  
-    const discountRate = (
+    let discountRate = ((
       ((originalPrice - currentPrice) / originalPrice) *
       100.0
-    ).toFixed(2);
- 
+    ).toFixed(2)) ;
+    // console.log("croma scraper :" + discountRate  );
     const details: any = [];
     $("div.cp-keyfeature ul li").each((index, element) => {
       const detailText = $(element).text().replace("|", " "); // Replace '|' with space
@@ -111,8 +130,8 @@ export async function scrapeCromaProduct(url: string) {
         currentPrice: Number(currentPrice) || Number(originalPrice),
         originalPrice:Number(originalPrice) || Number(currentPrice),
         priceHistory:[],
-        discountRate:Number(discountRate),
-        ratingCount,
+        discountRate:Number(discountRate) || 0.1,
+        ratingCount:  0,
         usersInteraction:[],
       //  rating,
         category:"category",
@@ -122,7 +141,7 @@ export async function scrapeCromaProduct(url: string) {
         lowestPrice: Number(currentPrice) || Number(originalPrice),
         highestPrice: Number(originalPrice) || Number(currentPrice),
         averagePrice: Number(currentPrice) || Number(originalPrice),
-        rating:Number(rating),
+        rating:2,
           sub_cat : "SmartPhones",
           main_cat : "Electronics",
         }
