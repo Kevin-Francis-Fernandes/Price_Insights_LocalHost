@@ -27,7 +27,7 @@ export async function amazonCrawler(searchTerm:any){
     const $ = cheerio.load(content);
 
     // Extract product titles and links
-    const products: any = [];
+    let products: any = [];
 
     $('.s-result-item').each((_, element) => {
       const titleElement = $(element).find('.s-title-instructions-style h2 a');
@@ -50,7 +50,7 @@ export async function amazonCrawler(searchTerm:any){
       }
   });
     // console.log('Extracted Products:', products);
-
+    products=products.slice(0,6)
     await connectToDB();
     await AmazonProduct.deleteMany({});
     // Save products to MongoDB

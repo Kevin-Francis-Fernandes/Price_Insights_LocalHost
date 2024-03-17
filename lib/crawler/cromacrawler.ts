@@ -12,7 +12,7 @@ import CromaProduct from "../models/croma.model";
 //   currency:string;
 //   image: string;
 // }
-export async function cromaCrawler(searchTerm: string) {
+export async function  cromaCrawler(searchTerm: string) {
     const browser = await puppeteer.launch({
         // args: [
         //     '--disable-notifications', // Disable notification prompts
@@ -96,7 +96,7 @@ export async function cromaCrawler(searchTerm: string) {
         await connectToDB();
         await CromaProduct.deleteMany({});
     // Save products to MongoDB
-    
+        products=products.slice(0,6)
     products.map(async (product: any) => {
         
       

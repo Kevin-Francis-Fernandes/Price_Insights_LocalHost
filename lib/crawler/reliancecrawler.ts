@@ -75,7 +75,7 @@ export async function relianceCrawler(searchTerm: string): Promise<Product[] | v
     await connectToDB();
     await RelianceProduct.deleteMany({});
     // Save products to MongoDB
-    
+    products=products.slice(0,6)
     products.map(async (product: any) => {
         
       
