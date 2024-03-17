@@ -48,7 +48,7 @@ export async function cromaCrawler(searchTerm: string) {
                         },
                         'timestamp': new Date().getTime() // Adding timestamp property
                     });
-                }, 10000);
+                }, 1000);
             }
         });
         // await page.waitForSelector('body')

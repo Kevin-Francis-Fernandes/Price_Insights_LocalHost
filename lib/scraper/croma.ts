@@ -108,18 +108,18 @@ export async function scrapeCromaProduct(url: string) {
  
     const description = details.join(" ");
  
-    console.log({
-      title,
-      imageUrls,
-      currentPrice,
-      originalPrice,
-      currency,
-      rating,
-      ratingCount,
-      discountRate,
-      description,
-      isOutOfStock,
-    });
+    // console.log({
+    //   title,
+    //   imageUrls,
+    //   currentPrice,
+    //   originalPrice,
+    //   currency,
+    //   rating,
+    //   ratingCount,
+    //   discountRate,
+    //   description,
+    //   isOutOfStock,
+    // });
     const sellerInfo="Croma";
        //constructing data object of scraped information 
        const data ={
