@@ -1,415 +1,188 @@
 item_id,title,brand,user_id,rating,timestamp,sub_cat,main_cat,age,gender,location
-65ee7a053403876ff7af2fec,motorola moto g power 5g  2023  unlocked  made for us 6/256gb  50 mpcamera  mineral black 163.06 x 74.8 x 8.45mm,motorola,77864601,4.3,2024-03-11 03:27:00,SmartPhones,Electronics,18-24,male,usa
-65ee826c3403876ff7c13c60,motorola moto g stylus 5g  2023  unlocked  made for us 6/256gb  50 mpcamera  cosmic black 162.83x73.77x9.29,motorola,a2a667f1,4.0,2024-03-11 04:02:51,SmartPhones,Electronics,18-24,female,india
-65ee82b73403876ff7c1b85d,samsung galaxy s23 5g (cream 8gb 256gb storage),samsung,a2a667f1,4.5,2024-03-11 04:04:05,SmartPhones,Electronics,18-24,female,india
-65ee82b93403876ff7c1bc28,samsung galaxy s23 5g (cream 8gb ram 256gb storage),samsung,a2a667f1,4.2,2024-03-11 04:04:08,SmartPhones,Electronics,18-24,female,india
-65ee82bb3403876ff7c1bf16,samsung galaxy s23 ultra 5g (green 12gb 256gb storage),samsung,a2a667f1,4.3,2024-03-11 04:04:10,SmartPhones,Electronics,18-24,female,india
-65ee82bb3403876ff7c1bf6c,samsung galaxy s23 fe 5g (purple 128 gb storage) (8 gb ram),samsung,a2a667f1,3.8,2024-03-11 04:04:10,SmartPhones,Electronics,18-24,female,india
-65ee82c03403876ff7c1c698,samsung galaxy s23 fe 5g (graphite 128 gb storage) (8 gb ram),samsung,a2a667f1,3.8,2024-03-11 04:04:15,SmartPhones,Electronics,18-24,female,india
-65ee82c03403876ff7c1c6b8,samsung galaxy s23 fe 5g (mint 8gb 128gb storage),samsung,a2a667f1,3.9,2024-03-11 04:04:15,SmartPhones,Electronics,18-24,female,india
-65ee82c23403876ff7c1cad9,samsung galaxy s23 5g (green 8gb 256gb storage),samsung,a2a667f1,4.5,2024-03-11 04:04:17,SmartPhones,Electronics,18-24,female,india
-65ee82c53403876ff7c1cf9d,samsung galaxy s23 fe 5g (purple 8gb 256gb storage),samsung,a2a667f1,3.9,2024-03-11 04:04:20,SmartPhones,Electronics,18-24,female,india
-65ee82c73403876ff7c1d27f,samsung galaxy s23 5g (phantom black 8gb 256gb storage),samsung,a2a667f1,4.5,2024-03-11 04:04:22,SmartPhones,Electronics,18-24,female,india
-65ee82ca3403876ff7c1d77e,samsung galaxy s23 5g (green 8gb 128gb storage),samsung,a2a667f1,4.4,2024-03-11 04:04:24,SmartPhones,Electronics,18-24,female,india
-65ee82cc3403876ff7c1db4a,samsung galaxy s23 5g (cream 8gb 128gb storage),samsung,a2a667f1,4.5,2024-03-11 04:04:26,SmartPhones,Electronics,18-24,female,india
-65ee82ce3403876ff7c1dd92,samsung galaxy s23 fe 5g (mint 128 gb storage) (8 gb ram),samsung,a2a667f1,3.8,2024-03-11 04:04:28,SmartPhones,Electronics,18-24,female,india
-65ee82d03403876ff7c1e1a6,samsung galaxy s23 fe 5g (purple 256 gb storage) (8 gb ram),samsung,a2a667f1,3.8,2024-03-11 04:04:31,SmartPhones,Electronics,18-24,female,india
-65ee82d13403876ff7c1e293,samsung galaxy s23 5g (phantom black 8gb 256gb storage),samsung,a2a667f1,4.5,2024-03-11 04:04:31,SmartPhones,Electronics,18-24,female,india
-65ee82d53403876ff7c1e97d,samsung galaxy s23 5g (green 8gb 128gb storage),samsung,a2a667f1,4.4,2024-03-11 04:04:36,SmartPhones,Electronics,18-24,female,india
-65ee82d53403876ff7c1ea0a,samsung galaxy s23 5g (lavender 8gb 256gb storage),samsung,a2a667f1,4.4,2024-03-11 04:04:36,SmartPhones,Electronics,18-24,female,india
-65ee82d93403876ff7c1f07b,samsung galaxy s23 5g (lavender 8gb 128gb storage),samsung,a2a667f1,4.1,2024-03-11 04:04:40,SmartPhones,Electronics,18-24,female,india
-65ee82db3403876ff7c1f24d,samsung galaxy s23 5g (lavender 8gb 128gb storage),samsung,a2a667f1,4.1,2024-03-11 04:04:41,SmartPhones,Electronics,18-24,female,india
-65ee82e03403876ff7c1fc97,samsung galaxy s23 fe 5g (mint 256 gb storage) (8 gb ram),samsung,a2a667f1,3.8,2024-03-11 04:04:47,SmartPhones,Electronics,18-24,female,india
-65ee82e13403876ff7c1fe35,samsung galaxy s23 fe 5g (mint 8gb 256gb storage),samsung,a2a667f1,3.9,2024-03-11 04:04:48,SmartPhones,Electronics,18-24,female,india
-65ee82e43403876ff7c20374,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,a2a667f1,4.4,2024-03-11 04:04:51,SmartPhones,Electronics,18-24,female,india
-65ee82e93403876ff7c20c1f,samsung galaxy s23 fe 5g (purple 8gb 128gb storage),samsung,a2a667f1,3.9,2024-03-11 04:04:55,SmartPhones,Electronics,18-24,female,india
-65ee843e3403876ff7c454ee,motorola edge  2023  unlocked  made for us 8/256gb  50mp camera  eclipse black,motorola,77864601,4.2,2024-03-11 04:10:36,SmartPhones,Electronics,18-24,male,usa
-65f09dab3403876ff7b451fa,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.3,2024-03-12 18:23:37,SmartPhones,Electronics,18-24,male,usa
-65f09dab3403876ff7b452ec,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,77864601,3.3,2024-03-12 18:23:38,SmartPhones,Electronics,18-24,male,usa
-65f09daf3403876ff7b45c06,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.3,2024-03-12 18:23:42,SmartPhones,Electronics,18-24,male,usa
-65f09db13403876ff7b45f1c,samsung galaxy s24 5g ai smartphone (onyx black 8gb 512gb storage),samsung,77864601,3.3,2024-03-12 18:23:44,SmartPhones,Electronics,18-24,male,usa
-65f09db33403876ff7b463f8,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,77864601,4.4,2024-03-12 18:23:46,SmartPhones,Electronics,18-24,male,usa
-65f09db53403876ff7b4688e,samsung galaxy s24 plus 5g ai smartphone (onyx black 12gb 256gb storage),samsung,77864601,4.5,2024-03-12 18:23:48,SmartPhones,Electronics,18-24,male,usa
-65f09db73403876ff7b46cb4,samsung galaxy s23 ultra 5g (cream 12gb 256gb storage),samsung,77864601,4.5,2024-03-12 18:23:50,SmartPhones,Electronics,18-24,male,usa
-65f09dba3403876ff7b47232,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 512gb storage),samsung,77864601,3.3,2024-03-12 18:23:53,SmartPhones,Electronics,18-24,male,usa
-65f09dbc3403876ff7b47761,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 512gb storage),samsung,77864601,3.3,2024-03-12 18:23:55,SmartPhones,Electronics,18-24,male,usa
-65f09dbe3403876ff7b47c11,samsung galaxy s24 plus 5g ai smartphone (cobalt violet 12gb 512gb storage),samsung,77864601,4.5,2024-03-12 18:23:57,SmartPhones,Electronics,18-24,male,usa
-65f09dc03403876ff7b481b8,samsung galaxy s24 ultra 5g ai smartphone (titanium violet 12gb 256gb storage),samsung,77864601,4.4,2024-03-12 18:23:59,SmartPhones,Electronics,18-24,male,usa
-65f09dc23403876ff7b487d1,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,77864601,4.4,2024-03-12 18:24:01,SmartPhones,Electronics,18-24,male,usa
-65f09dc53403876ff7b48d17,samsung galaxy s24 ultra 5g ai smartphone (titanium violet 12gb 512gb storage),samsung,77864601,4.4,2024-03-12 18:24:03,SmartPhones,Electronics,18-24,male,usa
-65f09dc73403876ff7b49186,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 256gb storage),samsung,77864601,4.4,2024-03-12 18:24:06,SmartPhones,Electronics,18-24,male,usa
-65f09dc83403876ff7b49420,samsung galaxy s24 plus 5g ai smartphone (cobalt violet 12gb 256gb storage),samsung,77864601,4.5,2024-03-12 18:24:07,SmartPhones,Electronics,18-24,male,usa
-65f09e733403876ff7b61cef,samsung galaxy m04 light green 4gb ram 128gb storage  upto 8gb ram with ram plus  mediatek helio p35 octa-core processor  5000 mah battery  13mp dual camera,samsung,77864601,3.9,2024-03-12 18:26:58,SmartPhones,Electronics,18-24,male,usa
-65f09e753403876ff7b62244,samsung 108 cm (43 inches) crystal ismart 4k ultra hd smart led tv ua43cue60aklxl (black),samsung,77864601,4.2,2024-03-12 18:27:00,SmartPhones,Electronics,18-24,male,usa
-65f09e783403876ff7b6270d,samsung galaxy s22 5g (green 8gb 128gb storage) with no cost emi/additional exchange offers,samsung,77864601,4.3,2024-03-12 18:27:02,SmartPhones,Electronics,18-24,male,usa
-65f09e7f3403876ff7b6369b,samsung galaxy m14 5g (berry blue6gb128gb)50mp triple camsegment's only 6000 mah 5g sp5nm processor2 gen. os upgrade & 4 year security update12gb ram with ram plusandroid 13without charger,samsung,77864601,4.0,2024-03-12 18:27:08,SmartPhones,Electronics,18-24,male,usa
-65f09e7f3403876ff7b636b1,samsung galaxy m14 5g (icy silver6gb128gb)50mp triple camsegment's only 6000 mah 5g sp5nm processor2 gen. os upgrade & 4 year security update12gb ram with ram plusandroid 13without charger,samsung,77864601,4.0,2024-03-12 18:27:08,SmartPhones,Electronics,18-24,male,usa
-65f09e823403876ff7b63ca8,samsung galaxy m34 5g (prism silver6gb128gb)120hz samoled display50mp triple no shake cam6000 mah battery4 gen os upgrade & 5 year security update12gb ram with ram+android 13without charger,samsung,77864601,4.0,2024-03-12 18:27:13,SmartPhones,Electronics,18-24,male,usa
-65f09e823403876ff7b63db4,samsung galaxy m14 5g (smoky teal6gb128gb)50mp triple camsegment's only 6000 mah 5g sp5nm processor2 gen. os upgrade & 4 year security update12gb ram with ram plusandroid 13without charger,samsung,77864601,4.0,2024-03-12 18:27:13,SmartPhones,Electronics,18-24,male,usa
-65f09e833403876ff7b63fd3,samsung galaxy a15 5g (blue black 6gb 128gb storage)  50 mp main camera  android 14 with one ui 6.0  12gb expandable ram  mediatek dimensity 6100+  5000 mah battery,samsung,77864601,3.9,2024-03-12 18:27:14,SmartPhones,Electronics,18-24,male,usa
-65f09e873403876ff7b6482f,samsung f13 (waterfall blue 4gb ram 128gb storage)  expandable upto 1 tb  50mp + 5mp + 2mp  8mp front camera  exynos 850 processor  6000 mah lithium ion battery  6.6 fhd+ dewdrop display,samsung,77864601,2.7,2024-03-12 18:27:18,SmartPhones,Electronics,18-24,male,usa
-65f09e8b3403876ff7b651dc,samsung galaxy a34 5g (awesome violet 8gb 256gb storage)  48 mp no shake cam (ois)  ip67  gorilla glass 5  voice focus  travel adapter to be purchased separately,samsung,77864601,4.1,2024-03-12 18:27:22,SmartPhones,Electronics,18-24,male,usa
-65f09e8e3403876ff7b6580b,samsung galaxy m14 5g (smoky teal4gb128gb)50mp triple camsegment's only 6000 mah 5g sp5nm processor2 gen. os upgrade & 4 year security update12gb ram with ram plusandroid 13without charger,samsung,77864601,4.0,2024-03-12 18:27:24,SmartPhones,Electronics,18-24,male,usa
-65f09e903403876ff7b65ce2,samsung galaxy s20 fe 5g (cloud navy 8gb ram 128gb storage) with no cost emi & additional exchange offers,samsung,77864601,4.2,2024-03-12 18:27:27,SmartPhones,Electronics,18-24,male,usa
-65f09e903403876ff7b65e09,samsung galaxy a15 5g (blue 8gb 128gb storage)  50 mp main camera  android 14 with one ui 6.0  16gb expandable ram  mediatek dimensity 6100+  5000 mah battery,samsung,77864601,3.9,2024-03-12 18:27:27,SmartPhones,Electronics,18-24,male,usa
-65f0a0da3403876ff7bc12e4,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,77864601,3.3,2024-03-12 18:37:13,SmartPhones,Electronics,18-24,male,usa
-65f0a0de3403876ff7bc1f0a,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 256gb storage),samsung,77864601,4.4,2024-03-12 18:37:17,SmartPhones,Electronics,18-24,male,usa
-65f0a0de3403876ff7bc1f69,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.3,2024-03-12 18:37:17,SmartPhones,Electronics,18-24,male,usa
-65f0a0e03403876ff7bc241f,samsung galaxy s24 plus 5g ai smartphone (onyx black 12gb 512gb storage),samsung,77864601,4.5,2024-03-12 18:37:19,SmartPhones,Electronics,18-24,male,usa
-65f0a0e23403876ff7bc2b0d,galaxy s24 ultra 5g (titanium black 12gb 512gb storage),galaxy,77864601,3.0,2024-03-12 18:37:21,SmartPhones,Electronics,18-24,male,usa
-65f0a0e43403876ff7bc3222,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 256gb storage),samsung,77864601,4.4,2024-03-12 18:37:22,SmartPhones,Electronics,18-24,male,usa
-65f0a0e63403876ff7bc3752,samsung galaxy s24 ultra 5g ai smartphone (titanium violet 12gb 512gb storage),samsung,77864601,4.4,2024-03-12 18:37:25,SmartPhones,Electronics,18-24,male,usa
-65f0a0e83403876ff7bc3e5e,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,77864601,4.4,2024-03-12 18:37:26,SmartPhones,Electronics,18-24,male,usa
-65f0a0ea3403876ff7bc45a3,samsung galaxy s24 5g ai smartphone (onyx black 8gb 512gb storage),samsung,77864601,3.3,2024-03-12 18:37:29,SmartPhones,Electronics,18-24,male,usa
-65f0a0eb3403876ff7bc4ae2,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.3,2024-03-12 18:37:30,SmartPhones,Electronics,18-24,male,usa
-65f0a0ed3403876ff7bc5007,samsung galaxy s24 ultra 5g ai smartphone (titanium violet 12gb 256gb storage),samsung,77864601,4.4,2024-03-12 18:37:32,SmartPhones,Electronics,18-24,male,usa
-65f0a0ef3403876ff7bc5518,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 512gb storage),samsung,77864601,3.3,2024-03-12 18:37:34,SmartPhones,Electronics,18-24,male,usa
-65f0a0f13403876ff7bc5a6e,samsung galaxy s24 plus 5g ai smartphone (onyx black 12gb 256gb storage),samsung,77864601,4.5,2024-03-12 18:37:35,SmartPhones,Electronics,18-24,male,usa
-65f0a0f43403876ff7bc6513,samsung galaxy s24 plus 5g ai smartphone (cobalt violet 12gb 256gb storage),samsung,77864601,4.5,2024-03-12 18:37:39,SmartPhones,Electronics,18-24,male,usa
-65f0a0f63403876ff7bc6a48,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,77864601,4.4,2024-03-12 18:37:41,SmartPhones,Electronics,18-24,male,usa
-65f0a0fb3403876ff7bc78c8,ikall z3 smartphone (6.26 display 4gb 64gb) (blue),ikall,77864601,2.7,2024-03-12 18:37:45,SmartPhones,Electronics,18-24,male,usa
-65f0a0fc3403876ff7bc7dff,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 1tb storage),samsung,77864601,4.4,2024-03-12 18:37:47,SmartPhones,Electronics,18-24,male,usa
-65f0a0fe3403876ff7bc8310,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 512gb storage),samsung,77864601,3.3,2024-03-12 18:37:49,SmartPhones,Electronics,18-24,male,usa
-65f0a0ff3403876ff7bc8530,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,77864601,4.4,2024-03-12 18:37:49,SmartPhones,Electronics,18-24,male,usa
-65f14d503403876ff7546658,samsung galaxy s24 5g antireflecting screen protector,samsung,77864601,0.0,2024-03-13 06:53:04,SmartPhones,Electronics,18-24,male,usa
-65f14d503403876ff754665c,samsung galaxy s24 5g silicone mobile case white,samsung,77864601,0.0,2024-03-13 06:53:04,SmartPhones,Electronics,18-24,male,usa
-65f14d513403876ff75466e8,samsung galaxy s24 ultra 5g screen protector,samsung,77864601,0.0,2024-03-13 06:53:04,SmartPhones,Electronics,18-24,male,usa
-65f14d513403876ff754670d,samsung screen protector for samsung galaxy s23 ultra ef-us918ctegin,samsung,77864601,5.0,2024-03-13 06:53:04,SmartPhones,Electronics,18-24,male,usa
-65f14d513403876ff754671d,samsung galaxy s24 5g silicone mobile case yellow,samsung,77864601,0.0,2024-03-13 06:53:04,SmartPhones,Electronics,18-24,male,usa
-65f14d523403876ff7546a39,samsung galaxy s24 5g silicone mobile case dark violet,samsung,77864601,0.0,2024-03-13 06:53:06,SmartPhones,Electronics,18-24,male,usa
-65f14d523403876ff7546a94,samsung galaxy s24 5g smart view wallet case black,samsung,77864601,0.0,2024-03-13 06:53:06,SmartPhones,Electronics,18-24,male,usa
-65f14d523403876ff7546aa7,samsung galaxy s24 5g silicone mobile case violet,samsung,77864601,0.0,2024-03-13 06:53:06,SmartPhones,Electronics,18-24,male,usa
-65f14d523403876ff7546ac5,samsung silicone mobile case for samsung galaxy s23 ultra navy ef-ps918tnegin,samsung,77864601,0.0,2024-03-13 06:53:06,SmartPhones,Electronics,18-24,male,usa
-65f14d533403876ff7546b43,samsung galaxy s24 ultra 5g clear gadget transparent,samsung,77864601,0.0,2024-03-13 06:53:06,SmartPhones,Electronics,18-24,male,usa
-65f14d533403876ff7546b5c,samsung galaxy s24 plus 5g screen protector,samsung,77864601,0.0,2024-03-13 06:53:06,SmartPhones,Electronics,18-24,male,usa
-65f14d543403876ff7546ea0,samsung galaxy s24 5g clear gadget transparent,samsung,77864601,0.0,2024-03-13 06:53:08,SmartPhones,Electronics,18-24,male,usa
-65f14d553403876ff7546f57,samsung galaxy s24 5g silicone mobile case light green,samsung,77864601,0.0,2024-03-13 06:53:08,SmartPhones,Electronics,18-24,male,usa
-65f14d553403876ff7546f62,samsung galaxy s24 5g smart view wallet case violet,samsung,77864601,0.0,2024-03-13 06:53:08,SmartPhones,Electronics,18-24,male,usa
-65f14d553403876ff7546ff8,samsung galaxy s24 5g smart view wallet case white,samsung,77864601,0.0,2024-03-13 06:53:08,SmartPhones,Electronics,18-24,male,usa
-65f14d553403876ff7547044,samsung silicone mobile case for samsung galaxy s23 ultra lavender ef-ps918tvegin,samsung,77864601,0.0,2024-03-13 06:53:09,SmartPhones,Electronics,18-24,male,usa
-65f14d553403876ff754708a,samsung galaxy s24 ultra 5g silicone mobile case violet,samsung,77864601,0.0,2024-03-13 06:53:09,SmartPhones,Electronics,18-24,male,usa
-65f14d593403876ff75477fa,samsung galaxy s24 ultra 5g silicone mobile case yellow,samsung,77864601,0.0,2024-03-13 06:53:13,SmartPhones,Electronics,18-24,male,usa
-65f2b7023403876ff7a2271d,moto g22 64 gb 4 gb ram cosmic black mobile phone,moto,77864601,4.7,2024-03-14 11:02:42,SmartPhones,Electronics,18-24,male,usa
-65f2c0dc3403876ff7c413f5,samsung s24 5g 256 gb 8 gb ram onxy black mobile phone,samsung,77864601,0.0,2024-03-17 15:16:04,SmartPhones,Electronics,18-24,male,usa
-65f2c0dc3403876ff7c41404,samsung s24 5g 512 gb 8 gb marble gray mobile phone,samsung,77864601,0.0,2024-03-17 15:15:22,SmartPhones,Electronics,18-24,male,usa
-65f2c0dc3403876ff7c416ea,samsung s24 5g 256 gb 8 gb ram amber yellow mobile phone,samsung,77864601,0.0,2024-03-17 07:09:45,SmartPhones,Electronics,18-24,male,usa
-65f2c0dc3403876ff7c41711,samsung a04s 64 gb 4 gb ram black mobile phone,samsung,77864601,0.0,2024-03-17 07:15:03,SmartPhones,Electronics,18-24,male,usa
-65f2c0dc3403876ff7c417ce,samsung s24 5g 512 gb 8 gb ram onxy black mobile phone,samsung,77864601,0.0,2024-03-17 07:09:54,SmartPhones,Electronics,18-24,male,usa
-65f2c0dc3403876ff7c41d31,samsung a04s 64 gb 4 gb ram copper mobile phone,samsung,77864601,0.0,2024-03-17 06:09:56,SmartPhones,Electronics,18-24,male,usa
-65f2c0dd3403876ff7c41ff3,samsung s22 5g 128 gb 8 gb ram green mobile phone,samsung,77864601,5.0,2024-03-17 07:16:22,SmartPhones,Electronics,18-24,male,usa
-65f2c0df3403876ff7c4286f,samsung s24 5g 512 gb 8 gb ram cobalt violet mobile phone,samsung,77864601,0.0,2024-03-17 06:04:39,SmartPhones,Electronics,18-24,male,usa
-65f2c0df3403876ff7c428ab,samsung s24+ 5g 256 gb 12 gb ram cobalt violet mobile phone,samsung,77864601,0.0,2024-03-17 07:11:06,SmartPhones,Electronics,18-24,male,usa
-65f2c0df3403876ff7c429b1,samsung s24+ 5g 256 gb 12gb ram onyx black mobile phone,samsung,77864601,0.0,2024-03-17 15:15:32,SmartPhones,Electronics,18-24,male,usa
-65f2c0e03403876ff7c429d2,samsung s24 5g 256 gb 8 gb ram marble gray mobile phone,samsung,77864601,0.0,2024-03-17 15:15:46,SmartPhones,Electronics,18-24,male,usa
-65f2c2a13403876ff7ca115c,samsung galaxy a03s 64 gb 4 gb ram blue mobile phone,samsung,77864601,3.0,2024-03-17 07:14:32,SmartPhones,Electronics,18-24,male,usa
-65f2c2a13403876ff7ca118b,samsung a04s 64 gb 4 gb ram green mobile phone,samsung,77864601,0.0,2024-03-17 06:10:07,SmartPhones,Electronics,18-24,male,usa
-65f2c8903403876ff7dccb5c,samsung s24 5g 256 gb 8 gb ram cobalt violet mobile phone,samsung,77864601,0.0,2024-03-17 15:15:56,SmartPhones,Electronics,18-24,male,usa
-65f2c8953403876ff7dcdb1c,samsung s24 5g 512 gb 8 gb ram amber yellow mobile phone,samsung,77864601,0.0,2024-03-17 07:10:56,SmartPhones,Electronics,18-24,male,usa
-65f2da373403876ff7089929,motorola g34 5g (ocean green 8gb ram 128gb storage),motorola,77864601,4.1,2024-03-14 11:06:30,SmartPhones,Electronics,18-24,male,usa
-65f2da383403876ff708a14b,motorola g24 power (glacier blue 8gb ram 128gb storage),motorola,77864601,3.8,2024-03-14 11:06:31,SmartPhones,Electronics,18-24,male,usa
-65f2da393403876ff708a5aa,motorola g24 power 4/128 (glacier blue),motorola,77864601,3.8,2024-03-14 11:06:32,SmartPhones,Electronics,18-24,male,usa
-65f2da393403876ff708a5c8,motorola g04 4g (satin blue 4gb ram 64gb storage)  up to 8gb with ram boost  6.6 punch hole display  16mp rear camera  5mp front camera  ip 52 water-repellent design  5000 mah android 14,motorola,77864601,4.0,2024-03-14 11:06:32,SmartPhones,Electronics,18-24,male,usa
-65f2da3b3403876ff708a9c1,motorola g04 4g 8/128 (sea green),motorola,77864601,4.0,2024-03-14 11:06:34,SmartPhones,Electronics,18-24,male,usa
-65f2da3b3403876ff708ab6f,motorola moto g32  8gb 128gb  mineral grey,motorola,77864601,4.0,2024-03-14 11:06:35,SmartPhones,Electronics,18-24,male,usa
-65f2da3c3403876ff708ae43,motorola g34 5g (ice blue 8gb ram 128gb storage),motorola,77864601,4.1,2024-03-14 11:06:35,SmartPhones,Electronics,18-24,male,usa
-65f2da3d3403876ff708aec9,motorola moto e13 (aurora green 2gb ram 64gb storage),motorola,77864601,3.8,2024-03-14 11:06:36,SmartPhones,Electronics,18-24,male,usa
-65f2dc073403876ff70cdcf9,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.5,2024-03-14 11:14:15,SmartPhones,Electronics,18-24,male,usa
-65f2dc093403876ff70cdf20,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.5,2024-03-14 11:14:16,SmartPhones,Electronics,18-24,male,usa
-65f2dc093403876ff70ce0bd,samsung galaxy s24 5g ai smartphone (onyx black 8gb 512gb storage),samsung,77864601,3.5,2024-03-14 11:14:16,SmartPhones,Electronics,18-24,male,usa
-65f2dc0a3403876ff70ce280,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 256gb storage),samsung,77864601,4.2,2024-03-14 11:14:17,SmartPhones,Electronics,18-24,male,usa
-65f2dc0c3403876ff70ce566,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 1tb storage),samsung,77864601,4.2,2024-03-14 11:14:19,SmartPhones,Electronics,18-24,male,usa
-65f2dc0e3403876ff70cea54,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,77864601,3.5,2024-03-14 11:14:22,SmartPhones,Electronics,18-24,male,usa
-65f2dc0e3403876ff70cea71,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 256gb storage),samsung,77864601,4.2,2024-03-14 11:14:21,SmartPhones,Electronics,18-24,male,usa
-65f2dc0f3403876ff70cea98,samsung galaxy s24 ultra 5g ai smartphone (titanium violet 12gb 256gb storage),samsung,77864601,4.2,2024-03-14 11:14:21,SmartPhones,Electronics,18-24,male,usa
-65f2dc0f3403876ff70cebeb,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,77864601,4.2,2024-03-14 11:14:22,SmartPhones,Electronics,18-24,male,usa
-65f2dc103403876ff70cedab,samsung galaxy s24 ultra 5g ai smartphone (titanium violet 12gb 512gb storage),samsung,77864601,4.2,2024-03-14 11:14:23,SmartPhones,Electronics,18-24,male,usa
-65f2dc123403876ff70cf08e,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,77864601,4.2,2024-03-14 11:14:25,SmartPhones,Electronics,18-24,male,usa
-65f2dc123403876ff70cf349,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 512gb storage),samsung,77864601,3.5,2024-03-14 11:14:25,SmartPhones,Electronics,18-24,male,usa
-65f2dc133403876ff70cf84a,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 512gb storage),samsung,77864601,3.5,2024-03-14 11:14:26,SmartPhones,Electronics,18-24,male,usa
-65f2dc143403876ff70cfd85,samsung galaxy s24 plus 5g ai smartphone (cobalt violet 12gb 256gb storage),samsung,77864601,4.6,2024-03-14 11:14:27,SmartPhones,Electronics,18-24,male,usa
-65f2dc153403876ff70cff37,samsung galaxy s24 plus 5g ai smartphone (onyx black 12gb 512gb storage),samsung,77864601,4.6,2024-03-14 11:14:28,SmartPhones,Electronics,18-24,male,usa
-65f2dc163403876ff70d0047,samsung galaxy s24 plus 5g ai smartphone (onyx black 12gb 256gb storage),samsung,77864601,4.6,2024-03-14 11:14:29,SmartPhones,Electronics,18-24,male,usa
-65f2dcdf3403876ff70ec02c,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.5,2024-03-14 11:17:50,SmartPhones,Electronics,18-24,male,usa
-65f2dce13403876ff70ec62d,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,77864601,4.2,2024-03-14 11:17:52,SmartPhones,Electronics,18-24,male,usa
-65f2dce43403876ff70ecda8,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,77864601,4.2,2024-03-14 11:17:55,SmartPhones,Electronics,18-24,male,usa
-65f2dce43403876ff70ecdf1,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 256gb storage),samsung,77864601,4.2,2024-03-14 11:17:55,SmartPhones,Electronics,18-24,male,usa
-65f2dce63403876ff70ed131,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,77864601,3.5,2024-03-14 11:17:57,SmartPhones,Electronics,18-24,male,usa
-65f2dce73403876ff70ed535,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 256gb storage),samsung,77864601,4.2,2024-03-14 11:17:58,SmartPhones,Electronics,18-24,male,usa
-65f2dcea3403876ff70edf9a,samsung galaxy s24 ultra 5g ai smartphone (titanium violet 12gb 512gb storage),samsung,77864601,4.2,2024-03-14 11:18:01,SmartPhones,Electronics,18-24,male,usa
-65f2dceb3403876ff70ee07b,samsung galaxy s24 5g ai smartphone (onyx black 8gb 512gb storage),samsung,77864601,3.5,2024-03-14 11:18:01,SmartPhones,Electronics,18-24,male,usa
-65f2dced3403876ff70ee9fe,galaxy s24 ultra 5g (titanium black 12gb 512gb storage),galaxy,77864601,3.0,2024-03-14 11:18:04,SmartPhones,Electronics,18-24,male,usa
-65f2dced3403876ff70eea25,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 1tb storage),samsung,77864601,4.2,2024-03-14 11:18:04,SmartPhones,Electronics,18-24,male,usa
-65f2dcef3403876ff70eefca,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 512gb storage),samsung,77864601,3.5,2024-03-14 11:18:06,SmartPhones,Electronics,18-24,male,usa
-65f2dcf13403876ff70efe02,samsung galaxy s24 plus 5g ai smartphone (onyx black 12gb 256gb storage),samsung,77864601,4.6,2024-03-14 11:18:08,SmartPhones,Electronics,18-24,male,usa
-65f2dcf23403876ff70f02e3,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 512gb storage),samsung,77864601,3.5,2024-03-14 11:18:09,SmartPhones,Electronics,18-24,male,usa
-65f2dcf33403876ff70f039b,samsung galaxy s24 plus 5g ai smartphone (cobalt violet 12gb 256gb storage),samsung,77864601,4.6,2024-03-14 11:18:10,SmartPhones,Electronics,18-24,male,usa
-65f2dd863403876ff7108d4a,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.5,2024-03-14 11:20:37,SmartPhones,Electronics,18-24,male,usa
-65f2dd873403876ff7109014,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.5,2024-03-14 11:20:38,SmartPhones,Electronics,18-24,male,usa
-65f2dd883403876ff710927d,galaxy s24 ultra 5g (titanium black 12gb 512gb storage),galaxy,77864601,3.0,2024-03-14 11:20:39,SmartPhones,Electronics,18-24,male,usa
-65f2dd893403876ff71094ee,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 1tb storage),samsung,77864601,4.2,2024-03-14 11:20:40,SmartPhones,Electronics,18-24,male,usa
-65f2dd8c3403876ff7109b5e,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,77864601,4.2,2024-03-14 11:20:43,SmartPhones,Electronics,18-24,male,usa
-65f2dd8c3403876ff7109c2b,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 512gb storage),samsung,77864601,3.5,2024-03-14 11:20:43,SmartPhones,Electronics,18-24,male,usa
-65f2dd903403876ff710a60f,samsung galaxy s24 5g ai smartphone (onyx black 8gb 512gb storage),samsung,77864601,3.5,2024-03-14 11:20:48,SmartPhones,Electronics,18-24,male,usa
-65f2dd913403876ff710a66c,samsung galaxy s24 plus 5g ai smartphone (cobalt violet 12gb 256gb storage),samsung,77864601,4.6,2024-03-14 11:20:48,SmartPhones,Electronics,18-24,male,usa
-65f2dd913403876ff710a671,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 256gb storage),samsung,77864601,4.2,2024-03-14 11:20:48,SmartPhones,Electronics,18-24,male,usa
-65f2dd923403876ff710aa7d,samsung galaxy s24 ultra 5g ai smartphone (titanium violet 12gb 512gb storage),samsung,77864601,4.2,2024-03-14 11:20:49,SmartPhones,Electronics,18-24,male,usa
-65f2dd943403876ff710ae3a,samsung galaxy s24 plus 5g ai smartphone (onyx black 12gb 256gb storage),samsung,77864601,4.6,2024-03-14 11:20:51,SmartPhones,Electronics,18-24,male,usa
-65f2dd953403876ff710b06c,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,77864601,4.2,2024-03-14 11:20:52,SmartPhones,Electronics,18-24,male,usa
-65f2dd973403876ff710b5e0,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,77864601,3.5,2024-03-14 11:20:53,SmartPhones,Electronics,18-24,male,usa
-65f2dd983403876ff710b809,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 512gb storage),samsung,77864601,3.5,2024-03-14 11:20:55,SmartPhones,Electronics,18-24,male,usa
-65f3e3c03403876ff7a5daae,motorola g34 5g (charcoal black 8gb ram 128gb storage),motorola,77864601,4.1,2024-03-15 05:59:27,SmartPhones,Electronics,18-24,male,usa
-65f3e3c13403876ff7a5e027,motorola g34 5g (ocean green 8gb ram 128gb storage),motorola,77864601,4.1,2024-03-15 05:59:28,SmartPhones,Electronics,18-24,male,usa
-65f3e3c33403876ff7a5e6f6,motorola g04 4g (satin blue 4gb ram 64gb storage)  up to 8gb with ram boost  6.6 punch hole display  16mp rear camera  5mp front camera  ip 52 water-repellent design  5000 mah android 14,motorola,77864601,4.0,2024-03-15 05:59:30,SmartPhones,Electronics,18-24,male,usa
-65f3e3c53403876ff7a5ecad,motorola g24 power (glacier blue 8gb ram 128gb storage),motorola,77864601,3.9,2024-03-15 05:59:32,SmartPhones,Electronics,18-24,male,usa
-65f3e3c73403876ff7a5f215,motorola moto g32  8gb 128gb  mineral grey,motorola,77864601,4.0,2024-03-15 05:59:34,SmartPhones,Electronics,18-24,male,usa
-65f3e3c93403876ff7a5f834,motorola g24 power 4/128 (glacier blue),motorola,77864601,3.9,2024-03-15 05:59:36,SmartPhones,Electronics,18-24,male,usa
-65f3e3c93403876ff7a5fa6b,motorola g04 4g (satin blue 8gb ram 128gb storage),motorola,77864601,4.0,2024-03-15 05:59:36,SmartPhones,Electronics,18-24,male,usa
-65f3e63a3403876ff7ad0a9b,samsung galaxy s23 fe 5g (mint 128 gb storage) (8 gb ram),samsung,77864601,3.7,2024-03-15 06:10:01,SmartPhones,Electronics,18-24,male,usa
-65f3e63b3403876ff7ad0ee0,samsung galaxy s23 5g (phantom black 8gb 256gb storage),samsung,77864601,4.5,2024-03-15 06:10:02,SmartPhones,Electronics,18-24,male,usa
-65f3e63d3403876ff7ad13a2,samsung galaxy s23 5g (cream 8gb ram 256gb storage),samsung,77864601,4.2,2024-03-15 06:10:04,SmartPhones,Electronics,18-24,male,usa
-65f3e6423403876ff7ad2577,samsung galaxy s23 5g smartphone 256 gb 15.5 cm (6.1 inch) phantom black,samsung,77864601,4.3,2024-03-15 06:10:09,SmartPhones,Electronics,18-24,male,usa
-65f3e6423403876ff7ad25a6,samsung galaxy s23 fe 5g (purple 128 gb storage) (8 gb ram),samsung,77864601,3.7,2024-03-15 06:10:09,SmartPhones,Electronics,18-24,male,usa
-65f3e6423403876ff7ad25ec,samsung galaxy s23 fe 5g (purple 256 gb storage) (8 gb ram),samsung,77864601,3.7,2024-03-15 06:10:09,SmartPhones,Electronics,18-24,male,usa
-65f3e6473403876ff7ad36b9,samsung galaxy s23 5g (lavender 8gb 128gb storage),samsung,77864601,4.1,2024-03-15 06:10:14,SmartPhones,Electronics,18-24,male,usa
-65f3e6493403876ff7ad3daa,samsung galaxy s23 fe 5g (graphite 128 gb storage) (8 gb ram),samsung,77864601,3.7,2024-03-15 06:10:16,SmartPhones,Electronics,18-24,male,usa
-65f3e6493403876ff7ad3e2b,samsung galaxy s23 ultra 5g (green 12gb 256gb storage),samsung,77864601,4.3,2024-03-15 06:10:16,SmartPhones,Electronics,18-24,male,usa
-65f3e64b3403876ff7ad4600,samsung galaxy s23 fe 5g (mint 256 gb storage) (8 gb ram),samsung,77864601,3.7,2024-03-15 06:10:18,SmartPhones,Electronics,18-24,male,usa
-65f3e64d3403876ff7ad4a33,samsung galaxy s23 5g (green 8gb 128gb storage),samsung,77864601,4.4,2024-03-15 06:10:20,SmartPhones,Electronics,18-24,male,usa
-65f3e64f3403876ff7ad521a,samsung galaxy s23 5g (green 8gb 256gb storage),samsung,77864601,4.4,2024-03-15 06:10:22,SmartPhones,Electronics,18-24,male,usa
-65f3e6513403876ff7ad5795,samsung galaxy s23 5g (cream 8gb 128gb storage),samsung,77864601,4.5,2024-03-15 06:10:24,SmartPhones,Electronics,18-24,male,usa
-65f3e6533403876ff7ad5c8e,samsung galaxy s23 5g (green 8gb ram 256gb storage),samsung,77864601,4.1,2024-03-15 06:10:26,SmartPhones,Electronics,18-24,male,usa
-65f3e6543403876ff7ad5f8c,samsung galaxy s23 5g (phantom black 8gb 128gb storage),samsung,77864601,4.5,2024-03-15 06:10:26,SmartPhones,Electronics,18-24,male,usa
-65f3e6573403876ff7ad6c75,samsung galaxy s23 fe 5g (mint 8gb 128gb storage),samsung,77864601,3.9,2024-03-15 06:10:30,SmartPhones,Electronics,18-24,male,usa
-65f3e9643403876ff7b6c5e7,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.6,2024-03-15 06:23:31,SmartPhones,Electronics,18-24,male,usa
-65f3e9683403876ff7b6cd30,oneplus 12 (flowy emerald 16gb ram 512gb storage),oneplus,77864601,4.5,2024-03-15 06:23:35,SmartPhones,Electronics,18-24,male,usa
-65f3e9693403876ff7b6cf2b,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,77864601,3.6,2024-03-15 06:23:36,SmartPhones,Electronics,18-24,male,usa
-65f3e96b3403876ff7b6d5a0,nillkin for samsung galaxy s24 ultra case with camera cover [non slip & anti-fingerprint] [drop protection] slim thin protective phone case for samsung s24 ultra 6.8 inch black,nillkin,77864601,4.6,2024-03-15 06:23:38,SmartPhones,Electronics,18-24,male,usa
-65f3e9703403876ff7b6e0ff,oppo f25 pro 5g (lava red 8gb ram 128gb storage) with no cost emi/additional exchange offers,oppo,77864601,3.6,2024-03-15 06:23:43,SmartPhones,Electronics,18-24,male,usa
-65f3e9733403876ff7b6e800,nillkin galaxy s24 ultra magnetic case with kickstandcamshield prop s24 ultra 5g case with camera cover compatible with magsafe 6.8 inch (blue),nillkin,77864601,4.4,2024-03-15 06:23:46,SmartPhones,Electronics,18-24,male,usa
-65f3e9733403876ff7b6e942,samsung galaxy s23 ultra 5g (phantom black 12gb 256gb storage),samsung,77864601,4.2,2024-03-15 06:23:46,SmartPhones,Electronics,18-24,male,usa
-65f3e9793403876ff7b6f5af,redmi 13c 5g (starlight black 4gb ram 128gb storage)  mediatek dimensity 6100+ 5g  90hz display,redmi,77864601,4.0,2024-03-15 06:23:52,SmartPhones,Electronics,18-24,male,usa
-65f3e97c3403876ff7b6ff12,redmi 12 5g moonstone silver 6gb ram 128gb rom,redmi,77864601,4.0,2024-03-15 06:23:55,SmartPhones,Electronics,18-24,male,usa
-65f3e97d3403876ff7b6ff49,samsung galaxy s23 fe 5g (purple 256 gb storage) (8 gb ram),samsung,77864601,3.7,2024-03-15 06:23:56,SmartPhones,Electronics,18-24,male,usa
-65f3e97f3403876ff7b70700,samsung galaxy m14 5g (icy silver6gb128gb)50mp triple camsegment's only 6000 mah 5g sp5nm processor2 gen. os upgrade & 4 year security update12gb ram with ram plusandroid 13without charger,samsung,77864601,4.0,2024-03-15 06:23:58,SmartPhones,Electronics,18-24,male,usa
-65f3eb193403876ff7bb72e5,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.6,2024-03-15 06:30:48,SmartPhones,Electronics,18-24,male,usa
-65f3eb1b3403876ff7bb7f45,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,77864601,4.2,2024-03-15 06:30:50,SmartPhones,Electronics,18-24,male,usa
-65f3eb1d3403876ff7bb8a59,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 256gb storage),samsung,77864601,4.2,2024-03-15 06:30:52,SmartPhones,Electronics,18-24,male,usa
-65f3eb1f3403876ff7bb8ea6,samsung galaxy s24 ultra 5g ai smartphone (titanium violet 12gb 512gb storage),samsung,77864601,4.2,2024-03-15 06:30:54,SmartPhones,Electronics,18-24,male,usa
-65f3eb213403876ff7bb9335,samsung galaxy s24 5g ai smartphone (onyx black 8gb 512gb storage),samsung,77864601,3.6,2024-03-15 06:30:56,SmartPhones,Electronics,18-24,male,usa
-65f3eb223403876ff7bb9975,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 512gb storage),samsung,77864601,3.6,2024-03-15 06:30:57,SmartPhones,Electronics,18-24,male,usa
-65f3eb243403876ff7bb9d5c,samsung galaxy s24 plus 5g ai smartphone (cobalt violet 12gb 256gb storage),samsung,77864601,4.6,2024-03-15 06:30:59,SmartPhones,Electronics,18-24,male,usa
-65f3eb263403876ff7bba184,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 512gb storage),samsung,77864601,3.6,2024-03-15 06:31:01,SmartPhones,Electronics,18-24,male,usa
-65f3eb273403876ff7bba2e4,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.6,2024-03-15 06:31:02,SmartPhones,Electronics,18-24,male,usa
-65f3eb7c3403876ff7bc6cbc,samsung s24+ 5g 512 gb 12 gb ram cobalt violet mobile phone,samsung,77864601,0.0,2024-03-17 07:08:46,SmartPhones,Electronics,18-24,male,usa
-65f3ee1e3403876ff7c2cf14,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,77864601,3.6,2024-03-15 06:43:41,SmartPhones,Electronics,18-24,male,usa
-65f3ee1f3403876ff7c2cfc0,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,77864601,4.2,2024-03-15 06:43:41,SmartPhones,Electronics,18-24,male,usa
-65f3ee203403876ff7c2d330,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,77864601,4.2,2024-03-15 06:43:43,SmartPhones,Electronics,18-24,male,usa
-65f3ee223403876ff7c2d6f4,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.6,2024-03-15 06:43:45,SmartPhones,Electronics,18-24,male,usa
-65f3ee243403876ff7c2da15,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 256gb storage),samsung,77864601,4.2,2024-03-15 06:43:47,SmartPhones,Electronics,18-24,male,usa
-65f3ee263403876ff7c2dd8a,samsung galaxy s24 plus 5g ai smartphone (cobalt violet 12gb 256gb storage),samsung,77864601,4.6,2024-03-15 06:43:49,SmartPhones,Electronics,18-24,male,usa
-65f3ee283403876ff7c2e104,galaxy s24 ultra 5g (titanium black 12gb 512gb storage),galaxy,77864601,3.0,2024-03-15 06:43:51,SmartPhones,Electronics,18-24,male,usa
-65f3ee293403876ff7c2e4ca,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 1tb storage),samsung,77864601,4.2,2024-03-15 06:43:52,SmartPhones,Electronics,18-24,male,usa
-65f3ee2b3403876ff7c2e8ea,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.6,2024-03-15 06:43:54,SmartPhones,Electronics,18-24,male,usa
-65f3ee2d3403876ff7c2ec95,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 256gb storage),samsung,77864601,4.2,2024-03-15 06:43:56,SmartPhones,Electronics,18-24,male,usa
-65f3ee2e3403876ff7c2ee64,samsung galaxy s24 5g ai smartphone (onyx black 8gb 512gb storage),samsung,77864601,3.6,2024-03-15 06:43:57,SmartPhones,Electronics,18-24,male,usa
-65f3eeaf3403876ff7c45442,samsung s24 ultra 5g 256 gb 12 gb ram titanium violet mobile phone,samsung,77864601,0.0,2024-03-17 07:12:46,SmartPhones,Electronics,18-24,male,usa
-65f3f1553403876ff7caeafa,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.6,2024-03-15 06:57:24,SmartPhones,Electronics,18-24,male,usa
-65f3f1583403876ff7caf39d,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.6,2024-03-15 06:57:27,SmartPhones,Electronics,18-24,male,usa
-65f3f1593403876ff7caf7f2,samsung galaxy s24 5g ai smartphone (onyx black 8gb 512gb storage),samsung,77864601,3.6,2024-03-15 06:57:28,SmartPhones,Electronics,18-24,male,usa
-65f3f15b3403876ff7cafbfa,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 512gb storage),samsung,77864601,3.6,2024-03-15 06:57:30,SmartPhones,Electronics,18-24,male,usa
-65f3f15c3403876ff7caff60,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,77864601,4.2,2024-03-15 06:57:31,SmartPhones,Electronics,18-24,male,usa
-65f3f15e3403876ff7cb0408,samsung galaxy s24 ultra 5g ai smartphone (titanium violet 12gb 512gb storage),samsung,77864601,4.2,2024-03-15 06:57:33,SmartPhones,Electronics,18-24,male,usa
-65f3f1603403876ff7cb0a01,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 1tb storage),samsung,77864601,4.2,2024-03-15 06:57:35,SmartPhones,Electronics,18-24,male,usa
-65f3f1613403876ff7cb0a3c,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 256gb storage),samsung,77864601,4.2,2024-03-15 06:57:35,SmartPhones,Electronics,18-24,male,usa
-65f3f1653403876ff7cb16c3,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 512gb storage),samsung,77864601,3.6,2024-03-15 06:57:38,SmartPhones,Electronics,18-24,male,usa
-65f3f1683403876ff7cb1ea1,samsung galaxy s24 plus 5g ai smartphone (onyx black 12gb 512gb storage),samsung,77864601,4.6,2024-03-15 06:57:40,SmartPhones,Electronics,18-24,male,usa
-65f3f1ce3403876ff7cc0483,samsung s24 ultra 5g  256 gb 12 gb ram titanium black mobile phone,samsung,77864601,0.0,2024-03-17 06:08:09,SmartPhones,Electronics,18-24,male,usa
-65f4614a3403876ff7062759,motorola g34 5g (ocean green 8gb ram 128gb storage),motorola,77864601,3.9,2024-03-15 14:55:04,SmartPhones,Electronics,18-24,male,usa
-65f461573403876ff70648d2,motorola g24 power (glacier blue 8gb ram 128gb storage),motorola,77864601,3.9,2024-03-15 14:55:17,SmartPhones,Electronics,18-24,male,usa
-65f461623403876ff70662d0,motorola g34 5g (charcoal black 8gb ram 128gb storage),motorola,77864601,3.9,2024-03-15 14:55:27,SmartPhones,Electronics,18-24,male,usa
-65f4616b3403876ff7067e19,motorola g34 5g (ice blue 4gb ram 128gb storage),motorola,77864601,3.9,2024-03-15 14:55:37,SmartPhones,Electronics,18-24,male,usa
-65f461783403876ff706a043,motorola g24 power (ink blue 8gb ram 128gb storage)  expandable upto 1 tb  up to 8gb with ram boost  50 mp quad pixel camera  mediatek helio g85  6000 mah battery & 33 w turbopower charger,motorola,77864601,3.9,2024-03-15 14:55:50,SmartPhones,Electronics,18-24,male,usa
-65f461843403876ff706c138,motorola g24 power 4/128 (glacier blue),motorola,77864601,3.9,2024-03-15 14:56:02,SmartPhones,Electronics,18-24,male,usa
-65f4628d3403876ff7095eb6,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.6,2024-03-15 15:00:27,SmartPhones,Electronics,18-24,male,usa
-65f462903403876ff7096611,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,77864601,4.2,2024-03-15 15:00:29,SmartPhones,Electronics,18-24,male,usa
-65f462913403876ff70967e4,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,77864601,4.2,2024-03-15 15:00:31,SmartPhones,Electronics,18-24,male,usa
-65f462933403876ff7096d42,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,77864601,3.6,2024-03-15 15:00:32,SmartPhones,Electronics,18-24,male,usa
-65f462953403876ff7097334,samsung galaxy s24 plus 5g ai smartphone (cobalt violet 12gb 256gb storage),samsung,77864601,4.6,2024-03-15 15:00:35,SmartPhones,Electronics,18-24,male,usa
-65f462983403876ff7097a87,samsung galaxy s24 5g ai smartphone (onyx black 8gb 512gb storage),samsung,77864601,3.6,2024-03-15 15:00:38,SmartPhones,Electronics,18-24,male,usa
-65f4629a3403876ff7098194,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 256gb storage),samsung,77864601,4.2,2024-03-15 15:00:40,SmartPhones,Electronics,18-24,male,usa
-65f4629c3403876ff709865e,samsung galaxy s24 ultra 5g ai smartphone (titanium violet 12gb 512gb storage),samsung,77864601,4.2,2024-03-15 15:00:42,SmartPhones,Electronics,18-24,male,usa
-65f4629f3403876ff7098cb0,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.6,2024-03-15 15:00:45,SmartPhones,Electronics,18-24,male,usa
-65f462a13403876ff7099320,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 256gb storage),samsung,77864601,4.2,2024-03-15 15:00:47,SmartPhones,Electronics,18-24,male,usa
-65f462a33403876ff709986b,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 512gb storage),samsung,77864601,3.6,2024-03-15 15:00:49,SmartPhones,Electronics,18-24,male,usa
-65f462a63403876ff7099db0,samsung galaxy s24 plus 5g ai smartphone (onyx black 12gb 512gb storage),samsung,77864601,4.6,2024-03-15 15:00:51,SmartPhones,Electronics,18-24,male,usa
-65f462a73403876ff709a27e,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 512gb storage),samsung,77864601,3.6,2024-03-15 15:00:53,SmartPhones,Electronics,18-24,male,usa
-65f462a83403876ff709a30e,samsung galaxy s23 ultra 5g (cream 12gb 256gb storage),samsung,77864601,4.5,2024-03-15 15:00:54,SmartPhones,Electronics,18-24,male,usa
-65f464dd3403876ff70f4fac,motorola g34 5g (ocean green 8gb ram 128gb storage),motorola,77864601,3.9,2024-03-15 15:10:19,SmartPhones,Electronics,18-24,male,usa
-65f464e93403876ff70f6cad,motorola g34 5g (charcoal black 8gb ram 128gb storage),motorola,77864601,3.9,2024-03-15 15:10:31,SmartPhones,Electronics,18-24,male,usa
-65f464f23403876ff70f820c,motorola g04 4g (satin blue 4gb ram 64gb storage)  up to 8gb with ram boost  6.6 punch hole display  16mp rear camera  5mp front camera  ip 52 water-repellent design  5000 mah android 14,motorola,77864601,4.0,2024-03-15 15:10:40,SmartPhones,Electronics,18-24,male,usa
-65f464fc3403876ff70fa89e,motorola g24 power (glacier blue 8gb ram 128gb storage),motorola,77864601,3.9,2024-03-15 15:10:50,SmartPhones,Electronics,18-24,male,usa
-65f465053403876ff70fc700,motorola g34 5g (ice blue 4gb ram 128gb storage),motorola,77864601,3.9,2024-03-15 15:10:58,SmartPhones,Electronics,18-24,male,usa
-65f4650f3403876ff70fe242,motorola g24 power 4/128 (glacier blue),motorola,77864601,3.9,2024-03-15 15:11:09,SmartPhones,Electronics,18-24,male,usa
-65f4662d3403876ff712b2ed,apple iphone 15 (128 gb) - black,apple,77864601,4.5,2024-03-15 15:15:55,SmartPhones,Electronics,18-24,male,usa
-65f466343403876ff712c425,apple iphone 15 (128 gb) - blue,apple,77864601,4.5,2024-03-15 15:16:02,SmartPhones,Electronics,18-24,male,usa
-65f4663d3403876ff712ddc0,apple iphone 15 (256 gb) - black,apple,77864601,4.5,2024-03-15 15:16:11,SmartPhones,Electronics,18-24,male,usa
-65f466473403876ff712f6fb,apple iphone 15 (256 gb) - blue,apple,77864601,4.5,2024-03-15 15:16:21,SmartPhones,Electronics,18-24,male,usa
-65f466523403876ff7131297,apple iphone 15 (128 gb) - pink,apple,77864601,4.5,2024-03-15 15:16:32,SmartPhones,Electronics,18-24,male,usa
-65f4665a3403876ff713287c,apple iphone 15 (128 gb) - green,apple,77864601,4.5,2024-03-15 15:16:40,SmartPhones,Electronics,18-24,male,usa
-65f466e43403876ff7146976,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.6,2024-03-15 15:18:58,SmartPhones,Electronics,18-24,male,usa
-65f466ee3403876ff71480c5,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.6,2024-03-15 15:19:08,SmartPhones,Electronics,18-24,male,usa
-65f466fb3403876ff7149e7d,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,77864601,3.6,2024-03-15 15:19:21,SmartPhones,Electronics,18-24,male,usa
-65f467023403876ff714afcc,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,77864601,4.2,2024-03-15 15:19:28,SmartPhones,Electronics,18-24,male,usa
-65f467163403876ff714dc0e,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,77864601,4.2,2024-03-15 15:19:48,SmartPhones,Electronics,18-24,male,usa
-65f4671f3403876ff714f8a0,samsung galaxy s24 5g ai smartphone (onyx black 8gb 512gb storage),samsung,77864601,3.6,2024-03-15 15:19:57,SmartPhones,Electronics,18-24,male,usa
-65f468013403876ff7176ab7,apple iphone 15 (128 gb) - black,apple,77864601,4.5,2024-03-15 15:23:43,SmartPhones,Electronics,18-24,male,usa
-65f468083403876ff7177fd3,apple iphone 15 (128 gb) - blue,apple,77864601,4.5,2024-03-15 15:23:50,SmartPhones,Electronics,18-24,male,usa
-65f468183403876ff717b074,apple iphone 15 (128 gb) - pink,apple,77864601,4.5,2024-03-15 15:24:06,SmartPhones,Electronics,18-24,male,usa
-65f468203403876ff717c7f8,apple iphone 15 (256 gb) - black,apple,77864601,4.5,2024-03-15 15:24:14,SmartPhones,Electronics,18-24,male,usa
-65f468283403876ff717dd7b,apple iphone 15 (128 gb) - green,apple,77864601,4.5,2024-03-15 15:24:21,SmartPhones,Electronics,18-24,male,usa
-65f4682e3403876ff717ef67,apple iphone 15 (256 gb) - blue,apple,77864601,4.5,2024-03-15 15:24:27,SmartPhones,Electronics,18-24,male,usa
-65f46a943403876ff71f4e30,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.6,2024-03-15 15:34:42,SmartPhones,Electronics,18-24,male,usa
-65f46a9c3403876ff71f66a0,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.6,2024-03-15 15:34:50,SmartPhones,Electronics,18-24,male,usa
-65f46aa53403876ff71f8495,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,77864601,4.2,2024-03-15 15:34:59,SmartPhones,Electronics,18-24,male,usa
-65f46ab33403876ff71fb0d7,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,77864601,4.2,2024-03-15 15:35:13,SmartPhones,Electronics,18-24,male,usa
-65f46abe3403876ff71fcf80,samsung galaxy s24 5g ai smartphone (onyx black 8gb 512gb storage),samsung,77864601,3.6,2024-03-15 15:35:23,SmartPhones,Electronics,18-24,male,usa
-65f46b153403876ff720d735,samsung s24+ 5g 512 gb 12gb ram onyx black mobile phone,samsung,77864601,0.0,2024-03-17 15:15:39,SmartPhones,Electronics,18-24,male,usa
-65f52cc7a11701f44cb0a99c,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.6,2024-03-16 05:23:18,SmartPhones,Electronics,18-24,male,usa
-65f52ccba11701f44cb0b707,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.6,2024-03-16 05:23:22,SmartPhones,Electronics,18-24,male,usa
-65f52ccfa11701f44cb0c85e,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,77864601,3.6,2024-03-16 05:23:26,SmartPhones,Electronics,18-24,male,usa
-65f52cd3a11701f44cb0d329,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,77864601,4.2,2024-03-16 05:23:30,SmartPhones,Electronics,18-24,male,usa
-65f52cd7a11701f44cb0e00b,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,77864601,4.2,2024-03-16 05:23:34,SmartPhones,Electronics,18-24,male,usa
-65f52cdba11701f44cb0eabe,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 256gb storage),samsung,77864601,4.2,2024-03-16 05:23:38,SmartPhones,Electronics,18-24,male,usa
-65f52f0da11701f44cb595c6,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.6,2024-03-16 05:33:00,SmartPhones,Electronics,18-24,male,usa
-65f52f11a11701f44cb59e4a,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.6,2024-03-16 05:33:04,SmartPhones,Electronics,18-24,male,usa
-65f52f15a11701f44cb5a481,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,77864601,3.6,2024-03-16 05:33:08,SmartPhones,Electronics,18-24,male,usa
-65f52f19a11701f44cb5ac01,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,77864601,4.2,2024-03-16 05:33:12,SmartPhones,Electronics,18-24,male,usa
-65f52f1ca11701f44cb5b248,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,77864601,4.2,2024-03-16 05:33:15,SmartPhones,Electronics,18-24,male,usa
-65f52f20a11701f44cb5b7c1,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 256gb storage),samsung,77864601,4.2,2024-03-16 05:33:19,SmartPhones,Electronics,18-24,male,usa
-65f52fffa11701f44cb74311,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.6,2024-03-16 05:37:02,SmartPhones,Electronics,18-24,male,usa
-65f53003a11701f44cb74b11,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.6,2024-03-16 05:37:06,SmartPhones,Electronics,18-24,male,usa
-65f53007a11701f44cb752a6,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,77864601,3.6,2024-03-16 05:37:10,SmartPhones,Electronics,18-24,male,usa
-65f5300ba11701f44cb75ad8,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,77864601,4.2,2024-03-16 05:37:14,SmartPhones,Electronics,18-24,male,usa
-65f5300fa11701f44cb76080,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,77864601,4.2,2024-03-16 05:37:18,SmartPhones,Electronics,18-24,male,usa
-65f53013a11701f44cb76722,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 256gb storage),samsung,77864601,4.2,2024-03-16 05:37:22,SmartPhones,Electronics,18-24,male,usa
-65f5325da11701f44cbd24c2,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.6,2024-03-16 05:47:08,SmartPhones,Electronics,18-24,male,usa
-65f53262a11701f44cbd3390,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.6,2024-03-16 05:47:13,SmartPhones,Electronics,18-24,male,usa
-65f53266a11701f44cbd3e5f,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,77864601,3.6,2024-03-16 05:47:17,SmartPhones,Electronics,18-24,male,usa
-65f5326aa11701f44cbd480d,galaxy s24 ultra 5g (titanium black 12gb 512gb storage),galaxy,77864601,3.0,2024-03-16 05:47:21,SmartPhones,Electronics,18-24,male,usa
-65f5326ea11701f44cbd5449,nillkin galaxy s24 ultra case camshield pro for samsung galaxy s24 ultra case with slide camera cover s24 ultra 5g slim phone case 2024 6.8'' (black),nillkin,77864601,4.7,2024-03-16 05:47:25,SmartPhones,Electronics,18-24,male,usa
-65f53273a11701f44cbd68a8,nillkin for samsung galaxy s24 ultra magnetic case carbon fiber with camera cover metal kickstand compatible with magsafe for samsung s24 ultra 5g 6.8'',nillkin,77864601,2.9,2024-03-16 05:47:30,SmartPhones,Electronics,18-24,male,usa
-65f6736fa11701f44cade823,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 04:37:00,SmartPhones,Electronics,18-24,male,usa
-65f67373a11701f44cadf5c7,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 04:37:05,SmartPhones,Electronics,18-24,male,usa
-65f67378a11701f44cae01c7,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 04:37:10,SmartPhones,Electronics,18-24,male,usa
-65f6737da11701f44cae0f28,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,77864601,4.3,2024-03-17 04:37:14,SmartPhones,Electronics,18-24,male,usa
-65f67381a11701f44cae1cb4,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,77864601,4.3,2024-03-17 04:37:19,SmartPhones,Electronics,18-24,male,usa
-65f67386a11701f44cae2b42,samsung galaxy s24 ultra 5g ai smartphone (titanium violet 12gb 256gb storage),samsung,77864601,4.3,2024-03-17 04:37:24,SmartPhones,Electronics,18-24,male,usa
-65f6747ea11701f44cb0f682,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 04:41:31,SmartPhones,Electronics,18-24,male,usa
-65f67482a11701f44cb1025e,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,77864601,4.3,2024-03-17 04:41:36,SmartPhones,Electronics,18-24,male,usa
-65f67486a11701f44cb10f42,samsung galaxy s24 5g ai smartphone (onyx black 8gb 512gb storage),samsung,77864601,3.6,2024-03-17 04:41:40,SmartPhones,Electronics,18-24,male,usa
-65f6748ba11701f44cb11b1d,samsung galaxy s24 plus 5g ai smartphone (onyx black 12gb 256gb storage),samsung,77864601,4.0,2024-03-17 04:41:44,SmartPhones,Electronics,18-24,male,usa
-65f676f2a11701f44cb655d7,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 04:51:59,SmartPhones,Electronics,18-24,male,usa
-65f676f7a11701f44cb66203,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 04:52:05,SmartPhones,Electronics,18-24,male,usa
-65f676fca11701f44cb66a0d,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 04:52:09,SmartPhones,Electronics,18-24,male,usa
-65f67700a11701f44cb6737f,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 256gb storage),samsung,77864601,4.3,2024-03-17 04:52:14,SmartPhones,Electronics,18-24,male,usa
-65f67705a11701f44cb67bcc,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,77864601,4.3,2024-03-17 04:52:19,SmartPhones,Electronics,18-24,male,usa
-65f67709a11701f44cb68441,samsung galaxy s24 ultra 5g ai smartphone (titanium violet 12gb 256gb storage),samsung,77864601,4.3,2024-03-17 04:52:23,SmartPhones,Electronics,18-24,male,usa
-65f677f0a11701f44cb81adf,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 04:56:13,SmartPhones,Electronics,18-24,male,usa
-65f677f4a11701f44cb82201,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 04:56:18,SmartPhones,Electronics,18-24,male,usa
-65f677f8a11701f44cb82b14,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 04:56:22,SmartPhones,Electronics,18-24,male,usa
-65f677fda11701f44cb83279,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,77864601,4.3,2024-03-17 04:56:26,SmartPhones,Electronics,18-24,male,usa
-65f67801a11701f44cb839d4,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,77864601,4.3,2024-03-17 04:56:31,SmartPhones,Electronics,18-24,male,usa
-65f67807a11701f44cb84256,samsung galaxy s24 ultra 5g ai smartphone (titanium violet 12gb 256gb storage),samsung,77864601,4.3,2024-03-17 04:56:36,SmartPhones,Electronics,18-24,male,usa
-65f6787ba11701f44cb90cd8,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 04:58:32,SmartPhones,Electronics,18-24,male,usa
-65f6787fa11701f44cb913e8,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 04:58:37,SmartPhones,Electronics,18-24,male,usa
-65f67884a11701f44cb91bd1,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 04:58:42,SmartPhones,Electronics,18-24,male,usa
-65f67888a11701f44cb922f1,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,77864601,4.3,2024-03-17 04:58:46,SmartPhones,Electronics,18-24,male,usa
-65f6788da11701f44cb92aba,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,77864601,4.3,2024-03-17 04:58:51,SmartPhones,Electronics,18-24,male,usa
-65f67893a11701f44cb933b6,samsung galaxy s24 ultra 5g ai smartphone (titanium violet 12gb 256gb storage),samsung,77864601,4.3,2024-03-17 04:58:56,SmartPhones,Electronics,18-24,male,usa
-65f683bba11701f44cd025d6,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 05:46:33,SmartPhones,Electronics,18-24,male,usa
-65f683c3a11701f44cd034d8,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 05:46:40,SmartPhones,Electronics,18-24,male,usa
-65f683caa11701f44cd04257,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,77864601,4.3,2024-03-17 05:46:47,SmartPhones,Electronics,18-24,male,usa
-65f683d1a11701f44cd04ff4,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,77864601,4.3,2024-03-17 05:46:54,SmartPhones,Electronics,18-24,male,usa
-65f683d9a11701f44cd06160,samsung galaxy s24 ultra 5g ai smartphone (titanium violet 12gb 256gb storage),samsung,77864601,4.3,2024-03-17 05:47:03,SmartPhones,Electronics,18-24,male,usa
-65f683e1a11701f44cd071cf,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 256gb storage),samsung,77864601,4.3,2024-03-17 05:47:11,SmartPhones,Electronics,18-24,male,usa
-65f683e8a11701f44cd08050,samsung galaxy s24 ultra 5g ai smartphone (titanium violet 12gb 512gb storage),samsung,77864601,4.3,2024-03-17 05:47:17,SmartPhones,Electronics,18-24,male,usa
-65f683f1a11701f44cd092fc,samsung galaxy s24 5g ai smartphone (onyx black 8gb 512gb storage),samsung,77864601,3.6,2024-03-17 05:47:26,SmartPhones,Electronics,18-24,male,usa
-65f683f8a11701f44cd0a10b,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 256gb storage),samsung,77864601,4.3,2024-03-17 05:47:33,SmartPhones,Electronics,18-24,male,usa
-65f683ffa11701f44cd0af73,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 512gb storage),samsung,77864601,3.6,2024-03-17 05:47:40,SmartPhones,Electronics,18-24,male,usa
-65f68406a11701f44cd0bdcc,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 512gb storage),samsung,77864601,3.6,2024-03-17 05:47:47,SmartPhones,Electronics,18-24,male,usa
-65f68410a11701f44cd0db04,samsung galaxy s24 plus 5g ai smartphone (onyx black 12gb 256gb storage),samsung,77864601,4.0,2024-03-17 05:47:57,SmartPhones,Electronics,18-24,male,usa
-65f6857aa11701f44cd3e22d,samsung s24 ultra 5g 1 tb 12 gb ram titanium gray mobile phone,samsung,77864601,0.0,2024-03-17 07:11:33,SmartPhones,Electronics,18-24,male,usa
-65f68594a11701f44cd41d22,samsung s24 ultra  5g 256 gb 12 gb ram titanium gray mobile phone,samsung,77864601,0.0,2024-03-17 07:11:59,SmartPhones,Electronics,18-24,male,usa
-65f685aca11701f44cd450ce,samsung s24 ultra 5g  512 gb 12 gb ram titanium gray mobile phone,samsung,77864601,0.0,2024-03-17 07:12:21,SmartPhones,Electronics,18-24,male,usa
-65f685e7a11701f44cd4cc5b,samsung s24 ultra 5g 512 gb  12 gb ram titanium violet mobile phone,samsung,77864601,0.0,2024-03-17 07:13:16,SmartPhones,Electronics,18-24,male,usa
-65f6861ba11701f44cd53fd1,samsung s24 ultra 5g 512 gb 12 gb ram titanium black mobile phone,samsung,77864601,0.0,2024-03-17 07:14:11,SmartPhones,Electronics,18-24,male,usa
-65f68675a11701f44cd61e1b,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 05:58:11,SmartPhones,Electronics,18-24,male,usa
-65f6867ea11701f44cd62d81,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 05:58:20,SmartPhones,Electronics,18-24,male,usa
-65f6868ea11701f44cd64a78,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 05:58:36,SmartPhones,Electronics,18-24,male,usa
-65f68697a11701f44cd65890,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,77864601,4.3,2024-03-17 05:58:44,SmartPhones,Electronics,18-24,male,usa
-65f6869ea11701f44cd664a9,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,77864601,4.3,2024-03-17 05:58:51,SmartPhones,Electronics,18-24,male,usa
-65f686a4a11701f44cd6700c,samsung galaxy s24 ultra 5g ai smartphone (titanium violet 12gb 256gb storage),samsung,77864601,4.3,2024-03-17 05:58:57,SmartPhones,Electronics,18-24,male,usa
-65f686aba11701f44cd67cef,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 256gb storage),samsung,77864601,4.3,2024-03-17 05:59:04,SmartPhones,Electronics,18-24,male,usa
-65f686b2a11701f44cd6895f,samsung galaxy s24 ultra 5g ai smartphone (titanium violet 12gb 512gb storage),samsung,77864601,4.3,2024-03-17 05:59:11,SmartPhones,Electronics,18-24,male,usa
-65f686b9a11701f44cd6977f,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 1tb storage),samsung,77864601,4.3,2024-03-17 05:59:19,SmartPhones,Electronics,18-24,male,usa
-65f686c0a11701f44cd6a4a1,samsung galaxy s24 5g ai smartphone (onyx black 8gb 512gb storage),samsung,77864601,3.6,2024-03-17 05:59:26,SmartPhones,Electronics,18-24,male,usa
-65f686c6a11701f44cd6af47,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 256gb storage),samsung,77864601,4.3,2024-03-17 05:59:32,SmartPhones,Electronics,18-24,male,usa
-65f686cea11701f44cd6bd0b,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 512gb storage),samsung,77864601,3.6,2024-03-17 05:59:40,SmartPhones,Electronics,18-24,male,usa
-65f686d6a11701f44cd6cdb0,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 512gb storage),samsung,77864601,3.6,2024-03-17 05:59:48,SmartPhones,Electronics,18-24,male,usa
-65f686dea11701f44cd6dba9,galaxy s24 ultra 5g (titanium black 12gb 512gb storage),galaxy,77864601,3.0,2024-03-17 05:59:56,SmartPhones,Electronics,18-24,male,usa
-65f686e6a11701f44cd6eb99,samsung galaxy s24 plus 5g ai smartphone (onyx black 12gb 256gb storage),samsung,77864601,4.0,2024-03-17 06:00:03,SmartPhones,Electronics,18-24,male,usa
-65f694e1a11701f44cf59161,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 06:59:43,SmartPhones,Electronics,18-24,male,usa
-65f694e8a11701f44cf59e62,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 06:59:50,SmartPhones,Electronics,18-24,male,usa
-65f694eea11701f44cf5aa3f,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 06:59:56,SmartPhones,Electronics,18-24,male,usa
-65f694faa11701f44cf5c461,samsung galaxy s24 5g ai smartphone (onyx black 8gb 512gb storage),samsung,77864601,3.6,2024-03-17 07:00:08,SmartPhones,Electronics,18-24,male,usa
-65f694ffa11701f44cf5cdf3,samsung galaxy s24 plus 5g ai smartphone (onyx black 12gb 256gb storage),samsung,77864601,4.0,2024-03-17 07:00:13,SmartPhones,Electronics,18-24,male,usa
-65f69506a11701f44cf5de44,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 512gb storage),samsung,77864601,3.6,2024-03-17 07:00:20,SmartPhones,Electronics,18-24,male,usa
-65f6950ea11701f44cf5ef68,samsung galaxy s24 ultra 5g ai smartphone (titanium violet 12gb 512gb storage),samsung,77864601,4.3,2024-03-17 07:00:28,SmartPhones,Electronics,18-24,male,usa
-65f69513a11701f44cf5fa60,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 256gb storage),samsung,77864601,4.3,2024-03-17 07:00:33,SmartPhones,Electronics,18-24,male,usa
-65f6951aa11701f44cf60764,samsung galaxy s24 plus 5g ai smartphone (onyx black 12gb 512gb storage),samsung,77864601,4.0,2024-03-17 07:00:40,SmartPhones,Electronics,18-24,male,usa
-65f69520a11701f44cf610c4,samsung galaxy s24 plus 5g ai smartphone (cobalt violet 12gb 512gb storage),samsung,77864601,4.0,2024-03-17 07:00:46,SmartPhones,Electronics,18-24,male,usa
-65f69537a11701f44cf63ea5,samsung galaxy s24 ultra 5g (12gb ram 256gb titanium gray),samsung,77864601,2.0,2024-03-17 15:14:25,SmartPhones,Electronics,18-24,male,usa
-65f69540a11701f44cf65012,samsung galaxy s24 ultra 5g (12gb ram 256gb titanium black),samsung,77864601,2.0,2024-03-17 15:14:36,SmartPhones,Electronics,18-24,male,usa
-65f6954ba11701f44cf6676e,samsung galaxy s24 ultra 5g (12gb ram 512gb titanium yellow),samsung,77864601,2.0,2024-03-17 15:14:44,SmartPhones,Electronics,18-24,male,usa
-65f69553a11701f44cf677ea,samsung galaxy s24 5g (8gb ram 256gb marble gray),samsung,77864601,2.0,2024-03-17 15:14:51,SmartPhones,Electronics,18-24,male,usa
-65f6955ca11701f44cf6893c,samsung galaxy s24 ultra 5g (12gb ram 1tb titanium gray),samsung,77864601,2.0,2024-03-17 15:14:59,SmartPhones,Electronics,18-24,male,usa
-65f69568a11701f44cf6a14c,samsung galaxy s24 ultra 5g (12gb ram 256gb titanium violet),samsung,77864601,2.0,2024-03-17 15:15:06,SmartPhones,Electronics,18-24,male,usa
-65f69574a11701f44cf6babd,samsung galaxy s24 ultra 5g (12gb ram 256gb titanium yellow),samsung,77864601,2.0,2024-03-17 07:02:10,SmartPhones,Electronics,18-24,male,usa
-65f69580a11701f44cf6d1e2,samsung galaxy s24 ultra 5g (12gb ram 512gb titanium violet),samsung,77864601,2.0,2024-03-17 07:02:22,SmartPhones,Electronics,18-24,male,usa
-65f69590a11701f44cf6f025,samsung galaxy s24 5g (8gb ram 256gb onyx black),samsung,77864601,2.0,2024-03-17 07:02:38,SmartPhones,Electronics,18-24,male,usa
-65f695a0a11701f44cf70d92,samsung galaxy s24 ultra 5g (12gb ram 512gb titanium black),samsung,77864601,2.0,2024-03-17 07:02:54,SmartPhones,Electronics,18-24,male,usa
-65f695bea11701f44cf74cb9,samsung galaxy s24 ultra 5g (12gb ram 512gb titanium gray),samsung,77864601,2.0,2024-03-17 07:03:24,SmartPhones,Electronics,18-24,male,usa
-65f695c7a11701f44cf75d1c,samsung galaxy s24 5g (8gb ram 256gb amber yellow),samsung,77864601,2.0,2024-03-17 07:03:33,SmartPhones,Electronics,18-24,male,usa
-65f695e3a11701f44cf794d8,samsung galaxy s24 5g (8gb ram 512gb marble gray),samsung,77864601,2.0,2024-03-17 07:04:01,SmartPhones,Electronics,18-24,male,usa
-65f69602a11701f44cf7ecfb,samsung galaxy s24 plus 5g (12gb ram 256gb marble gray),samsung,77864601,2.0,2024-03-17 07:04:33,SmartPhones,Electronics,18-24,male,usa
-65f69616a11701f44cf823a5,samsung galaxy s24 plus 5g (12gb ram 256gb cobalt violet),samsung,77864601,2.0,2024-03-17 07:04:52,SmartPhones,Electronics,18-24,male,usa
-65f6962aa11701f44cf867d8,samsung galaxy s24 plus 5g (12gb ram 256gb onyx black),samsung,77864601,2.0,2024-03-17 07:05:12,SmartPhones,Electronics,18-24,male,usa
-65f69645a11701f44cf8c196,samsung galaxy s24 5g (8gb ram 256gb cobalt violet),samsung,77864601,2.0,2024-03-17 07:05:39,SmartPhones,Electronics,18-24,male,usa
-65f69662a11701f44cf91d40,samsung galaxy s24 plus 5g (12gb ram 256gb amber yellow),samsung,77864601,2.0,2024-03-17 07:06:07,SmartPhones,Electronics,18-24,male,usa
-65f69693a11701f44cf9bfb9,samsung galaxy s24 5g (8gb ram 512gb onyx black),samsung,77864601,2.0,2024-03-17 07:06:57,SmartPhones,Electronics,18-24,male,usa
-65f696a4a11701f44cf9fb1c,samsung galaxy s24 plus 5g (12gb ram 512gb onyx black),samsung,77864601,2.0,2024-03-17 07:07:14,SmartPhones,Electronics,18-24,male,usa
-65f698e1a11701f44cff358e,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 07:16:47,SmartPhones,Electronics,18-24,male,usa
-65f698e8a11701f44cff41ac,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 07:16:54,SmartPhones,Electronics,18-24,male,usa
-65f698f0a11701f44cff52f8,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 07:17:02,SmartPhones,Electronics,18-24,male,usa
-65f698faa11701f44cff6857,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,77864601,4.3,2024-03-17 07:17:13,SmartPhones,Electronics,18-24,male,usa
-65f69902a11701f44cff7836,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,77864601,4.3,2024-03-17 07:17:20,SmartPhones,Electronics,18-24,male,usa
-65f6990aa11701f44cff86b1,samsung galaxy s24 ultra 5g ai smartphone (titanium violet 12gb 256gb storage),samsung,77864601,4.3,2024-03-17 07:17:28,SmartPhones,Electronics,18-24,male,usa
-65f69911a11701f44cff9451,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 256gb storage),samsung,77864601,4.3,2024-03-17 07:17:35,SmartPhones,Electronics,18-24,male,usa
-65f69921a11701f44cffb3be,samsung galaxy s24 ultra 5g ai smartphone (titanium violet 12gb 512gb storage),samsung,77864601,4.3,2024-03-17 07:17:49,SmartPhones,Electronics,18-24,male,usa
-65f69929a11701f44cffc278,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 1tb storage),samsung,77864601,4.3,2024-03-17 07:17:59,SmartPhones,Electronics,18-24,male,usa
-65f69931a11701f44cffd4e4,samsung galaxy s24 5g ai smartphone (onyx black 8gb 512gb storage),samsung,77864601,3.6,2024-03-17 07:18:08,SmartPhones,Electronics,18-24,male,usa
-65f6993aa11701f44cffe609,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 512gb storage),samsung,77864601,3.6,2024-03-17 07:18:16,SmartPhones,Electronics,18-24,male,usa
-65f69940a11701f44cfff26d,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 512gb storage),samsung,77864601,3.6,2024-03-17 07:18:22,SmartPhones,Electronics,18-24,male,usa
-65f69946a11701f44cffff63,galaxy s24 ultra 5g (titanium black 12gb 512gb storage),galaxy,77864601,3.0,2024-03-17 07:18:28,SmartPhones,Electronics,18-24,male,usa
-65f6994da11701f44c000cbe,samsung galaxy s24 plus 5g ai smartphone (onyx black 12gb 256gb storage),samsung,77864601,4.0,2024-03-17 07:18:35,SmartPhones,Electronics,18-24,male,usa
-65f69952a11701f44c001848,samsung galaxy s24 plus 5g ai smartphone (onyx black 12gb 512gb storage),samsung,77864601,4.0,2024-03-17 07:18:41,SmartPhones,Electronics,18-24,male,usa
-65f7048ea11701f44cfe2dd2,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,77864601,4.3,2024-03-17 14:56:12,SmartPhones,Electronics,18-24,male,usa
-65f70497a11701f44cfe4085,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 14:56:21,SmartPhones,Electronics,18-24,male,usa
-65f704afa11701f44cfe7afb,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 14:56:45,SmartPhones,Electronics,18-24,male,usa
-65f704c8a11701f44cfebb12,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,77864601,4.3,2024-03-17 14:57:10,SmartPhones,Electronics,18-24,male,usa
-65f708aca11701f44c08a6cd,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 15:13:47,SmartPhones,Electronics,18-24,male,usa
-65f708b1a11701f44c08b200,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 15:13:51,SmartPhones,Electronics,18-24,male,usa
-65f708b5a11701f44c08bc52,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,77864601,3.6,2024-03-17 15:13:55,SmartPhones,Electronics,18-24,male,usa
-65f708baa11701f44c08cae0,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,77864601,4.3,2024-03-17 15:14:01,SmartPhones,Electronics,18-24,male,usa
-65f708bfa11701f44c08d6f6,samsung galaxy s24 5g ai smartphone (onyx black 8gb 512gb storage),samsung,77864601,3.6,2024-03-17 15:14:05,SmartPhones,Electronics,18-24,male,usa
-65f708c3a11701f44c08e17a,samsung galaxy s24 plus 5g ai smartphone (onyx black 12gb 256gb storage),samsung,77864601,4.0,2024-03-17 15:14:09,SmartPhones,Electronics,18-24,male,usa
+65f92fe18156be72902fa6fb,oneplus nord ce 3 5g (aqua surge 12gb ram 256gb storage),oneplus,90bc6c94,4.1,2024-03-19 06:25:34,SmartPhones,Electronics,21,female,canada
+65f938a48156be729048aeae,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,90bc6c94,3.7,2024-03-19 07:02:58,SmartPhones,Electronics,21,female,canada
+65f938b08156be729048ca78,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,90bc6c94,3.7,2024-03-19 07:03:09,SmartPhones,Electronics,21,female,canada
+65f938b78156be729048f6b5,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,90bc6c94,4.3,2024-03-19 07:03:17,SmartPhones,Electronics,21,female,canada
+65f938bf8156be7290491388,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 256gb storage),samsung,90bc6c94,4.3,2024-03-19 07:03:25,SmartPhones,Electronics,21,female,canada
+65f938c68156be729049239b,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,90bc6c94,4.3,2024-03-19 07:03:32,SmartPhones,Electronics,21,female,canada
+65f939188156be72904a387a,samsung s24+ 5g 256 gb 12gb ram onyx black mobile phone,samsung,90bc6c94,0.0,2024-03-21 10:54:09,SmartPhones,Electronics,21,female,canada
+65f939188156be72904a387a,samsung s24+ 5g 256 gb 12gb ram onyx black mobile phone,samsung,189625dd,0.0,2024-03-21 10:54:09,SmartPhones,Electronics,21,female,uk
+65f939188156be72904a387a,samsung s24+ 5g 256 gb 12gb ram onyx black mobile phone,samsung,79b6e80e,0.0,2024-03-21 10:54:09,SmartPhones,Electronics,21,male,india
+65f968f38156be7290dcc931,moto edge 40 5g 256 gb 8 gb viva magenta mobile phone,moto,90bc6c94,4.8,2024-03-19 10:29:07,SmartPhones,Electronics,21,female,canada
+65f9695d8156be7290de09fb,samsung galaxy s23 5g (8gb ram 128gb phantom black),samsung,df61010f,2.0,2024-03-19 10:30:53,SmartPhones,Electronics,21,female,canada
+65f969e48156be7290dfa1ff,apple iphone 14 pro max (128gb deep purple),apple,df61010f,2.0,2024-03-19 10:33:08,SmartPhones,Electronics,21,female,canada
+65f96d948156be7290ea4aef,apple iphone 15 128gb blue,apple,8727f415,4.9,2024-03-20 04:19:50,SmartPhones,Electronics,21,male,canada
+65f96d948156be7290ea4aef,apple iphone 15 128gb blue,apple,189625dd,4.9,2024-03-20 04:19:50,SmartPhones,Electronics,21,female,uk
+65f970d78156be7290f3ac9a,samsung galaxy m14 5g (icy silver4gb128gb)50mp triple camsegment's only 6000 mah 5g sp5nm processor2 gen. os upgrade & 4 year security update12gb ram with ram plusandroid 13without charger,samsung,b74e2b1a,4.0,2024-03-19 11:02:47,SmartPhones,Electronics,21,male,brazil
+65f971528156be7290f4c493,apple iphone 15 128gb black,apple,b74e2b1a,4.9,2024-03-19 11:04:50,SmartPhones,Electronics,21,male,brazil
+65f971a58156be7290f57cfc,oneplus 12 5g (12gb ram 256gb flowy emerald),oneplus,07caa545,2.0,2024-03-19 11:06:13,SmartPhones,Electronics,21,male,brazil
+65f973888156be7290faa54c,samsung galaxy z fold5 5g (phantom black 12gb ram 512gb storage),samsung,3962a1dd,4.1,2024-03-19 11:15:16,SmartPhones,Electronics,21,male,usa
+65f974208156be7290fc4bcc,apple iphone 14 128 gb midnight,apple,10cc2a43,4.9,2024-03-19 11:16:48,SmartPhones,Electronics,21,female,usa
+65f974728156be7290fd582a,apple iphone 15 pro (256gb natural titanium),apple,d07a530a,2.0,2024-03-19 11:18:10,SmartPhones,Electronics,21,female,uk
+65f974ad8156be7290fe0add,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,189625dd,4.3,2024-03-19 11:19:09,SmartPhones,Electronics,21,female,uk
+65f9867f8156be72902d48b7,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,189625dd,3.7,2024-03-19 12:35:12,SmartPhones,Electronics,21,female,uk
+65f986868156be72902d5718,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,189625dd,3.7,2024-03-19 12:35:19,SmartPhones,Electronics,21,female,uk
+65f9868d8156be72902d67f6,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,189625dd,3.7,2024-03-19 12:35:26,SmartPhones,Electronics,21,female,uk
+65f986948156be72902d7524,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,189625dd,4.3,2024-03-19 12:35:32,SmartPhones,Electronics,21,female,uk
+65f986998156be72902d7f22,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,189625dd,4.3,2024-03-19 12:35:38,SmartPhones,Electronics,21,female,uk
+65f9869f8156be72902d8d09,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 256gb storage),samsung,189625dd,4.3,2024-03-19 12:35:44,SmartPhones,Electronics,21,female,uk
+65f986f58156be72902e6146,samsung s24+ 5g 512 gb 12gb ram onyx black mobile phone,samsung,189625dd,0.0,2024-03-21 10:54:26,SmartPhones,Electronics,21,female,uk
+65f986f58156be72902e6146,samsung s24+ 5g 512 gb 12gb ram onyx black mobile phone,samsung,79b6e80e,0.0,2024-03-21 10:54:26,SmartPhones,Electronics,21,male,india
+65f9870f8156be72902eb417,samsung s24 5g 512 gb 8 gb marble gray mobile phone,samsung,189625dd,0.0,2024-03-21 10:53:55,SmartPhones,Electronics,21,female,uk
+65f9870f8156be72902eb417,samsung s24 5g 512 gb 8 gb marble gray mobile phone,samsung,79b6e80e,0.0,2024-03-21 10:53:55,SmartPhones,Electronics,21,male,india
+65f987668156be72902f84e3,samsung s24 5g 256 gb 8 gb ram marble gray mobile phone,samsung,189625dd,0.0,2024-03-21 10:54:39,SmartPhones,Electronics,21,female,uk
+65f987668156be72902f84e3,samsung s24 5g 256 gb 8 gb ram marble gray mobile phone,samsung,79b6e80e,0.0,2024-03-21 10:54:39,SmartPhones,Electronics,21,male,india
+65f989738156be72903422d3,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,189625dd,3.7,2024-03-19 12:47:47,SmartPhones,Electronics,21,female,uk
+65f9897a8156be7290343387,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,189625dd,3.7,2024-03-19 12:47:54,SmartPhones,Electronics,21,female,uk
+65f989828156be7290344913,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,189625dd,3.7,2024-03-19 12:48:02,SmartPhones,Electronics,21,female,uk
+65f989898156be7290345ae6,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 256gb storage),samsung,189625dd,4.3,2024-03-19 12:48:09,SmartPhones,Electronics,21,female,uk
+65f9898e8156be7290346887,galaxy s24 ultra 5g (titanium black 12gb 512gb storage),galaxy,189625dd,3.0,2024-03-19 12:48:15,SmartPhones,Electronics,21,female,uk
+65f989948156be7290347438,nillkin galaxy s24 ultra case camshield pro for samsung galaxy s24 ultra case with slide camera cover s24 ultra 5g slim phone case 2024 6.8'' (black),nillkin,189625dd,4.7,2024-03-19 12:48:20,SmartPhones,Electronics,21,female,uk
+65f98b318156be729038697b,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,189625dd,3.7,2024-03-19 12:55:13,SmartPhones,Electronics,21,female,uk
+65f98b388156be72903877dc,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,189625dd,3.7,2024-03-19 12:55:19,SmartPhones,Electronics,21,female,uk
+65f98b3f8156be7290388a33,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,189625dd,3.7,2024-03-19 12:55:27,SmartPhones,Electronics,21,female,uk
+65f98b448156be72903895c6,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,189625dd,4.3,2024-03-19 12:55:32,SmartPhones,Electronics,21,female,uk
+65f98b4e8156be729038acbb,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,189625dd,4.3,2024-03-19 12:55:43,SmartPhones,Electronics,21,female,uk
+65f98b538156be729038b6de,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 256gb storage),samsung,189625dd,4.3,2024-03-19 12:55:47,SmartPhones,Electronics,21,female,uk
+65f98bc98156be729039d87f,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,189625dd,3.7,2024-03-19 12:57:45,SmartPhones,Electronics,21,female,uk
+65f98bcd8156be729039e249,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,189625dd,3.7,2024-03-19 12:57:50,SmartPhones,Electronics,21,female,uk
+65f98bd28156be729039ed31,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,189625dd,3.7,2024-03-19 12:57:55,SmartPhones,Electronics,21,female,uk
+65f98bd78156be729039f74d,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,189625dd,4.3,2024-03-19 12:57:59,SmartPhones,Electronics,21,female,uk
+65f98bdb8156be72903a03e3,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,189625dd,4.3,2024-03-19 12:58:04,SmartPhones,Electronics,21,female,uk
+65f98be08156be72903a0e54,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 256gb storage),samsung,189625dd,4.3,2024-03-19 12:58:08,SmartPhones,Electronics,21,female,uk
+65f98cf68156be72903c8413,samsung s24+ 5g 512 gb 12 gb ram cobalt violet mobile phone,samsung,189625dd,0.0,2024-03-19 13:20:39,SmartPhones,Electronics,21,female,uk
+65f98d088156be72903caee1,samsung s24 5g 256 gb 8 gb ram onxy black mobile phone,samsung,189625dd,0.0,2024-03-21 10:54:58,SmartPhones,Electronics,21,female,uk
+65f98d088156be72903caee1,samsung s24 5g 256 gb 8 gb ram onxy black mobile phone,samsung,79b6e80e,0.0,2024-03-21 10:54:58,SmartPhones,Electronics,21,male,india
+65f98e1c8156be72903f2170,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,189625dd,3.7,2024-03-19 13:07:41,SmartPhones,Electronics,21,female,uk
+65f98e208156be72903f28d0,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,189625dd,3.7,2024-03-19 13:07:45,SmartPhones,Electronics,21,female,uk
+65f98e248156be72903f3165,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,189625dd,3.7,2024-03-19 13:07:49,SmartPhones,Electronics,21,female,uk
+65f98e278156be72903f381b,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 256gb storage),samsung,189625dd,4.3,2024-03-19 13:07:52,SmartPhones,Electronics,21,female,uk
+65f98e2a8156be72903f3fcd,galaxy s24 ultra 5g (titanium black 12gb 512gb storage),galaxy,189625dd,3.0,2024-03-19 13:07:55,SmartPhones,Electronics,21,female,uk
+65f98e2e8156be72903f476b,nillkin galaxy s24 ultra case camshield pro for samsung galaxy s24 ultra case with slide camera cover s24 ultra 5g slim phone case 2024 6.8'' (black),nillkin,189625dd,4.7,2024-03-19 13:07:59,SmartPhones,Electronics,21,female,uk
+65f98e768156be72903ff81e,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,189625dd,3.7,2024-03-19 13:09:11,SmartPhones,Electronics,21,female,uk
+65f98e7a8156be729040049d,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,189625dd,3.7,2024-03-19 13:09:15,SmartPhones,Electronics,21,female,uk
+65f98e7e8156be7290400e5e,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,189625dd,3.7,2024-03-19 13:09:19,SmartPhones,Electronics,21,female,uk
+65f98e828156be72904017da,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,189625dd,4.3,2024-03-19 13:09:23,SmartPhones,Electronics,21,female,uk
+65f98e868156be7290401ff6,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,189625dd,4.3,2024-03-19 13:09:27,SmartPhones,Electronics,21,female,uk
+65f98e8a8156be7290402831,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 256gb storage),samsung,189625dd,4.3,2024-03-19 13:09:31,SmartPhones,Electronics,21,female,uk
+65f98f0b8156be729041661d,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,189625dd,3.7,2024-03-19 13:11:39,SmartPhones,Electronics,21,female,uk
+65f98f128156be72904175a6,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,189625dd,3.7,2024-03-19 13:11:46,SmartPhones,Electronics,21,female,uk
+65f98f198156be72904185c6,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,189625dd,3.7,2024-03-19 13:11:53,SmartPhones,Electronics,21,female,uk
+65f98f208156be729041951f,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,189625dd,4.3,2024-03-19 13:12:00,SmartPhones,Electronics,21,female,uk
+65f98f268156be729041a618,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,189625dd,4.3,2024-03-19 13:12:07,SmartPhones,Electronics,21,female,uk
+65f98f2d8156be729041b949,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 256gb storage),samsung,189625dd,4.3,2024-03-19 13:12:14,SmartPhones,Electronics,21,female,uk
+65f990378156be7290445f72,samsung galaxy s24 plus 5g ai smartphone (onyx black 12gb 256gb storage),samsung,189625dd,3.7,2024-03-19 13:16:39,SmartPhones,Electronics,21,female,uk
+65f990408156be729044752d,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,189625dd,3.7,2024-03-19 13:16:49,SmartPhones,Electronics,21,female,uk
+65f990478156be729044858e,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,189625dd,3.7,2024-03-19 13:16:56,SmartPhones,Electronics,21,female,uk
+65f990518156be7290449e7d,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,189625dd,4.3,2024-03-19 13:17:05,SmartPhones,Electronics,21,female,uk
+65f990748156be729044ff79,samsung galaxy s24 ultra 5g (12gb ram 256gb titanium gray),samsung,189625dd,2.0,2024-03-21 10:52:20,SmartPhones,Electronics,21,female,uk
+65f990748156be729044ff79,samsung galaxy s24 ultra 5g (12gb ram 256gb titanium gray),samsung,79b6e80e,2.0,2024-03-21 10:52:20,SmartPhones,Electronics,21,male,india
+65f9908b8156be7290453d42,samsung galaxy s24 ultra 5g (12gb ram 256gb titanium black),samsung,189625dd,2.0,2024-03-21 10:52:33,SmartPhones,Electronics,21,female,uk
+65f9908b8156be7290453d42,samsung galaxy s24 ultra 5g (12gb ram 256gb titanium black),samsung,79b6e80e,2.0,2024-03-21 10:52:33,SmartPhones,Electronics,21,male,india
+65f990a08156be72904570ed,samsung galaxy s24 ultra 5g (12gb ram 512gb titanium yellow),samsung,189625dd,2.0,2024-03-21 10:53:08,SmartPhones,Electronics,21,female,uk
+65f990a08156be72904570ed,samsung galaxy s24 ultra 5g (12gb ram 512gb titanium yellow),samsung,79b6e80e,2.0,2024-03-21 10:53:08,SmartPhones,Electronics,21,male,india
+65f990b68156be729045a4cb,samsung galaxy s24 ultra 5g (12gb ram 1tb titanium gray),samsung,189625dd,2.0,2024-03-21 10:53:24,SmartPhones,Electronics,21,female,uk
+65f990b68156be729045a4cb,samsung galaxy s24 ultra 5g (12gb ram 1tb titanium gray),samsung,79b6e80e,2.0,2024-03-21 10:53:24,SmartPhones,Electronics,21,male,india
+65f990cb8156be729045d44d,samsung galaxy s24 5g (8gb ram 256gb marble gray),samsung,189625dd,2.0,2024-03-20 05:51:56,SmartPhones,Electronics,21,female,uk
+65fa5be3bec08a417bc7f909,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,189625dd,3.7,2024-03-20 03:45:39,SmartPhones,Electronics,21,female,uk
+65fa5bebbec08a417bc80cc7,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,189625dd,3.7,2024-03-20 03:45:48,SmartPhones,Electronics,21,female,uk
+65fa5bf2bec08a417bc81c1d,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,189625dd,3.7,2024-03-20 03:45:54,SmartPhones,Electronics,21,female,uk
+65fa5bfabec08a417bc8327e,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,189625dd,4.3,2024-03-20 03:46:03,SmartPhones,Electronics,21,female,uk
+65fa5cdabec08a417bcaa838,samsung s24 5g 256 gb 8 gb ram cobalt violet mobile phone,samsung,189625dd,0.0,2024-03-21 10:55:12,SmartPhones,Electronics,21,female,uk
+65fa5cdabec08a417bcaa838,samsung s24 5g 256 gb 8 gb ram cobalt violet mobile phone,samsung,79b6e80e,0.0,2024-03-21 10:55:12,SmartPhones,Electronics,21,male,india
+65fa633cbec08a417bdbed77,apple iphone 15 (256 gb) - yellow,apple,189625dd,4.5,2024-03-20 04:17:01,SmartPhones,Electronics,21,female,uk
+65fa6344bec08a417bdc012c,apple iphone 15 pro max (256 gb) - black titanium,apple,189625dd,4.5,2024-03-20 04:17:08,SmartPhones,Electronics,21,female,uk
+65fa634bbec08a417bdc1552,apple iphone 15 plus (256 gb) - blue,apple,189625dd,4.5,2024-03-20 04:17:15,SmartPhones,Electronics,21,female,uk
+65fa6354bec08a417bdc2cb6,apple iphone 15 pro max (256 gb) - blue titanium,apple,189625dd,4.5,2024-03-20 04:17:24,SmartPhones,Electronics,21,female,uk
+65fa637ebec08a417bdc9859,apple iphone 15 (128gb black),apple,189625dd,2.0,2024-03-20 04:18:06,SmartPhones,Electronics,21,female,uk
+65fa638ebec08a417bdcc644,apple iphone 15 (128gb blue),apple,189625dd,2.0,2024-03-20 04:18:23,SmartPhones,Electronics,21,female,uk
+65fa63a3bec08a417bdd0158,apple iphone 15 (128gb green),apple,189625dd,2.0,2024-03-20 04:18:43,SmartPhones,Electronics,21,female,uk
+65fa63b4bec08a417bdd37cf,apple iphone 15 (128gb pink),apple,189625dd,2.0,2024-03-20 04:19:00,SmartPhones,Electronics,21,female,uk
+65fa63c3bec08a417bdd6159,apple iphone 15 (256gb black),apple,189625dd,2.0,2024-03-20 04:19:15,SmartPhones,Electronics,21,female,uk
+65fa63f7bec08a417bdde5e9,apple iphone 15 256gb yellow,apple,189625dd,5.0,2024-03-20 11:08:22,SmartPhones,Electronics,21,female,uk
+65fa63f7bec08a417bdde5e9,apple iphone 15 256gb yellow,apple,79b6e80e,5.0,2024-03-20 11:08:22,SmartPhones,Electronics,21,male,india
+65fa640dbec08a417bde2c64,apple iphone 15 512gb black,apple,189625dd,0.0,2024-03-20 11:08:29,SmartPhones,Electronics,21,female,uk
+65fa640dbec08a417bde2c64,apple iphone 15 512gb black,apple,79b6e80e,0.0,2024-03-20 11:08:29,SmartPhones,Electronics,21,male,india
+65fa6426bec08a417bde6d15,apple iphone 15 512gb pink,apple,189625dd,0.0,2024-03-20 11:08:53,SmartPhones,Electronics,21,female,uk
+65fa6426bec08a417bde6d15,apple iphone 15 512gb pink,apple,79b6e80e,0.0,2024-03-20 11:08:53,SmartPhones,Electronics,21,male,india
+65fa6437bec08a417bde9b5e,apple iphone 15 512gb yellow,apple,189625dd,5.0,2024-03-20 11:09:10,SmartPhones,Electronics,21,female,uk
+65fa6437bec08a417bde9b5e,apple iphone 15 512gb yellow,apple,79b6e80e,5.0,2024-03-20 11:09:10,SmartPhones,Electronics,21,male,india
+65fa6447bec08a417bdec985,apple iphone 15 256gb black,apple,189625dd,4.9,2024-03-20 04:21:27,SmartPhones,Electronics,21,female,uk
+65fa76dabec08a417b103e39,samsung galaxy m34 5g (waterfall blue6gb128gb)120hz samoled display50mp triple no shake cam6000 mah battery4 gen os upgrade & 5 year security update12gb ram with ram+android 13without charger,samsung,189625dd,4.0,2024-03-20 05:41:29,SmartPhones,Electronics,21,female,uk
+65fa790fbec08a417b172d6f,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,189625dd,3.7,2024-03-20 05:50:07,SmartPhones,Electronics,21,female,uk
+65fa7915bec08a417b173a10,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,189625dd,3.7,2024-03-20 05:50:13,SmartPhones,Electronics,21,female,uk
+65fa791abec08a417b1747bf,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,189625dd,3.7,2024-03-20 05:50:18,SmartPhones,Electronics,21,female,uk
+65fa791fbec08a417b175595,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,189625dd,4.3,2024-03-20 05:50:23,SmartPhones,Electronics,21,female,uk
+65fa7924bec08a417b176299,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,189625dd,4.3,2024-03-20 05:50:28,SmartPhones,Electronics,21,female,uk
+65fa792bbec08a417b177157,samsung galaxy s24 5g ai smartphone (onyx black 8gb 512gb storage),samsung,189625dd,3.7,2024-03-20 05:50:35,SmartPhones,Electronics,21,female,uk
+65faaf78bec08a417bb88c0d,oneplus nord ce 3 lite 5g (chromatic gray 8gb ram 128gb storage),oneplus,189625dd,4.2,2024-03-20 09:42:17,SmartPhones,Electronics,21,female,uk
+65faaf7ebec08a417bb8a7cf,oneplus nord ce 3 5g (grey shimmer 8gb ram 128gb storage),oneplus,189625dd,4.1,2024-03-20 09:42:23,SmartPhones,Electronics,21,female,uk
+65faaf84bec08a417bb8bdc2,oneplus nord 3 5g (misty green 8gb ram 128gb storage),oneplus,189625dd,4.1,2024-03-20 09:42:29,SmartPhones,Electronics,21,female,uk
+65faaf8abec08a417bb8d3d6,oneplus nord ce 3 lite 5g (pastel lime 8gb ram 128gb storage),oneplus,189625dd,4.2,2024-03-20 09:42:35,SmartPhones,Electronics,21,female,uk
+65faaf90bec08a417bb8eaa5,oneplus nord ce 3 lite 5g (chromatic gray 8gb ram 256gb storage),oneplus,189625dd,4.2,2024-03-20 09:42:41,SmartPhones,Electronics,21,female,uk
+65faaf95bec08a417bb8fd48,oneplus nord ce 3 5g (aqua surge 8gb ram 128gb storage),oneplus,189625dd,4.1,2024-03-20 09:42:47,SmartPhones,Electronics,21,female,uk
+65faafb0bec08a417bb95a58,oneplus nord ce 3 5g (8gb 128gb grey),oneplus,189625dd,2.0,2024-03-20 09:43:14,SmartPhones,Electronics,21,female,uk
+65faafbdbec08a417bb98d23,oneplus nord ce 3 lite 5g (8gb ram 256gb chromatic gray),oneplus,189625dd,2.0,2024-03-20 09:43:26,SmartPhones,Electronics,21,female,uk
+65faafccbec08a417bb9c24c,oneplus nord ce3 5g (8gb ram 128gb aqua surge),oneplus,189625dd,2.0,2024-03-20 09:43:42,SmartPhones,Electronics,21,female,uk
+65faafd8bec08a417bb9ec1a,oneplus nord ce 3 lite 5g (8gb ram 256gb pastel lime),oneplus,189625dd,2.0,2024-03-20 09:43:54,SmartPhones,Electronics,21,female,uk
+65faafe8bec08a417bba2958,oneplus nord 3 5g (8gb ram 128gb misty green),oneplus,189625dd,2.0,2024-03-20 09:44:10,SmartPhones,Electronics,21,female,uk
+65faafffbec08a417bba7e57,oneplus nord ce 5g 256 gb 12 gb ram silver ray mobile phone,oneplus,189625dd,4.6,2024-03-20 09:44:33,SmartPhones,Electronics,21,female,uk
+65fab006bec08a417bba9644,oneplus nord ce 5g 256 gb 12 gb ram blue void mobile phone,oneplus,189625dd,5.0,2024-03-20 09:44:40,SmartPhones,Electronics,21,female,uk
+65fab00cbec08a417bbaab5e,oneplus nord 2t 5g 256gb 12gb ram gray shadow mobile phone,oneplus,189625dd,4.9,2024-03-20 09:44:46,SmartPhones,Electronics,21,female,uk
+65fab01dbec08a417bbaee9a,oneplus nord 2t 5g 128gb 8gb ram gray shadow mobile phone,oneplus,189625dd,4.8,2024-03-20 09:45:02,SmartPhones,Electronics,21,female,uk
+65fab02fbec08a417bbb2d08,oneplus nord 2t 5g 128gb 8gb ram jade fog mobile phone,oneplus,189625dd,4.8,2024-03-20 09:45:20,SmartPhones,Electronics,21,female,uk
+65fab03dbec08a417bbb640d,oneplus nord ce3 5g 256gb 12gb ram grey shimmer mobile phone,oneplus,189625dd,4.6,2024-03-20 09:45:35,SmartPhones,Electronics,21,female,uk
+65fab456bec08a417bc9f8d0,apple iphone 14 (128 gb) - blue,apple,79b6e80e,4.5,2024-03-20 10:04:40,SmartPhones,Electronics,21,male,india
+65fab9d4bec08a417bdce360,redmi note 12 (lunar black 6gb ram 64gb storage),redmi,79b6e80e,4.1,2024-03-20 10:26:30,SmartPhones,Electronics,21,male,india
+65fab9dabec08a417bdcf90a,redmi note 12 (ice blue 6gb ram 64gb storage),redmi,79b6e80e,4.1,2024-03-20 10:26:36,SmartPhones,Electronics,21,male,india
+65fab9e0bec08a417bdd0c0b,redmi note 12 (sunrise gold 6gb ram 64gb storage),redmi,79b6e80e,4.1,2024-03-20 10:26:41,SmartPhones,Electronics,21,male,india
+65fab9e6bec08a417bdd2160,redmi note 12 5g frosted green 4gb ram 128gb rom  1st phone with 120hz super amoled and snapdragonÂ® 4 gen 1  48mp ai triple camera,redmi,79b6e80e,3.8,2024-03-20 10:26:48,SmartPhones,Electronics,21,male,india
+65fab9ecbec08a417bdd3667,redmi note 12 5g (frosted green8gb ram 256gb storage),redmi,79b6e80e,3.8,2024-03-20 10:26:54,SmartPhones,Electronics,21,male,india
+65fab9f2bec08a417bdd4d1e,redmi 12 5g jade black 6gb ram 128gb rom,redmi,79b6e80e,4.0,2024-03-20 10:27:00,SmartPhones,Electronics,21,male,india
+65faba10bec08a417bddc75a,redmi note 12 (6gb ram 64gb lunar black),redmi,79b6e80e,2.0,2024-03-20 10:53:11,SmartPhones,Electronics,21,male,india
+65faba20bec08a417bddfe4d,redmi note 12 5g (4gb ram 128gb matte black),redmi,79b6e80e,2.0,2024-03-20 10:53:27,SmartPhones,Electronics,21,male,india
+65faba2ebec08a417bde3109,redmi note 12 (6gb ram 64gb sunrise gold),redmi,79b6e80e,2.0,2024-03-20 10:53:42,SmartPhones,Electronics,21,male,india
+65faba3ebec08a417bde6ab8,redmi note 12 (6gb ram 64gb ice blue),redmi,79b6e80e,2.0,2024-03-20 10:54:01,SmartPhones,Electronics,21,male,india
+65faba4dbec08a417bdea2d6,redmi note 12 5g (6gb ram 128gb matte black),redmi,79b6e80e,2.0,2024-03-20 10:54:17,SmartPhones,Electronics,21,male,india
+65faba7cbec08a417bdf4599,xiaomi redmi note 12 pro 5g 256 gb 12 gb ram blue mobile phone,xiaomi,79b6e80e,0.0,2024-03-20 10:54:51,SmartPhones,Electronics,21,male,india
+65faba8cbec08a417bdf7f89,xiaomi redmi note 12 pro 5g 256 gb 12 gb ram black mobile phone,xiaomi,79b6e80e,0.0,2024-03-20 10:55:06,SmartPhones,Electronics,21,male,india
+65faba9dbec08a417bdfba6b,xiaomi redmi note 12 pro 5g 256 gb 12 gb ram purple mobile phone,xiaomi,79b6e80e,0.0,2024-03-20 10:55:21,SmartPhones,Electronics,21,male,india
+65fabaa5bec08a417bdfd822,redmi note 11t 5g 128 gb 8 gb ram aquamarine blue mobile phone,redmi,79b6e80e,4.8,2024-03-20 10:55:30,SmartPhones,Electronics,21,male,india
+65fabaadbec08a417bdff651,redmi note 11t 5g 128 gb 8 gb ram stardust white mobile phone,redmi,79b6e80e,5.0,2024-03-20 10:55:38,SmartPhones,Electronics,21,male,india
+65fabab5bec08a417be0128c,redmi note 11t 5g 128 gb 8 gb ram matte black mobile phone,redmi,79b6e80e,4.7,2024-03-20 10:55:45,SmartPhones,Electronics,21,male,india
+65fabf04bec08a417bee44c3,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,79b6e80e,3.7,2024-03-20 10:48:37,SmartPhones,Electronics,21,male,india
+65fabfd4bec08a417bf0e07f,redmi note 12 (ice blue 6gb ram 64gb storage),redmi,79b6e80e,4.1,2024-03-20 10:52:05,SmartPhones,Electronics,21,male,india
+65fabfddbec08a417bf0fcee,redmi note 12 5g frosted green 4gb ram 128gb rom  1st phone with 120hz super amoled and snapdragonÂ® 4 gen 1  48mp ai triple camera,redmi,79b6e80e,3.8,2024-03-20 10:52:15,SmartPhones,Electronics,21,male,india
+65fabfe5bec08a417bf113c8,redmi note 12 5g (frosted green8gb ram 256gb storage),redmi,79b6e80e,3.8,2024-03-20 10:52:23,SmartPhones,Electronics,21,male,india
+65fabfeebec08a417bf1283d,redmi 12 5g jade black 6gb ram 128gb rom,redmi,79b6e80e,4.0,2024-03-20 10:52:31,SmartPhones,Electronics,21,male,india
+65fac340bec08a417bfbb948,apple iphone 15 (128 gb) - blue,apple,79b6e80e,4.5,2024-03-20 11:06:41,SmartPhones,Electronics,21,male,india
+65fac347bec08a417bfbd2d0,apple iphone 15 (128 gb) - black,apple,79b6e80e,4.5,2024-03-20 11:06:48,SmartPhones,Electronics,21,male,india
+65fac34dbec08a417bfbe870,apple iphone 15 (128 gb) - pink,apple,79b6e80e,4.5,2024-03-20 11:06:55,SmartPhones,Electronics,21,male,india
+65fac353bec08a417bfbff91,apple iphone 15 (128 gb) - green,apple,79b6e80e,4.5,2024-03-20 11:07:00,SmartPhones,Electronics,21,male,india
+65fac359bec08a417bfc1a58,apple iphone 15 (256 gb) - black,apple,79b6e80e,4.5,2024-03-20 11:07:07,SmartPhones,Electronics,21,male,india
+65fac35fbec08a417bfc3c83,apple iphone 15 (256 gb) - blue,apple,79b6e80e,4.5,2024-03-20 11:07:12,SmartPhones,Electronics,21,male,india
+65fac413bec08a417bfec4e5,apple iphone 15 256gb pink,apple,79b6e80e,5.0,2024-03-20 11:10:12,SmartPhones,Electronics,21,male,india
+65fc112c953649561683816b,samsung galaxy s24 5g ai smartphone (amber yellow 8gb 256gb storage),samsung,79b6e80e,3.8,2024-03-21 10:51:25,SmartPhones,Electronics,21,male,india
+65fc11329536495616838cc0,samsung galaxy s24 5g ai smartphone (onyx black 8gb 256gb storage),samsung,79b6e80e,3.8,2024-03-21 10:51:31,SmartPhones,Electronics,21,male,india
+65fc11379536495616839969,samsung galaxy s24 5g ai smartphone (cobalt violet 8gb 256gb storage),samsung,79b6e80e,3.8,2024-03-21 10:51:36,SmartPhones,Electronics,21,male,india
+65fc113c953649561683a524,samsung galaxy s24 ultra 5g ai smartphone (titanium black 12gb 512gb storage),samsung,79b6e80e,4.3,2024-03-21 10:51:41,SmartPhones,Electronics,21,male,india
+65fc1141953649561683b0d5,samsung galaxy s24 ultra 5g ai smartphone (titanium violet 12gb 512gb storage),samsung,79b6e80e,4.3,2024-03-21 10:51:46,SmartPhones,Electronics,21,male,india
+65fc1147953649561683beb3,samsung galaxy s24 ultra 5g ai smartphone (titanium gray 12gb 512gb storage),samsung,79b6e80e,4.3,2024-03-21 10:51:52,SmartPhones,Electronics,21,male,india
+65fc11829536495616843ecb,samsung galaxy s24 ultra 5g (12gb ram 256gb titanium yellow),samsung,79b6e80e,2.0,2024-03-21 10:52:51,SmartPhones,Electronics,21,male,india
+65fc12ea9536495616879829,oneplus 11 5g (eternal green 16gb ram 256gb storage),oneplus,79b6e80e,4.4,2024-03-21 10:58:49,SmartPhones,Electronics,21,male,india
+65fc12ef953649561687a324,oneplus 11 5g (eternal green 8gb ram 128gb storage),oneplus,79b6e80e,4.4,2024-03-21 10:58:55,SmartPhones,Electronics,21,male,india
+65fc12f5953649561687b1f2,oneplus 11 5g (titan black 8gb ram 128gb storage),oneplus,79b6e80e,4.4,2024-03-21 10:59:00,SmartPhones,Electronics,21,male,india
+65fc12fc953649561687c2dd,oneplus 11 5g (marble odyssey 16gb ram 256gb storage) beige,oneplus,79b6e80e,4.4,2024-03-21 10:59:08,SmartPhones,Electronics,21,male,india
+65fc13219536495616881d3f,oneplus 11r 5g (galactic silver 8gb ram 128gb storage),oneplus,79b6e80e,4.4,2024-03-21 10:59:45,SmartPhones,Electronics,21,male,india
+65fc132795364956168831cf,oneplus 12r (cool blue 16gb ram 256gb storage),oneplus,79b6e80e,4.2,2024-03-21 10:59:51,SmartPhones,Electronics,21,male,india
+65fc13429536495616887378,oneplus 11 5g (8gb ram 128gb eternal green),oneplus,79b6e80e,2.0,2024-03-21 11:00:18,SmartPhones,Electronics,21,male,india
+65fc1354953649561688a3a0,oneplus 11 5g (16gb ram 256gb marble odyssey),oneplus,79b6e80e,2.0,2024-03-21 11:00:36,SmartPhones,Electronics,21,male,india
+65fc1365953649561688d3da,oneplus 11 5g (16gb ram 256gb eternal green),oneplus,79b6e80e,2.0,2024-03-21 11:00:52,SmartPhones,Electronics,21,male,india
+65fc1378953649561689061b,oneplus 11 5g (16gb ram 256gb titan black),oneplus,79b6e80e,2.0,2024-03-21 11:01:12,SmartPhones,Electronics,21,male,india
+65fc13899536495616892a6d,oneplus 11 5g (8gb ram 128gb titan black),oneplus,79b6e80e,2.0,2024-03-21 11:01:29,SmartPhones,Electronics,21,male,india
+65fc13a39536495616895bea,oneplus 11 5g 128 gb 8 gb ram eternal green mobile phone,oneplus,79b6e80e,5.0,2024-03-21 11:01:55,SmartPhones,Electronics,21,male,india
+65fc13b09536495616897768,oneplus 11 5g 256 gb 16 gb ram eternal green mobile phone,oneplus,79b6e80e,4.9,2024-03-21 11:02:08,SmartPhones,Electronics,21,male,india
+65fc13bf953649561689a091,oneplus 11 5g 256 gb 16 gb ram titan black mobile phone,oneplus,79b6e80e,5.0,2024-03-21 11:02:23,SmartPhones,Electronics,21,male,india
+65fc13d0953649561689d8c3,oneplus 11 5g 128 gb 8 gb ram titan black mobile phone,oneplus,79b6e80e,0.0,2024-03-21 11:02:40,SmartPhones,Electronics,21,male,india
+65fc13e195364956168a1083,oneplus 9 128 gb 8 gb ram arctic sky mobile phone,oneplus,79b6e80e,4.7,2024-03-21 11:02:56,SmartPhones,Electronics,21,male,india
+65fc13f295364956168a4bba,oneplus 9 256 gb 12 gb ram astral black mobile phone,oneplus,79b6e80e,4.7,2024-03-21 11:03:14,SmartPhones,Electronics,21,male,india

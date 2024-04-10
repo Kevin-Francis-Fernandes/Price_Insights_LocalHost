@@ -43,7 +43,7 @@ def get_data():
 
 
     # Create an instance of the HybridRecommender class
-    hybrid_recommender = HybridRecommender(df, content_based_weight=0.4, collaborative_filtering_weight=0.6)
+    hybrid_recommender = HybridRecommender(df, content_based_weight=0.6, collaborative_filtering_weight=0.4)
     top_n_recommendations_hybrid = hybrid_recommender.get_recommendations(user_id_to_recommend)
 
     # Get the model's recommended products

@@ -50,7 +50,7 @@ export async function amazonCrawler(searchTerm:any){
       }
   });
     // console.log('Extracted Products:', products);
-    products=products.slice(0,6)
+    // products=products.slice(0,6)
     await connectToDB();
     await AmazonProduct.deleteMany({});
     // Save products to MongoDB

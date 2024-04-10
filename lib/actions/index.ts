@@ -240,7 +240,7 @@ export async function getAllCrawledCromaProducts(id:any) {
     const coll = client.db('test').collection('cromaproducts');
       const cursor = coll.aggregate(agg);
       const products = await cursor.toArray();
-      // console.log(products)
+      console.log(products)
     
       return products;
     

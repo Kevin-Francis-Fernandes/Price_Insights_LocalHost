@@ -112,7 +112,7 @@ export async function scrapeRelianceProduct(url: string) {
         //  }
     
         //  const s :any = [data, recommend]
-         
+        console.log("reliance scrapped")
         return data;
     } else {
       console.log('No product data found.');

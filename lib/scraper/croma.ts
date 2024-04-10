@@ -157,7 +157,7 @@ export async function scrapeCromaProduct(url: string) {
         //  const s :any = [data, recommend]
          
         // return s;
-
+        console.log("croma product scrapped");
         return data;
 
   } catch (error: any) {

@@ -33,6 +33,8 @@ export async function  cromaCrawler(searchTerm: string) {
     
         // await page.browserContext().overridePermissions(cromaUrl,['geolocation']);
         // await page.setGeolocation({latitude,longitude});
+        // await page.goto(cromaUrl, { waitUntil: "networkidle2" });
+        
         await page.evaluateOnNewDocument(function() {
             navigator.geolocation.getCurrentPosition = function (cb) {
                 setTimeout(() => {
@@ -54,6 +56,27 @@ export async function  cromaCrawler(searchTerm: string) {
         // await page.waitForSelector('body')
         
         await page.goto(cromaUrl, { waitUntil: "networkidle2" });
+        
+        
+        
+          await page.evaluate(async () => {
+            await new Promise<void>(resolve => {
+              let totalHeight = 0;
+              const distance = 100;
+              const scrollInterval = setInterval(() => {
+                const scrollHeight = document.body.scrollHeight;
+                window.scrollBy(0, distance);
+                totalHeight += distance;
+      
+                if (totalHeight >= scrollHeight) {
+                  clearInterval(scrollInterval);
+                  resolve();
+                }
+              }, 100);
+            });
+          });
+        
+      
         
         const htmlContent = await page.content();
     
@@ -91,13 +114,14 @@ export async function  cromaCrawler(searchTerm: string) {
             
         });
     
-        console.log(products);
+        console.log("croma crawl products: " + products);
 
         await connectToDB();
         await CromaProduct.deleteMany({});
     // Save products to MongoDB
-        products=products.slice(0,6)
-    products.map(async (product: any) => {
+        // products=products.slice(0,5)
+
+      products.map(async (product: any) => {
         
       
   

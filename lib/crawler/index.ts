@@ -12,13 +12,13 @@ export async function extractSearchTermInfo(searchTerm: any) {
   try {
     const amazoncrawlproducts = await amazonCrawler(searchTerm);
     // let i=0;
-    for( const product  of amazoncrawlproducts){
-      // if(i==6){
-      //   break;
-      // }
-      // i++;
-      await scrapeAndStoreProduct(product.url,"amazon");
-    }
+    // for( const product  of amazoncrawlproducts){
+    //   // if(i==6){
+    //   //   break;
+    //   // }
+    //   // i++;
+    //   await scrapeAndStoreProduct(product.url,"amazon");
+    // }
   } catch (error: any) {
     console.log(`Error extracting amazon crawled products : ${error.message}`);
   }
@@ -26,15 +26,16 @@ export async function extractSearchTermInfo(searchTerm: any) {
   try {
     const cromacrawlproducts = await cromaCrawler(searchTerm);
     // let i=0;
-    if(cromacrawlproducts){
-    for( const product  of cromacrawlproducts){
-      // if(i==6){
-      //   break;
-      // }
-      // i++;
-      await scrapeAndStoreProduct(product.url,"croma");
-    }
-   }
+  //   if(cromacrawlproducts){
+  //   for( const product  of cromacrawlproducts){
+  //     // if(i==6){
+  //     //   break;
+  //     // }
+  //     // i++;
+  //     await scrapeAndStoreProduct(product.url,"croma");
+      
+  //   }
+  //  }
   } catch (error: any) {
     console.log(`Error extracting croma crawled products : ${error.message}`);
   }
@@ -49,15 +50,15 @@ export async function extractSearchTermInfo(searchTerm: any) {
     //   );
     // }
     // let i=0;
-    if(reliancecrawlproducts){
-    for( const product  of reliancecrawlproducts){
-      // if(i==6){
-      //   break;
-      // }
-      // i++;
-      await scrapeAndStoreProduct(product.url,"reliance");
-    }
-  }
+  //   if(reliancecrawlproducts){
+  //   for( const product  of reliancecrawlproducts){
+  //     // if(i==6){
+  //     //   break;
+  //     // }
+  //     // i++;
+  //     await scrapeAndStoreProduct(product.url,"reliance");
+  //   }
+  // }
   } catch (error: any) {
     console.log(
       `Error extracting reliance crawled products : ${error.message}`

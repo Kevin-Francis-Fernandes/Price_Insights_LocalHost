@@ -71,6 +71,7 @@ const Searchbar = () => {
           router.push(product.productRedirect);
         }
 
+        
          
          
      

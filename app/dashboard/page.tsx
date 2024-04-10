@@ -128,7 +128,7 @@ const Home = async () => {
       </section>
 
       <section className="trending-section">
-        <h2 className="section-text">Trending</h2>
+        {popularproducts && <h2 className="section-text">Trending</h2>}
 
         <div className="flex flex-wrap gap-x-8 gap-y-16">
           {popularproducts?.map((product) => (
