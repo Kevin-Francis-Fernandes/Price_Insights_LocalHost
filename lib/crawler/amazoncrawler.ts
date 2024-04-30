@@ -18,7 +18,7 @@ export async function amazonCrawler(searchTerm:any){
       password,
     });
 
-    const amazonUrl = 'https://www.amazon.in/s?k=' + searchTerm.replace(/ /g, '%20');
+    const amazonUrl = 'https://www.amazon.in/s?k=' + searchTerm.replace(/ /g, '%20') + 'smartphone';
     console.log(amazonUrl);
 
     await page.goto(amazonUrl);

@@ -1,5 +1,7 @@
 export type PriceHistoryItem = {
   price: number;
+  _id:any;
+  date:any;
 };
 
 export type User = {
@@ -11,6 +13,7 @@ export type UserInteraction={
 }
 
 export type Product = {
+  price: ReactNode;
   rating: string;
   _id?: string;
   url: string;

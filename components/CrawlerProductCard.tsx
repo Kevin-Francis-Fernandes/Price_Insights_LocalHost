@@ -123,7 +123,7 @@ const isValidProductURL = (url: string) => {
 
   
 }
-const CrawlerProductCard = async ({ product }: Props) => {
+const CrawlerProductCard = ({ product }: Props) => {
  
 
   // let prod;
@@ -153,7 +153,7 @@ const CrawlerProductCard = async ({ product }: Props) => {
         // Scrape the product page
          const products = await scrapeAndStoreProduct(searchPrompt,isValidLink);
          if (products && products.redirect) {
-          await new Promise(resolve => setTimeout(resolve, 9000));
+          // await new Promise(resolve => setTimeout(resolve, 9000));
           router.push(products.redirect);
         }
 

@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import { useState } from "react";
 import { signIn } from "next-auth/react";
@@ -7,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { cn } from "@/utils/cn";
+import handleUpdate from "@/app/api/update";
 export default function LoginForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -29,7 +29,12 @@ export default function LoginForm() {
         return;
       }
 
-      router.replace("dashboard");
+      await handleUpdate;
+        router.replace("/dashboard");
+        router.push("/dashboard");
+        router.refresh();
+
+      
     } catch (error) {
       console.log(error);
     }

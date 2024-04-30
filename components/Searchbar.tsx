@@ -13,10 +13,11 @@ const isValidProductURL = (url: string) => {
     
     const parsedURL = new URL(url);
     const hostname = parsedURL.hostname;
-
+    
     if(hostname.includes('amazon.com')||
          hostname.includes('amazon.')||
          hostname.endsWith('amazon')){
+          
             return "amazon"
          }
          else if(hostname.includes('croma.com')||
@@ -51,7 +52,7 @@ const Searchbar = () => {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     
     event.preventDefault();
-
+    
     const isValidLink = isValidProductURL(searchPrompt);
     
     if(isValidLink === "error" ) return alert('An error occured ! Please try again'+isValidLink); 

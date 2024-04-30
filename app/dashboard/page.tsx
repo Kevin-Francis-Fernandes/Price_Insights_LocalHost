@@ -132,12 +132,12 @@ const Home = async () => {
 
         <div className="flex flex-wrap gap-x-8 gap-y-16">
           {popularproducts?.map((product) => (
-            <ProductCard key={product._id} product={product} />
+            <ProductCard key={product._id} product={JSON.parse(JSON.stringify(product))} />
           ))}
         </div>
       </section>
 
-      <UserInfo />
+      
     </>
   )
 }

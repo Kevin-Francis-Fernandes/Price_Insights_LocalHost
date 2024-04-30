@@ -14,9 +14,16 @@ interface Product {
 export async function relianceCrawler(searchTerm: string): Promise<Product[] | void> {
 
     
-  
+  const username = String(process.env.BRIGHT_DATA_USERNAME);
+  const password = String(process.env.BRIGHT_DATA_PASSWORD);
+  const port = 22225;
+  const session_id = (1000000 * Math.random()) | 0;
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
+  await page.authenticate({
+    username: `${username}-session-${session_id}`,
+    password,
+  });
   try {
     
     

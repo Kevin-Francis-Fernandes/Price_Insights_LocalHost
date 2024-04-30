@@ -1,6 +1,6 @@
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
-
+import LineGraph from "@/components/LineGraph";
 import Modal from "@/components/Modal";
 import PriceInfoCard from "@/components/PriceInfoCard";
 import ProductCard from "@/components/ProductCard";
@@ -11,6 +11,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import * as crypto from 'crypto';
+import Navbar from "@/components/Navbar";
+import NavBarTwo from "@/components/NavBarTwo";
 
 type Props = {
   params: { id: string }
@@ -94,6 +96,8 @@ const ProductDetails = async ({ params: { id } }: Props) => {
   const similarProducts = await getSimilarProducts(id);
 
   return (
+    <>
+    <NavBarTwo/>
     <div className="product-container">
       <div className="flex gap-28 xl:flex-row flex-col">
         <div className="product-image">
@@ -252,6 +256,16 @@ const ProductDetails = async ({ params: { id } }: Props) => {
           </Link>
         </button>
       </div>
+      <div>
+      {product.priceHistory.length>0 && (<>
+      <div>
+        <b>PRICE FLUCTUATIONS</b>
+      </div>
+      <LineGraph data={JSON.parse(JSON.stringify(product.priceHistory))}/>
+      </>
+      )}
+      </div>
+
 
       {/* {similarProducts && similarProducts?.length > 0 && (
         <div className="py-14 flex flex-col gap-2 w-full">
@@ -270,9 +284,9 @@ const ProductDetails = async ({ params: { id } }: Props) => {
         <div className="py-14 flex flex-col gap-2 w-full">
           <p className="section-text">Similar Products</p>
 
-          <div className="flex flex-wrap gap-10 mt-7 w-full">
+          <div className="flex flex-wrap gap-8 mt-7 w-full">
             {hybridproducts.map((product) => (
-              <ProductCard key={product._id} product={product} />
+              <ProductCard key={product._id} product={JSON.parse(JSON.stringify(product))} />
             ))}
           </div>
         </div>
@@ -282,14 +296,15 @@ const ProductDetails = async ({ params: { id } }: Props) => {
         <div className="py-14 flex flex-col gap-2 w-full">
           <p className="section-text">Popular Products</p>
 
-          <div className="flex flex-wrap gap-10 mt-7 w-full">
+          <div className="flex flex-wrap gap-8 mt-7 w-full">
             {popularproducts.map((product) => (
-              <ProductCard key={product._id} product={product} />
+              <ProductCard key={product._id} product={JSON.parse(JSON.stringify(product))} />
             ))}
           </div>
         </div>
       )}
     </div>
+    </>
   )
 }
 

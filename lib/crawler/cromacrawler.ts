@@ -13,6 +13,10 @@ import CromaProduct from "../models/croma.model";
 //   image: string;
 // }
 export async function  cromaCrawler(searchTerm: string) {
+  const username = String(process.env.BRIGHT_DATA_USERNAME);
+  const password = String(process.env.BRIGHT_DATA_PASSWORD);
+  const port = 22225;
+  const session_id = (1000000 * Math.random()) | 0;
     const browser = await puppeteer.launch({
         // args: [
         //     '--disable-notifications', // Disable notification prompts
@@ -20,13 +24,16 @@ export async function  cromaCrawler(searchTerm: string) {
         //   ],
         });
       const page = await browser.newPage();
-    
+      await page.authenticate({
+        username: `${username}-session-${session_id}`,
+        password,
+      });
     //   const latitude=37.7749;
     //   const longitude=122.4194;
     
       try {
         const cromaUrl =
-          'https://www.croma.com/searchB?q=' + searchTerm.replace(/ /g, "%20") +  "%3Arelevance&text=" +
+          'https://www.croma.com/searchB?q=' + searchTerm.replace(/ /g, "%20")+  "%3Arelevance&text=" +
           searchTerm.replace(/ /g, "%20");
     
         console.log(cromaUrl);

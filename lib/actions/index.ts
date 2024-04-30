@@ -31,13 +31,16 @@ export async function scrapeAndStoreProduct(productUrl: string,type:string) {
     
     if(type=="amazon"){
        scrapedProduct = await scrapeAmazonProduct(productUrl);
+       await fetch(`http://127.0.0.1:5000/api/update`);
     
     }
     else if(type=="croma"){
       scrapedProduct = await scrapeCromaProduct(productUrl);
+      await fetch(`http://127.0.0.1:5000/api/update`);
     }
     else if (type=="reliance"){
       scrapedProduct = await scrapeRelianceProduct(productUrl);
+      await fetch(`http://127.0.0.1:5000/api/update`);
     }
     else{
      

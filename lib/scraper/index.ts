@@ -1,11 +1,10 @@
 import axios from 'axios'
 import * as cheerio from 'cheerio'
 import { extractCurrency, extractDescription, extractPrice, extractRating, extractReview } from '../utils';
-//npm install axios cheerio 
+ 
 export async function scrapeAmazonProduct(url:string){
 
     if(!url) return;
-
     const username=String(process.env.BRIGHT_DATA_USERNAME);
     const password=String(process.env.BRIGHT_DATA_PASSWORD);
     const port=22225;
@@ -21,20 +20,15 @@ export async function scrapeAmazonProduct(url:string){
     }
 
     try {
-        //Fetch  the product page 
-        const response =await axios.get(url,options);
-        const $ = cheerio.load(response.data);
+       const response =await axios.get(url,options);
+       const $ = cheerio.load(response.data);
 
-       // console.log(response.data);
-    
-       //extract product title 
-
-       const title= $('#productTitle').text().trim();   //grabbing with respect to id so #
+       const title= $('#productTitle').text().trim();   
        const currentPrice= extractPrice(
-        $('.priceToPay span.a-price-whole'), //class as a selector 
+        $('.priceToPay span.a-price-whole'), 
         $('a.size.base.a-color-price'),
         $('.a-button-selected .a-color-base')
-       );   //not cherio function its a utility function 
+       );  
 
        const originalPrice=extractPrice(
         $('#priceblock_ourprice'),
@@ -44,21 +38,15 @@ export async function scrapeAmazonProduct(url:string){
         $('.a-size-base.a-color-price')
        );
        
-
-       //to check if its currently in stock or not 
        const outOfStock = $('availability span').text().trim().toLowerCase()
         ==='currently unavailable';
 
-        //extracting the images 
        const images = $('#imgBlkFront').attr('data-a-dynamic-image') ||
                      $('#landingImage').attr('data-a-dynamic-image') ||
-                     '{}';//returns object of images 
-                     //attr will give url 
-
-       //to write image URLS properly 
+                     '{}';
+      
        const imageUrls =Object.keys(JSON.parse(images));
 
-       //extracting currency 
        const currency =extractCurrency($('.a-price-symbol'))
 
        let rating =extractRating($('span.a-size-base .a-color-base'));
@@ -69,19 +57,14 @@ export async function scrapeAmazonProduct(url:string){
 
        const ratingCount=Number(extractReview($('span [data-hook=total-review-count]')));
        
-
        const discountRate = $('.savingsPercentage').text().replace(/[-%]/g,'');
-
 
        const description= extractDescription($);
 
        const g=typeof(ratingCount)
-      //  console.log({title,currentPrice,originalPrice,
-      //               outOfStock,imageUrls,
-      //               currency,discountRate,g,rating});
-
-        const sellerInfo="Amazon";
-       //constructing data object of scraped information 
+     
+       const sellerInfo="Amazon";
+       
        const data ={
         url,
         currency: currency || '₹',
@@ -101,25 +84,14 @@ export async function scrapeAmazonProduct(url:string){
         highestPrice: Number(originalPrice) || Number(currentPrice),
         averagePrice: Number(currentPrice) || Number(originalPrice),
         rating,
-      sub_cat : "SmartPhones",
-      main_cat : "Electronics",
+        sub_cat : "SmartPhones",
+        main_cat : "Electronics",
         }
 
        console.log("amazon scrapped")
 
-        
-
-    // const recommend = {
-    //   url,
-    //   title ,
-    //   rating:Number(rating),
-    //   sub_cat : "SmartPhones",
-    //   main_cat : "Electronics", 
-    //  }
-
-    //  const s :any = [data, recommend]
      
-    return data;
+      return data;
   } catch (error: any) {
     console.log(error);
   }

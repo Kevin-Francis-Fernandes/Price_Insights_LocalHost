@@ -8,7 +8,7 @@ class HybridRecommender:
         self.content_based_weight = content_based_weight
         self.collaborative_filtering_weight = collaborative_filtering_weight
 
-    def get_recommendations(self, user_id, top_n=10):
+    def get_recommendations(self, user_id, top_n=7):
         # Get recommendations from both content-based and collaborative filtering recommenders
         content_based_recommendations = self.content_based_recommender.get_recommendations(user_id, top_n)
         collaborative_filtering_recommendations = self.collaborative_filtering_recommender.get_recommendations(user_id,

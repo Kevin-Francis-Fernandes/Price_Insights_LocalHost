@@ -5,11 +5,12 @@ import { Carousel } from 'react-responsive-carousel';
 import Image from "next/image";
 
 const heroImages = [
-  { imgUrl: '/assets/images/hero-1.svg', alt: 'smartwatch'},
-  { imgUrl: '/assets/images/hero-2.svg', alt: 'bag'},
-  { imgUrl: '/assets/images/hero-3.svg', alt: 'lamp'},
-  { imgUrl: '/assets/images/hero-4.svg', alt: 'air fryer'},
-  { imgUrl: '/assets/images/hero-5.svg', alt: 'chair'},
+  { imgUrl: '/assets/images/iphone15.svg', alt: 'iphone'},
+  { imgUrl: '/assets/images/vivo.svg', alt: 'vivo'},
+  { imgUrl: '/assets/images/samsung-s24.svg', alt: 'samsung s24'},
+  { imgUrl: '/assets/images/nothing.svg', alt: 'nothing'},
+  { imgUrl: '/assets/images/oneplus12.svg', alt: 'oneplus 12r'},
+ 
 ]
 
 const HeroCarousel = () => {
@@ -17,9 +18,9 @@ const HeroCarousel = () => {
     <div className="hero-carousel">
       <Carousel
         showThumbs={false}
-        // autoPlay
+        autoPlay
         infiniteLoop
-        // interval={2000}
+        interval={2000}
         showArrows={false}
         showStatus={false}
       >
