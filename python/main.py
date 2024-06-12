@@ -55,22 +55,26 @@ def get_data():
     # print(f"User {user_id_to_recommend} Interacted for the following products:")
     # print(user_interactions)
 
-
-
-
-    # Create an instance of the HybridRecommender class
-    hybrid_recommender = HybridRecommender(df, content_based_weight=0.6, collaborative_filtering_weight=0.4)
-    top_n_recommendations_hybrid = hybrid_recommender.get_recommendations(user_id_to_recommend)
-
-    # Get the model's recommended products
-    recommendations = df[df['item_id'].isin(top_n_recommendations_hybrid)][
-        ['item_id', 'title', 'sub_cat', 'brand']].drop_duplicates('item_id')
-    # print(f"Model recommends the following products to the user {user_id_to_recommend}:")
-    # print(recommendations)
-
     dataList = []
-    for i in recommendations['item_id']:
-        dataList.append(i)
+    try:
+
+        # Create an instance of the HybridRecommender class
+        hybrid_recommender = HybridRecommender(df, content_based_weight=0.6, collaborative_filtering_weight=0.4)
+        top_n_recommendations_hybrid = hybrid_recommender.get_recommendations(user_id_to_recommend)
+
+        # Get the model's recommended products
+        recommendations = df[df['item_id'].isin(top_n_recommendations_hybrid)][
+            ['item_id', 'title', 'sub_cat', 'brand']].drop_duplicates('item_id')
+        # print(f"Model recommends the following products to the user {user_id_to_recommend}:")
+        # print(recommendations)
+
+        
+        for i in recommendations['item_id']:
+            dataList.append(i)
+    except:
+        print("User has not interacted")
+
+
 
     dataList.append("end")
 
@@ -82,7 +86,7 @@ def get_data():
     popularity_recommender = PopularityBasedRecommender(df)
 
     # Get trending items in the last 15 days (e.g., top 10)
-    trending_items = popularity_recommender.get_trending_items(period=180, top_n=3)
+    trending_items = popularity_recommender.get_trending_items(period=180, top_n=8)
 
     # Print the recommendations
     # print("Trending Items:")
@@ -91,7 +95,7 @@ def get_data():
         dataList.append(i)
 
     
-
+    # print(dataList)
     return jsonify(dataList)
 
 @app.route('/api/update', methods=['GET'])

@@ -14,6 +14,7 @@ import { TypewriterEffectDemo } from "@/components/typewriter"
 import UserInfo from "@/components/UserInfo"
 import Navbar from "@/components/Navbar"
 import { redirect } from "next/dist/server/api-utils"
+import Footer from "@/components/Footer"
 
 
 
@@ -136,8 +137,8 @@ const Home = async () => {
           ))}
         </div>
       </section>
-
-      
+      <br/>
+      <Footer />
     </>
   )
 }

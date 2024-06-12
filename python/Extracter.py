@@ -31,7 +31,7 @@ collection = db['products']
 csv_file_path = 'output.csv'
 
 # Define CSV header
-csv_header = ['item_id','title', 'brand','user_id', 'rating', 'timestamp', 'sub_cat','main_cat','age','gender','location']
+csv_header = ['item_id','title', 'brand','user_id', 'rating', 'timestamp', 'sub_cat','main_cat','age','gender','location','highestPrice','lowestPrice','currentPrice','originalPrice']
 
 # Open CSV file for writing
 with open(csv_file_path, 'w', newline='',encoding='utf-8') as csv_file:
@@ -44,6 +44,11 @@ with open(csv_file_path, 'w', newline='',encoding='utf-8') as csv_file:
     # Iterate through MongoDB documents
     for document in collection.find():
         # Iterate through all users in the 'users' field
+        highestPrice = document['highestPrice']
+            
+        lowestPrice = document['lowestPrice']
+        currentPrice = document['currentPrice']
+        originalPrice = document['originalPrice']
         for user in document['usersInteraction']:
             # Extract fields from the document
             user_id = pseudonymize_email(user['email'])
@@ -58,8 +63,9 @@ with open(csv_file_path, 'w', newline='',encoding='utf-8') as csv_file:
             age=user['age']
             gender= user['gender']
             location=user['location']
+            
             # Write data to CSV
-            csv_writer.writerow([ item_id, title, brand, user_id,rating, timestamp,sub_cat,main_cat, age,gender,location])
+            csv_writer.writerow([ item_id, title, brand, user_id,rating, timestamp,sub_cat,main_cat, age,gender,location,highestPrice,lowestPrice,currentPrice,originalPrice])
 
 # Close MongoDB connection
 client.close()

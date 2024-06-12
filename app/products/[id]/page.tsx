@@ -80,7 +80,8 @@ const ProductDetails = async ({ params: { id } }: Props) => {
       }
 
     }
-
+    hybridArray= hybridArray.filter(item => item !== id);
+    popularArray= popularArray.filter(item => item !== id);
     // console.log(hybridArray)
     //console.log(popularArray)
     hybridproducts = await getRecommendations(hybridArray)
@@ -94,7 +95,7 @@ const ProductDetails = async ({ params: { id } }: Props) => {
     // }
   }
   const similarProducts = await getSimilarProducts(id);
-
+  const descriptionLines = product?.description?.split('.');
   return (
     <>
     <NavBarTwo/>
@@ -239,7 +240,11 @@ const ProductDetails = async ({ params: { id } }: Props) => {
           </h3>
 
           <div className="flex flex-col gap-4">
-            {product?.description?.split('\n')}
+            
+            {descriptionLines.map((lines,index)=>
+            <div key="index">{lines}</div>)
+
+            }
           </div>
         </div>
 
