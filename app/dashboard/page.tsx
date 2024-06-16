@@ -15,6 +15,8 @@ import UserInfo from "@/components/UserInfo"
 import Navbar from "@/components/Navbar"
 import { redirect } from "next/dist/server/api-utils"
 import Footer from "@/components/Footer"
+import { connectToDB } from "@/lib/mongoose"
+import Product from "@/lib/models/product.model"
 
 
 
@@ -31,6 +33,8 @@ function pseudonymizeEmail(email: string): string {
 }
 
 const Home = async () => {
+
+ 
 
   const session = await getServerSession(authOptions);
   let setEmail
@@ -93,7 +97,19 @@ const Home = async () => {
     }
   }
   const allProducts = await getAllProducts();
-
+   
+   //
+   let recentInteractions;
+   try {
+     await connectToDB();
+     
+     recentInteractions = await Product.find({ 'usersInteraction.email': setEmail });
+   }
+   catch(error:any){
+     console.log(error.message);
+   }
+ 
+   //
   return (
     <>
       <Navbar />
@@ -125,6 +141,17 @@ const Home = async () => {
           </div>
 
           <HeroCarousel />
+        </div>
+      </section>
+
+
+      <section className="trending-section">
+        {recentInteractions && <h2 className="section-text">Recent Interactions</h2>}
+
+        <div className="flex flex-wrap gap-x-8 gap-y-16">
+          {recentInteractions?.map((product) => (
+            <ProductCard key={product._id} product={JSON.parse(JSON.stringify(product))} />
+          ))}
         </div>
       </section>
 
