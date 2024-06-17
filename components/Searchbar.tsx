@@ -10,7 +10,7 @@ const isValidProductURL = (url: string) => {
     const parsedURL = new URL(url);
     const hostname = parsedURL.hostname;
 
-    if (hostname.includes('amazon.com') ||
+    if (hostname.includes('amazon.in') ||
       hostname.includes('amazon.') ||
       hostname.endsWith('amazon')) {
       return "amazon";
@@ -81,7 +81,7 @@ const Searchbar = () => {
           type="text"
           value={searchPrompt}
           onChange={(e) => setSearchPrompt(e.target.value)}
-          placeholder="Enter product link"
+          placeholder="Enter product link or product name" 
           className="searchbar-input"
         />
 

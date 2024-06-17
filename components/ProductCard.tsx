@@ -22,7 +22,7 @@ const isValidProductURL = (url: string) => {
     const parsedURL = new URL(url);
     const hostname = parsedURL.hostname;
 
-    if(hostname.includes('amazon.com')||
+    if(hostname.includes('amazon.in')||
          hostname.includes('amazon.')||
          hostname.endsWith('amazon')){
             return "amazon"
