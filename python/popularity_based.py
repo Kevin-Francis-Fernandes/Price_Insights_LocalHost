@@ -11,23 +11,35 @@ class PopularityBasedRecommender:
         return user_item_matrix
 
     def get_trending_items(self, period=15, top_n=5):
-        # Filter the dataset to get interactions in the last "period" days
+        # Ensure 'timestamp' column is in datetime format
         self.df['timestamp'] = pd.to_datetime(self.df['timestamp'])
-        recent_interactions = self.df[self.df['timestamp'] >= self.df['timestamp'].max() - pd.Timedelta(days=period)]
+
+        # Filter the dataset to get interactions in the last "period" days
+        max_timestamp = self.df['timestamp'].max()
+        recent_interactions = self.df[self.df['timestamp'] >= max_timestamp - pd.Timedelta(days=period)]
 
         # Calculate popularity based on recent interactions
         item_popularity = recent_interactions['item_id'].value_counts()
 
-        # Get the titles, interaction count, and average rating of the trending items
+        # Get the top N trending items
         trending_items = item_popularity.head(top_n).index.tolist()
-        trending_titles = self.df[self.df['item_id'].isin(trending_items)]['title'].unique()
+
+        # Retrieve the titles for the trending items (ensuring each item_id has a unique title)
+        titles_df = self.df[self.df['item_id'].isin(trending_items)][['item_id', 'title']].drop_duplicates(subset=['item_id'])
+        trending_titles = titles_df.set_index('item_id').loc[trending_items]['title'].values
+
+        # Calculate interaction count and average rating for the trending items
         trending_interaction_count = item_popularity.head(top_n).values
         trending_avg_rating = recent_interactions.groupby('item_id')['rating'].mean().loc[trending_items].values
 
         # Return the top N trending items along with their titles, interaction count, and average rating
-        return pd.DataFrame({'item_id': trending_items, 'title': trending_titles,
-                             'interaction_count': trending_interaction_count, 'avg_rating': trending_avg_rating})
-
+        return pd.DataFrame({
+            'item_id': trending_items,
+            'title': trending_titles,
+            'interaction_count': trending_interaction_count,
+            'avg_rating': trending_avg_rating
+        })        # Return the top N trending items along with their titles, interaction count, and average rating
+        
     def get_most_popular_items(self, top_n=5):
         # Calculate popularity based on overall interactions
         item_popularity = self.df['item_id'].value_counts()

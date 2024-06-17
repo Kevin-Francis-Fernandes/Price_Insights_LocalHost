@@ -112,7 +112,7 @@ const ProductCard = ({ product }: Props) => {
 
         <div className="flex justify-between">
           <p className="text-black opacity-50 text-lg capitalize">
-            {product.title.split(" ")[0]}
+            {product.sellerInfo || product.title.split(" ")[0]}
           </p>
 
           <p className="text-black text-lg font-semibold">

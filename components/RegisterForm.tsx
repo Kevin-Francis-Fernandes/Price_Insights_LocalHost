@@ -15,7 +15,7 @@ export default function RegisterForm() {
   const [location, setLocation] = useState("");
   const [gender, setGender] = useState("");
   const [error, setError] = useState("");
-
+  const [showPassword, setShowPassword] = useState(false);
   const router = useRouter();
 
   const handleSubmit = async (e:any) => {
@@ -23,6 +23,11 @@ export default function RegisterForm() {
 
     if (!name || !email || !password || !age || !gender || !location) {
       setError("All fields are necessary.");
+      return;
+    }
+
+    if (password.length <= 8) {
+      setError("Password must be greater than 8 characters.");
       return;
     }
 
@@ -79,56 +84,47 @@ export default function RegisterForm() {
       &nbsp;
     </p>
         <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-          {/* <input
-            onChange={(e) => setName(e.target.value)}
-            type="text"
-            placeholder="Full Name"
-          /> */}
+         
           <LabelInputContainer className="mb-4">
           <Label htmlFor="name">Full  Name</Label>
           <Input id="name" placeholder="Name" type="text" onChange={(e) => setName(e.target.value)} />
          </LabelInputContainer>
-          {/* <input
-            onChange={(e) => setEmail(e.target.value)}
-            type="text"
-            placeholder="Email"
-          /> */}
+        
           <LabelInputContainer className="mb-4">
           <Label htmlFor="email">Email Address</Label>
           <Input id="email" placeholder="Email" type="email" onChange={(e) => setEmail(e.target.value)} />
          </LabelInputContainer>
-          {/* <input
-            onChange={(e) => setPassword(e.target.value)}
-            type="password"
-            placeholder="Password"
-          /> */}
-          <LabelInputContainer className="mb-4">
+          
+          {/* <LabelInputContainer className="mb-4">
           <Label htmlFor="password">Password</Label>
           <Input id="password" placeholder="••••••••" type="password" onChange={(e) => setPassword(e.target.value)}/>
-        </LabelInputContainer>
-          {/* <input
-            onChange={(e) => setAge(e.target.value)}
-            type="text"
-            placeholder="Age"
-          /> */}
+        </LabelInputContainer> */}
+          <LabelInputContainer className="mb-4 relative">
+            <Label htmlFor="password">Password</Label>
+            <Input 
+              id="password" 
+              placeholder="••••••••" 
+              type={showPassword ? "text" : "password"} 
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <button 
+              type="button" 
+              onClick={() => setShowPassword(!showPassword)} 
+              className="absolute right-3 top-6 text-sm text-gray-500 dark:text-gray-400">
+              {showPassword ? "Hide" : "Show"}
+            </button>
+          </LabelInputContainer>
+          
           <LabelInputContainer className="mb-4">
           <Label htmlFor="age">Age</Label>
           <Input id="age" placeholder="Age" type="text" onChange={(e) => setAge(e.target.value)} />
          </LabelInputContainer>
-          {/* <input
-            onChange={(e) => setGender(e.target.value.toLowerCase())}
-            type="text"
-            placeholder="Gender"
-          /> */}
+         
             <LabelInputContainer className="mb-4">
           <Label htmlFor="gender">Gender</Label>
           <Input id="gender" placeholder="Gender" type="text" onChange={(e) => setGender(e.target.value.toLowerCase())} />
          </LabelInputContainer>
-          {/* <input
-            onChange={(e) => setLocation(e.target.value.toLowerCase())}
-            type="text"
-            placeholder="Location"
-          /> */}
+         
             <LabelInputContainer className="mb-4">
           <Label htmlFor="location">Location</Label>
           <Input id="location" placeholder="Location" type="text" onChange={(e) => setLocation(e.target.value.toLowerCase())} />

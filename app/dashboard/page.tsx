@@ -103,7 +103,7 @@ const Home = async () => {
    try {
      await connectToDB();
      
-     recentInteractions = await Product.find({ 'usersInteraction.email': setEmail });
+     recentInteractions = await Product.find({ 'usersInteraction.email': setEmail }).sort({_id:-1}).limit(8);
    }
    catch(error:any){
      console.log(error.message);
@@ -144,7 +144,16 @@ const Home = async () => {
         </div>
       </section>
 
+      <section className="trending-section">
+        {popularproducts && <h2 className="section-text">Trending</h2>}
 
+        <div className="flex flex-wrap gap-x-8 gap-y-16">
+          {popularproducts?.map((product) => (
+            <ProductCard key={product._id} product={JSON.parse(JSON.stringify(product))} />
+          ))}
+        </div>
+      </section>
+      
       <section className="trending-section">
         {recentInteractions && <h2 className="section-text">Recent Interactions</h2>}
 
@@ -155,15 +164,7 @@ const Home = async () => {
         </div>
       </section>
 
-      <section className="trending-section">
-        {popularproducts && <h2 className="section-text">Trending</h2>}
-
-        <div className="flex flex-wrap gap-x-8 gap-y-16">
-          {popularproducts?.map((product) => (
-            <ProductCard key={product._id} product={JSON.parse(JSON.stringify(product))} />
-          ))}
-        </div>
-      </section>
+      
       <br/>
       <Footer />
     </>
