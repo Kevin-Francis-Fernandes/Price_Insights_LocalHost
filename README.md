@@ -16,47 +16,47 @@ This repository contains a Next.js project with an embedded Python server. Follo
 
 1. Clone the repository.
 2. Navigate to the project directory.
-   \`\`\`sh
+   ```
    cd nextjs_project
-   \`\`\`
+   ```
 3. Install the dependencies.
-   \`\`\`sh
+   ```
    npm install
-   \`\`\`
+   ```
 
 ### Environment Variables
 
-Create a \`.env.local\` file in the root of the project and add the following environment variables:
+Create a `.env.local` file in the root of the project and add the following environment variables:
 
-\`\`\`env
+```
 BRIGHT_DATA_USERNAME=your_brightdata_username
 BRIGHT_DATA_PASSWORD=your_brightdata_password
 MONGODB_URI=your_mongodb_uri
 EMAIL_PASSWORD=your_email_password
 NEXTAUTH_SECRET=your_randomly_generated_secret
 NEXTAUTH_URL=http://localhost:3000
-\`\`\`
+```
 
 - **BRIGHT_DATA_USERNAME**: Your Bright Data username. Create a Bright Data account and use the Web Unlocker tool.
 - **BRIGHT_DATA_PASSWORD**: Your Bright Data password.
 - **MONGODB_URI**: Your MongoDB connection URI. Create a MongoDB database and enter the URI here.
 - **EMAIL_PASSWORD**: The password for the email you are using with Nodemailer.
 - **NEXTAUTH_SECRET**: A randomly generated secret for NextAuth.
-- **NEXTAUTH_URL**: The domain name that you are running on, typically \`http://localhost:3000\` for local development.
+- **NEXTAUTH_URL**: The domain name that you are running on, typically `http://localhost:3000` for local development.
 
 ### Running the Server
 
 To start the Next.js development server, run:
 
-\`\`\`sh
+```
 npm run dev
-\`\`\`
+```
 
 Other available scripts:
 
-- **Build**: \`npm run build\`
-- **Start**: \`npm run start\`
-- **Lint**: \`npm run lint\`
+- **Build**: `npm run build`
+- **Start**: `npm run start`
+- **Lint**: `npm run lint`
 
 ## Python Server
 
@@ -68,21 +68,21 @@ Other available scripts:
 ### Installation
 
 1. Navigate to the Python server directory.
-   \`\`\`sh
+   ```
    cd python
-   \`\`\`
+   ```
 2. Install the required dependencies.
-   \`\`\`sh
+   ```
    pip install pandas scikit-learn flask pymongo flask-cors
-   \`\`\`
+   ```
 
 ### Running the Server
 
 To start the Python server, run:
 
-\`\`\`sh
+```
 python main.py
-\`\`\`
+```
 
 ## Accessing the Application
 
@@ -90,7 +90,7 @@ Open any browser and go to [http://localhost:3000](http://localhost:3000).
 
 ## Additional Information
 
-This project uses several dependencies listed in the \`package.json\` file for the Next.js project and the \`requirements.txt\` file for the Python server. Ensure that all dependencies are installed correctly to avoid any runtime errors.
+This project uses several dependencies listed in the `package.json` file for the Next.js project and the `requirements.txt` file for the Python server. Ensure that all dependencies are installed correctly to avoid any runtime errors.
 
 ### Next.js Dependencies
 
