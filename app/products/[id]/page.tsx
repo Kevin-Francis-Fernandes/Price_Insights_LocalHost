@@ -175,6 +175,7 @@ const ProductDetails = async ({ params: { id } }: Props) => {
           </div>
 
           <div className="product-info">
+          {product.currentPrice >0 && (
             <div className="flex flex-col gap-2">
               <p className="text-[34px] text-secondary font-bold">
                 {product.currency} {formatNumber(product.currentPrice)}
@@ -183,6 +184,15 @@ const ProductDetails = async ({ params: { id } }: Props) => {
                 {product.currency} {formatNumber(product.originalPrice)}
               </p>
             </div>
+          )}
+          {product.currentPrice ==0 && (
+            <div className="flex flex-col gap-2">
+
+            <p className="text-[34px] text-primary font-bold">
+            Out of Stock
+          </p>
+          </div>
+          )}
 
             <div className="flex flex-col gap-4">
               <div className="flex gap-3">
@@ -194,7 +204,7 @@ const ProductDetails = async ({ params: { id } }: Props) => {
                     height={16}
                   />
                   <p className="text-sm text-primary-orange font-semibold">
-                    {product.rating || '25'}
+                    {product.rating || '4'}
                   </p>
                 </div>
 
