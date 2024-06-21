@@ -152,7 +152,7 @@ def get_item_price_predictions(item_id, model, data):
 
 
 # Example usage
-item_id = "662d1884fcfae462736373a0"  # Replace with the desired item_id
+item_id = "65f98f208156be729041951f"  # Replace with the desired item_id
 predictions = get_item_price_predictions(item_id, model, data)
 print(predictions)
 
