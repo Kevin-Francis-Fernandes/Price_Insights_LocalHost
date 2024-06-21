@@ -248,7 +248,7 @@ const ProductDetails = async ({ params: { id } }: Props) => {
               <PriceInfoCard 
                 title="Lowest Price"
                 iconSrc="/assets/icons/arrow-down.svg"
-                value={`${product.currency} ${formatNumber(product.lowestPrice)}`}
+                value={`${product.currency} ${formatNumber(product.lowestPrice==0? product.currentPrice==0?product.originalPrice:product.currentPrice :product.lowestPrice)}`}
               />
             </div>
           </div>
@@ -289,7 +289,7 @@ const ProductDetails = async ({ params: { id } }: Props) => {
       <div>
         <b>PRICE FLUCTUATIONS</b>
       </div>
-      <LineGraph data={JSON.parse(JSON.stringify(product.priceHistory))}/>
+      <LineGraph data={JSON.parse(JSON.stringify(product.priceHistory.filter(product => product.price !== 0)))}/>
       </>
       )}
 

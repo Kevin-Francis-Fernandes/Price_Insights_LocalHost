@@ -123,9 +123,10 @@ item_id,title,brand,user_id,rating,timestamp,sub_cat,main_cat,age,gender,locatio
 65faaf84bec08a417bb8bdc2,oneplus nord 3 5g (misty green 8gb ram 128gb storage),oneplus,189625dd,4.1,2024-03-20 09:42:29,SmartPhones,Electronics,21,female,uk,33999.0,28999.0,28999.0,33999.0
 65faaf8abec08a417bb8d3d6,oneplus nord ce 3 lite 5g (pastel lime 8gb ram 128gb storage),oneplus,189625dd,4.2,2024-03-20 09:42:35,SmartPhones,Electronics,21,female,uk,19999.0,17999.0,17999.0,19999.0
 65faaf90bec08a417bb8eaa5,oneplus nord ce 3 lite 5g (chromatic gray 8gb ram 256gb storage),oneplus,189625dd,4.2,2024-03-20 09:42:41,SmartPhones,Electronics,21,female,uk,21999.0,19999.0,19999.0,21999.0
-65faaf95bec08a417bb8fd48,oneplus nord ce 3 5g (aqua surge 8gb ram 128gb storage),oneplus,189625dd,4.2,2024-06-21 10:27:58,SmartPhones,Electronics,21,female,uk,22999.0,20999.0,22999.0,26999.0
-65faaf95bec08a417bb8fd48,oneplus nord ce 3 5g (aqua surge 8gb ram 128gb storage),oneplus,089997d9,4.2,2024-06-21 10:27:58,SmartPhones,Electronics,5,m,i,22999.0,20999.0,22999.0,26999.0
-65faaf95bec08a417bb8fd48,oneplus nord ce 3 5g (aqua surge 8gb ram 128gb storage),oneplus,d372588d,4.2,2024-06-21 10:27:58,SmartPhones,Electronics,20,male,mapusa,22999.0,20999.0,22999.0,26999.0
+65faaf95bec08a417bb8fd48,oneplus nord ce 3 5g (aqua surge 8gb ram 128gb storage),oneplus,189625dd,4.2,2024-06-21 15:41:13,SmartPhones,Electronics,21,female,uk,22999.0,0.0,22999.0,26999.0
+65faaf95bec08a417bb8fd48,oneplus nord ce 3 5g (aqua surge 8gb ram 128gb storage),oneplus,089997d9,4.2,2024-06-21 15:41:13,SmartPhones,Electronics,5,m,i,22999.0,0.0,22999.0,26999.0
+65faaf95bec08a417bb8fd48,oneplus nord ce 3 5g (aqua surge 8gb ram 128gb storage),oneplus,d372588d,4.2,2024-06-21 15:41:13,SmartPhones,Electronics,20,male,mapusa,22999.0,0.0,22999.0,26999.0
+65faaf95bec08a417bb8fd48,oneplus nord ce 3 5g (aqua surge 8gb ram 128gb storage),oneplus,f9209930,4.2,2024-06-21 15:41:13,SmartPhones,Electronics,21,male,india,22999.0,0.0,22999.0,26999.0
 65faafb0bec08a417bb95a58,oneplus nord ce 3 5g (8gb 128gb grey),oneplus,189625dd,2.0,2024-03-20 09:43:14,SmartPhones,Electronics,21,female,uk,26999.0,24999.0,24999.0,26999.0
 65faafbdbec08a417bb98d23,oneplus nord ce 3 lite 5g (8gb ram 256gb chromatic gray),oneplus,189625dd,2.0,2024-03-20 09:43:26,SmartPhones,Electronics,21,female,uk,21999.0,19999.0,19999.0,21999.0
 65faafccbec08a417bb9c24c,oneplus nord ce3 5g (8gb ram 128gb aqua surge),oneplus,189625dd,2.0,2024-03-20 09:43:42,SmartPhones,Electronics,21,female,uk,26999.0,24999.0,24999.0,26999.0
@@ -242,13 +243,15 @@ item_id,title,brand,user_id,rating,timestamp,sub_cat,main_cat,age,gender,locatio
 6627457e1c944205c35b5ca3,oneplus nord ce 3 5g (aqua surge 8gb ram 128gb storage),oneplus,189625dd,4.2,2024-06-21 09:22:58,SmartPhones,Electronics,21,female,uk,22999.0,18999.0,22999.0,26999.0
 6627457e1c944205c35b5ca3,oneplus nord ce 3 5g (aqua surge 8gb ram 128gb storage),oneplus,b9b53630,4.2,2024-06-21 09:22:58,SmartPhones,Electronics,21,male,mapusa,22999.0,18999.0,22999.0,26999.0
 6627457e1c944205c35b5ca3,oneplus nord ce 3 5g (aqua surge 8gb ram 128gb storage),oneplus,d372588d,4.2,2024-06-21 09:22:58,SmartPhones,Electronics,20,male,mapusa,22999.0,18999.0,22999.0,26999.0
-66274a1b1c944205c366624a,motorola moto g 5g  2023  unlocked  made for us 4/128gb  bluetooth  48 mpcamera  harbor gray 163.94x74.98x8.39,motorola,189625dd,4.2,2024-04-23 05:44:49,SmartPhones,Electronics,21,female,uk,149.0,149.0,149.0,249.99
+66274a1b1c944205c366624a,motorola moto g 5g  2023  unlocked  made for us 4/128gb  bluetooth  48 mpcamera  harbor gray 163.94x74.98x8.39,motorola,189625dd,4.2,2024-06-21 13:59:42,SmartPhones,Electronics,21,female,uk,149.0,149.0,149.0,249.99
+66274a1b1c944205c366624a,motorola moto g 5g  2023  unlocked  made for us 4/128gb  bluetooth  48 mpcamera  harbor gray 163.94x74.98x8.39,motorola,f9209930,4.2,2024-06-21 13:59:42,SmartPhones,Electronics,21,male,india,149.0,149.0,149.0,249.99
 66274aa81c944205c3678096,lava agni 2 5g (glass viridian 8gb ram 256gb storage)  india's first dimensity 7050 processor  120 hz curved amoled display  13 5g bands  superfast 66w charging  clean android,lava,79b6e80e,4.2,2024-04-23 05:33:38,SmartPhones,Electronics,21,male,india,25999.0,17499.0,17499.0,25999.0
 6628af0cfcfae462733938c9,samsung galaxy s24 ultra cell phone 256gb ai smartphone unlocked android 200mp 100x zoom cameras long battery life s pen us version 2024 titanium black,samsung,79b6e80e,4.3,2024-04-24 07:04:44,SmartPhones,Electronics,21,male,india,1299.99,1099.0,1099.0,1299.99
 662bba90fcfae462736654ec,realme 12 5g (8gb ram 128gb woodland green),realme,f9209930,2.0,2024-05-01 16:40:32,SmartPhones,Electronics,21,male,india,17999.0,17999.0,17999.0,20999.0
 662bba90fcfae462736654ec,realme 12 5g (8gb ram 128gb woodland green),realme,79b6e80e,2.0,2024-05-01 16:40:32,SmartPhones,Electronics,21,male,india,17999.0,17999.0,17999.0,20999.0
 662bbaeefcfae46273670c1e,realme 12x 5g (8gb ram 128gb woodland green),realme,f9209930,2.0,2024-04-26 14:32:16,SmartPhones,Electronics,21,male,india,19999.0,14999.0,14999.0,19999.0
-662bbb01fcfae46273672935,realme 12 5g (8gb ram 128gb twilight purple),realme,f9209930,2.0,2024-04-26 14:32:41,SmartPhones,Electronics,21,male,india,17999.0,17999.0,17999.0,20999.0
+662bbb01fcfae46273672935,realme 12 5g (8gb ram 128gb twilight purple),realme,f9209930,2.0,2024-06-21 16:02:25,SmartPhones,Electronics,21,male,india,17999.0,17499.0,17499.0,20999.0
+662bbb01fcfae46273672935,realme 12 5g (8gb ram 128gb twilight purple),realme,d372588d,2.0,2024-06-21 16:02:25,SmartPhones,Electronics,20,male,mapusa,17999.0,17499.0,17499.0,20999.0
 662bbb33fcfae46273678e56,realme 12x 5g (6gb ram 128gb twilight purple),realme,f9209930,2.0,2024-04-26 14:33:25,SmartPhones,Electronics,21,male,india,18999.0,17999.0,17999.0,18999.0
 662bc462fcfae4627379023d,samsung galaxy tab a9+ 27.94 cm (11.0 inch) display ram 8 gb rom 128 gb expandable wi-fi tablet graphite,samsung,f9209930,4.1,2024-04-26 15:12:36,SmartPhones,Electronics,21,male,india,27999.0,20990.0,20990.0,27999.0
 662bc53afcfae462737ac4fa,oppo a59 5g (4gb ram 128gb starry black),oppo,f9209930,2.0,2024-04-26 15:16:12,SmartPhones,Electronics,21,male,india,17999.0,13999.0,13999.0,17999.0
@@ -327,3 +330,4 @@ item_id,title,brand,user_id,rating,timestamp,sub_cat,main_cat,age,gender,locatio
 6675584f926f304b487a7aa2,realme narzo 70 pro 5g (glass gold 8gb ram128gb storage) dimensity 7050 5g chipset  horizon glass design  segment 1st flagship sony imx890 ois camera,realme,d372588d,4.1,2024-06-21 10:39:02,SmartPhones,Electronics,20,male,mapusa,24999.0,19998.0,19998.0,24999.0
 66755a25926f304b487f8e57,itel a70 (4gb ram 128gb rom) upto 12gb ram with memory fusion  13mp dual rear camera & 8mp front camera  5000mah with type-c  dynamic bar  side fingerprint  octa-core processor  brilliant gold,itel,d372588d,3.9,2024-06-21 10:46:51,SmartPhones,Electronics,20,male,mapusa,9999.0,6799.0,6799.0,9999.0
 66755e12926f304b488a6220,oneplus 12r 5g (8gb 256gb iron grey),oneplus,d372588d,2.0,2024-06-21 11:03:37,SmartPhones,Electronics,20,male,mapusa,42999.0,42999.0,42999.0,42999.0
+667586d5926f304b48f35771,oneplus nord 3 5g (tempest gray 8gb ram 128gb storage),oneplus,f9209930,4.1,2024-06-21 13:57:47,SmartPhones,Electronics,21,male,india,33999.0,19998.0,19998.0,33999.0
