@@ -2,13 +2,16 @@
 import { Product } from '@/types';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
+import { ThreeDots } from 'react-loader-spinner';
 
 import { scrapeAndStoreProduct } from '@/lib/actions';
 
 import { useRouter } from 'next/navigation';
 
-import { FormEvent, useState } from 'react'
+import { FormEvent} from 'react'
 interface Props {
   product: any;
 }
@@ -48,6 +51,15 @@ const isValidProductURL = (url: string) => {
 }
 const ProductCard = ({ product }: Props) => {
  
+  const [initialLoading, setInitialLoading] = useState(true);
+  const [submitLoading, setSubmitLoading] = useState(false);
+  
+
+  useEffect(() => {
+    // Simulate a delay to show the skeleton loader
+    const timer = setTimeout(() => setInitialLoading(false), 2000); // Adjust the delay as needed
+    return () => clearTimeout(timer);
+  }, []);
 
   // let prod;
   // try {
@@ -72,7 +84,7 @@ const ProductCard = ({ product }: Props) => {
     
     try {
       
-      
+      setSubmitLoading(true);
         // Scrape the product page
          const products = await scrapeAndStoreProduct(searchPrompt,isValidLink);
          if (products && products.redirect) {
@@ -91,12 +103,18 @@ const ProductCard = ({ product }: Props) => {
     } catch (error) {
       console.log(error);
     }
+    finally {
+      setSubmitLoading(false);
+    }
   }
 
 
   return (
     
-    <div className="product-card" onClick={handleSubmit}>   
+    <div className="product-card" onClick={handleSubmit} style={{ position: 'relative' }}>   
+      {initialLoading ? (
+        <Skeleton height={200} width={200} />
+      ) : (
       <div className="product-card_img-container">
         <Image 
           src={product.image}
@@ -106,21 +124,34 @@ const ProductCard = ({ product }: Props) => {
           className="product-card_img"
         />
       </div>
+       )}
 
       <div className="flex flex-col gap-3">
-        <h3 className="product-title">{product.title}</h3>
+        <h3 className="product-title"> {initialLoading ? <Skeleton width="80%" /> : product.title}</h3>
 
         <div className="flex justify-between">
           <p className="text-black opacity-50 text-lg capitalize">
-            {product.sellerInfo || product.title.split(" ")[0]}
+          {initialLoading ? <Skeleton width="50%" /> : product.sellerInfo || product.title.split(" ")[0]}
           </p>
 
           <p className="text-black text-lg font-semibold">
+          {initialLoading ? (
+              <Skeleton width="60%" />
+            ) : (
+              <>
             <span>{product?.currency}</span>
             <span>{product?.originalPrice}</span>
+            </>
+            )}
           </p>
         </div>
       </div>
+      {submitLoading && (
+        <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-75">
+          <ThreeDots visible={true} height="80" width="80" color="#4fa94d" radius="9"
+  ariaLabel="three-dots-loading" wrapperStyle={{}} wrapperClass=""/>
+        </div>
+      )}
     </div>
   )
 }
