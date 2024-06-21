@@ -59,6 +59,19 @@ const ProductDetails = async ({ params: { id } }: Props) => {
   
       // Call fetchData
       
+      const predictfetchData = async () => {
+        try {
+            await fetch(`http://127.0.0.1:5000/api/update`);
+            const response = await fetch(`http://127.0.0.1:5000/api/predict?param=${id}`);
+            const jsonData = await response.json();
+            return jsonData;
+            
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
+    };
+    const predictdata = await predictfetchData();
+      
   
   let hybridArray:string[],popularArray:string[],flag,popularproducts,hybridproducts
   const data = await fetchData();
@@ -199,8 +212,8 @@ const ProductDetails = async ({ params: { id } }: Props) => {
               </div>
 
               <p className="text-sm text-black opacity-50">
-                <span className="text-primary-green font-semibold">93% </span> of
-                buyers have recommeded this.
+                <span className="text-primary-green font-semibold"> </span> 
+              
               </p>
             </div>
           </div>
@@ -269,6 +282,20 @@ const ProductDetails = async ({ params: { id } }: Props) => {
       <LineGraph data={JSON.parse(JSON.stringify(product.priceHistory))}/>
       </>
       )}
+
+      <br></br>
+      {predictdata?.length>0 && (<>
+        <div className="p-6 max-w-md mx-auto bg-white rounded-xl shadow-lg space-y-4 border border-gray-300">
+      <h1 className="text-2xl font-bold text-center">
+        Price is forcasted to  &nbsp;
+        <span className={predictdata == 'Increase' ? 'text-red-500' : 'text-green-500'}>
+          {predictdata}
+        </span>
+      </h1>
+      
+    </div>
+      
+      </>)}
       </div>
 
 

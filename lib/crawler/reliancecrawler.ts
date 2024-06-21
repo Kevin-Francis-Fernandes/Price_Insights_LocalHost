@@ -46,7 +46,7 @@ export async function relianceCrawler(searchTerm: string): Promise<Product[] | v
             return;
           }
           console.warn('Content not loaded yet, waiting again...');
-          await new Promise((resolve) => setTimeout(resolve, 5000));
+          // await new Promise((resolve) => setTimeout(resolve, 5000));
           retries++;
         }
         console.error('Max retries reached. Content not loaded.');

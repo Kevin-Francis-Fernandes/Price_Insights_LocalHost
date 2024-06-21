@@ -86,6 +86,10 @@ export async function scrapeAndStoreProduct(productUrl: string,type:string) {
       
     }
     if(!existingProduct) {
+      const updatedPriceHistory: any = [
+        
+        { price: scrapedProduct.currentPrice }
+      ]
 
       const updateUsersInteraction:any  = [
         
@@ -97,6 +101,7 @@ export async function scrapeAndStoreProduct(productUrl: string,type:string) {
       ]
     product = {
           ...scrapedProduct,
+          priceHistory: updatedPriceHistory,
           usersInteraction: updateUsersInteraction,
   
     }

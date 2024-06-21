@@ -63,7 +63,7 @@ const Home = async () => {
       // Call fetchData
       
   
-  let hybridArray:string[],popularArray:string[],flag,popularproducts
+  let hybridArray:string[],popularArray:string[],flag,popularproducts:any
   const data = await fetchData();
   if(data){
     
@@ -99,7 +99,7 @@ const Home = async () => {
   const allProducts = await getAllProducts();
    
    //
-   let recentInteractions;
+   let recentInteractions:any;
    try {
      await connectToDB();
      
@@ -145,20 +145,20 @@ const Home = async () => {
       </section>
 
       <section className="trending-section">
-        {popularproducts && <h2 className="section-text">Trending Products</h2>}
+        {popularproducts.length>0 && <h2 className="section-text">Trending Products</h2>}
 
         <div className="flex flex-wrap gap-x-8 gap-y-16">
-          {popularproducts?.map((product) => (
+          {popularproducts?.map((product:any) => (
             <ProductCard key={product._id} product={JSON.parse(JSON.stringify(product))} />
           ))}
         </div>
       </section>
       
       <section className="trending-section">
-        {recentInteractions && <h2 className="section-text">Recent Interactions</h2>}
+        {recentInteractions.length>0 && <h2 className="section-text">Recent Interactions</h2>}
 
         <div className="flex flex-wrap gap-x-8 gap-y-16">
-          {recentInteractions?.map((product) => (
+          {recentInteractions?.map((product:any) => (
             <ProductCard key={product._id} product={JSON.parse(JSON.stringify(product))} />
           ))}
         </div>

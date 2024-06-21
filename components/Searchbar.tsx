@@ -48,7 +48,7 @@ const Searchbar = () => {
       // Scrape the product page
       const product = await scrapeAndStoreProduct(searchPrompt, isValidLink);
       if (product && product.redirect) {
-        await new Promise(resolve => setTimeout(resolve, 20000));
+        // await new Promise(resolve => setTimeout(resolve, 20000));
         router.push(product.redirect);
       }
 
