@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Main Project
 
-First, run the development server:
+This repository contains a Next.js project with an embedded Python server. Follow the steps below to set up and run both the Next.js and Python servers.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+
+## Next.js Project
+
+### Prerequisites
+
+- Node.js (v14.x or later)
+- npm (v6.x or later)
+
+### Installation
+
+1. Clone the repository.
+2. Navigate to the project directory.
+   ```
+   cd nextjs_project
+   ```
+3. Install the dependencies.
+   ```
+   npm install
+   ```
+
+### Environment Variables
+
+Create a `.env.local` file in the root of the project and add the following environment variables:
+
+```
+BRIGHT_DATA_USERNAME=your_brightdata_username
+BRIGHT_DATA_PASSWORD=your_brightdata_password
+MONGODB_URI=your_mongodb_uri
+EMAIL_PASSWORD=your_email_password
+NEXTAUTH_SECRET=your_randomly_generated_secret
+NEXTAUTH_URL=http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **BRIGHT_DATA_USERNAME**: Your Bright Data username. Create a Bright Data account and use the Web Unlocker tool.
+- **BRIGHT_DATA_PASSWORD**: Your Bright Data password.
+- **MONGODB_URI**: Your MongoDB connection URI. Create a MongoDB database and enter the URI here.
+- **EMAIL_PASSWORD**: The password for the email you are using with Nodemailer.
+- **NEXTAUTH_SECRET**: A randomly generated secret for NextAuth.
+- **NEXTAUTH_URL**: The domain name that you are running on, typically `http://localhost:3000` for local development.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Running the Server
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To start the Next.js development server, run:
 
-## Learn More
+```
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Other available scripts:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Build**: `npm run build`
+- **Start**: `npm run start`
+- **Lint**: `npm run lint`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Python Server
 
-## Deploy on Vercel
+### Prerequisites
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Python (v3.7 or later)
+- pip (v20.x or later)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Installation
+
+1. Navigate to the Python server directory.
+   ```
+   cd python
+   ```
+2. Install the required dependencies.
+   ```
+   pip install pandas scikit-learn flask pymongo flask-cors
+   ```
+
+### Running the Server
+
+To start the Python server, run:
+
+```
+python main.py
+```
+
+## Accessing the Application
+
+Open any browser and go to [http://localhost:3000](http://localhost:3000).
+
+## Additional Information
+
+This project uses several dependencies listed in the `package.json` file for the Next.js project and the `requirements.txt` file for the Python server. Ensure that all dependencies are installed correctly to avoid any runtime errors.
+
+### Next.js Dependencies
+
+- @headlessui/react
+- @radix-ui/react-label
+- axios
+- bcryptjs
+- cheerio
+- clsx
+- date-fns
+- framer-motion
+- fs
+- headlessui
+- mongoose
+- next
+- nodemailer
+- prisma
+- puppeteer
+- puppeteer-core
+- react
+- react-dom
+- react-icons
+- react-loader-spinner
+- react-loading-skeleton
+- react-responsive-carousel
+- react-spinners
+- recharts
+- tailwind-merge
+
+### Python Dependencies
+
+- pandas
+- scikit-learn
+- flask
+- pymongo
+- flask-cors
+
+For any issues or questions, please refer to the respective documentation of the dependencies or create an issue in this repository.
+
+---
+
+Happy coding!
